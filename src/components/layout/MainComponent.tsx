@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { ReactNode, useState } from 'react'
 import { AppBar, Box, Button, Menu, MenuItem, Toolbar, Tooltip, Typography } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 
 
 type Props = {
+  children?: ReactNode
 }
 
 
@@ -61,10 +62,10 @@ const MainComponent = (props: Props) => {
           >
             Химия
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex' } }}>
             <Button
               id="organic-button"
-              sx={{ my: 2, color: 'inherit', display: 'block' }}
+              sx={{ my: 2, color: 'inherit', display: 'block', margin: 0 }}
               onClick={handleClick}
             >
               Органическая химия
@@ -83,7 +84,7 @@ const MainComponent = (props: Props) => {
                   variant="button"
                   noWrap
                   component={Link}
-                  to='/organic-tasks'
+                  to='/organic/tasks'
                   sx={{
                     color: 'inherit',
                     textDecoration: 'none',
@@ -97,7 +98,7 @@ const MainComponent = (props: Props) => {
                   variant="button"
                   noWrap
                   component={Link}
-                  to='/organic-book'
+                  to='/organic/guide'
                   sx={{
                     color: 'inherit',
                     textDecoration: 'none',
@@ -110,7 +111,7 @@ const MainComponent = (props: Props) => {
 
             <Button
               id="nonorganic-button"
-              sx={{ my: 2, color: 'inherit', display: 'block' }}
+              sx={{ my: 2, color: 'inherit', display: 'block', margin: 0 }}
               onClick={handleClick}
             >
               Неорганическая химия
@@ -129,7 +130,7 @@ const MainComponent = (props: Props) => {
                   variant="button"
                   noWrap
                   component={Link}
-                  to='/nonorganic-tasks'
+                  to='/nonorganic/tasks'
                   sx={{
                     color: 'inherit',
                     textDecoration: 'none',
@@ -143,7 +144,7 @@ const MainComponent = (props: Props) => {
                   variant="button"
                   noWrap
                   component={Link}
-                  to='/nonorganic-book'
+                  to='/nonorganic/guide'
                   sx={{
                     color: 'inherit',
                     textDecoration: 'none',
@@ -156,7 +157,7 @@ const MainComponent = (props: Props) => {
           </Box>
         </Toolbar>
       </AppBar>
-      test
+      {props.children}
     </div>
   )
 }

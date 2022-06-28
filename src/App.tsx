@@ -4,6 +4,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import { theme } from './theme';
 import { BrowserRouter } from 'react-router-dom';
 import Routes from './components/Routes';
+import MainComponent from './components/layout/MainComponent';
 
 type Props = {}
 
@@ -19,7 +20,9 @@ const App = (props: Props) => {
     <QueryClientProvider client={queryClient} >
       <BrowserRouter>
         <ThemeProvider theme={theme}>
-          <Routes />
+          <MainComponent>
+            <Routes />
+          </MainComponent>
         </ThemeProvider>
       </BrowserRouter>
     </QueryClientProvider>
