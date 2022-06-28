@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import { AppBar, Avatar, Box, Button, Menu, MenuItem, Toolbar, Tooltip, Typography } from '@mui/material'
+import { AppBar, Box, Button, Menu, MenuItem, Toolbar, Tooltip, Typography } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 
 type Props = {
@@ -9,6 +10,7 @@ type Props = {
 
 
 const MainComponent = (props: Props) => {
+  // const [t] = useTranslation();
   const [anchorElOrganic, setAnchorElOrganic] = useState<null | HTMLElement>(null)
   const [anchorElNonOrganic, setAnchorElNonOrganic] = useState<null | HTMLElement>(null)
 
@@ -154,6 +156,7 @@ const MainComponent = (props: Props) => {
           </Box>
         </Toolbar>
       </AppBar>
+      test
     </div>
   )
 }
