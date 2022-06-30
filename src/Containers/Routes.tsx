@@ -1,9 +1,9 @@
 import React from 'react'
 import { Navigate, useRoutes } from 'react-router'
-import Home from './Home'
-import Organic from './organic/Organic'
-import AlkanesTasks from './organic/tasks/AlkanesTasks'
-import OrganicTasks from './organic/tasks/OrganicTasks'
+import Home from '../Pages/Home'
+import Organic from '../Pages/organic/Organic'
+import AlkanesTasks from '../Pages/organic/tasks/AlkanesTasks'
+import OrganicTasks from '../Pages/organic/tasks/OrganicTasks'
 
 type Props = {}
 

@@ -3,8 +3,8 @@ import { ThemeProvider } from '@mui/material/styles';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { theme } from './theme';
 import { BrowserRouter } from 'react-router-dom';
-import Routes from './components/Routes';
-import MainComponent from './components/layout/MainComponent';
+import Routes from './Containers/Routes';
+import MainComponent from './Containers/layout/MainComponent';
 
 type Props = {}
 
