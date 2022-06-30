@@ -86,14 +86,13 @@ const Routes = (props: Props) => {
             // },
           ]
         },
-        // {
-        //   path: '/guide',
-        //   children: [
-        //     {
-        //       path: '/',
-        //       index: true,
-        //       element: <OrganicTasks />,
-        //     },
+        {
+          path: 'guide',
+          children: [
+            {
+              index: true,
+              element: <OrganicTasks />,
+            },
         //     {
         //       path: '/alkanes',
         //       element: <AlkanesTasks />,
@@ -150,8 +149,8 @@ const Routes = (props: Props) => {
         //       path: '/amino_acids',
         //       element: <AminoAcidsTasks />,
         //     },
-        // ]
-        // },
+        ]
+        },
       ],
     },
     // { path: "/nonOrganic", element: <NonOrganic /> },
