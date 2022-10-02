@@ -7,14 +7,15 @@ const Home = (props: Props) => {
   return (
     <Box sx={{ padding: '1em' }}>
       <Paper sx={{ p: 3 }}>
-        <Typography variant='h2'>
-          about
+        <Typography variant='h5'>
+          О сайте
         </Typography>
-        Lorem ipsum dolor sit amet
-        consectetur adipisicing elit.
-        Libero debitis id quod repellendus hic dolorem cum,
-        amet optio magnam aperiam, quisquam quibusdam. Quod,
-        molestias? Eaque error quo numquam maxime soluta.
+        <p>
+          Химия – увлекательнейший предмет, в котором далеко не все ученики могут хорошо разобраться. Поэтому наша команда разработчиков решила создать онлайновый задачник, включающий в себя краткий справочный материал по требуемым темам. Задачник включает в себя два раздела по материалу 10-ого и 11-ого классов: органическая и неорганическая химия. В этих разделах можно найти как справочный материал (вещества, их структурные формулы, свойства, применение, способы получения и даже шаро-стержневые модели), так и задачи на разные темы.
+        </p>
+        <Typography variant='subtitle2'>
+          Надеемся, вам будет интересно познавать химию с нашим задачником, поэтому желаем удачи!
+        </Typography>
       </Paper>
     </Box>
   )
