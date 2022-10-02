@@ -12,7 +12,7 @@ interface PageTemplateProps {
 
 const PageTemplate = (props: PageTemplateProps) => {
   const { Guide, GuideLabel, Tasks, TasksLabel } = props
-  const [value, setValue] = useState('Guide');
+  const [value, setValue] = useState('guide');
 
   const handleChange = (_e: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
@@ -21,14 +21,14 @@ const PageTemplate = (props: PageTemplateProps) => {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} variant='fullWidth'>
-          <Tab label={GuideLabel} value='Guide' />
-          <Tab label={TasksLabel} value='Tasks' />
+          <Tab label={GuideLabel} value='guide' />
+          <Tab label={TasksLabel} value='tasks' />
         </Tabs>
       </Box>
       <Box sx={{ p: 2 }}>
         <Paper>
-          {value === 'Guide' && Guide}
-          {value === 'Tasks' && Tasks}
+          {value === 'guide' && Guide}
+          {value === 'tasks' && Tasks}
         </Paper>
       </Box>
     </Box>
