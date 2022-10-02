@@ -2,6 +2,7 @@ import { AppBar, Box, Button, Menu, MenuItem, Toolbar, Typography } from '@mui/m
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
+
 type Props = {}
 
 const Header = (props: Props) => {
@@ -76,27 +77,27 @@ const Header = (props: Props) => {
                 variant="button"
                 noWrap
                 component={Link}
-                to='/organic/tasks'
+                to='/organic/alkanes'
                 sx={{
                   color: 'inherit',
                   textDecoration: 'none',
                 }}
               >
-                Задачи
+                Алканы
               </Typography>
             </MenuItem>
-            <MenuItem onClick={() => handleClose('organic')}>
+            <MenuItem sx={{ textDecoration: 'none' }} onClick={() => handleClose('organic')}>
               <Typography
                 variant="button"
                 noWrap
                 component={Link}
-                to='/organic/guide'
+                to='/organic/alkenes'
                 sx={{
                   color: 'inherit',
                   textDecoration: 'none',
                 }}
               >
-                Справочник
+                Алкены
               </Typography>
             </MenuItem>
           </Menu>
@@ -117,7 +118,7 @@ const Header = (props: Props) => {
               'aria-labelledby': 'nonorganic-button',
             }}
           >
-            <MenuItem sx={{ textDecoration: 'none' }} onClick={() => handleClose('nonorganic')}>
+            {/* <MenuItem sx={{ textDecoration: 'none' }} onClick={() => handleClose('nonorganic')}>
               <Typography
                 variant="button"
                 noWrap
@@ -144,7 +145,7 @@ const Header = (props: Props) => {
               >
                 Справочник
               </Typography>
-            </MenuItem>
+            </MenuItem> */}
           </Menu>
         </Box>
       </Toolbar>

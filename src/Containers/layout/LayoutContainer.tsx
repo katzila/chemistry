@@ -16,13 +16,9 @@ const LayoutContainer = (props: Props) => {
   return (
     <div id='app' >
       <Header />
-      <Box sx={{ padding: '1em' }}>
-        <Paper>
-          {props.children}
-
-        </Paper>
+      <Box >
+        {props.children}
       </Box>
-
     </div>
   )
 }
