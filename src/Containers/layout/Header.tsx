@@ -1,11 +1,13 @@
 import { AppBar, Box, Button, Menu, MenuItem, Toolbar, Typography } from '@mui/material'
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
 
 type Props = {}
 
 const Header = (props: Props) => {
+  const [t] = useTranslation()
   const [anchorElOrganic, setAnchorElOrganic] = useState<null | HTMLElement>(null)
   const [anchorElNonOrganic, setAnchorElNonOrganic] = useState<null | HTMLElement>(null)
 
@@ -83,7 +85,7 @@ const Header = (props: Props) => {
                   textDecoration: 'none',
                 }}
               >
-                Алканы
+                {t('navigation.alkanes.title')}
               </Typography>
             </MenuItem>
             <MenuItem sx={{ textDecoration: 'none' }} onClick={() => handleClose('organic')}>

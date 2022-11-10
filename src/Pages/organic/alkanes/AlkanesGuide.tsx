@@ -9,6 +9,7 @@ import Izomer2 from '../../../assets/alkanes/2.png'
 import Izomer3 from '../../../assets/alkanes/3.png'
 import P1 from '../../../assets/alkanes/p1.png'
 import P2 from '../../../assets/alkanes/p2.png'
+import { useTranslation } from 'react-i18next';
 
 // import Pentane from '../../../assets/alkanes/пентан.html'
 
@@ -17,21 +18,22 @@ type Props = {
 }
 
 const AlkanesGuide = (props: Props) => {
+  const [t] = useTranslation()
+
   return (
     <div
       role="tabpanel"
     >
       <Box sx={{ p: 2, display: 'flex' }}>
         <Box sx={{ width: '50%', pr: 2 }}>
-          <Typography variant='h5'>Определение:</Typography>
+          <Typography variant='h5'>{t('guide.definitionTitle')}</Typography>
 
           <Paper elevation={0} sx={{ p: 1, borderLeft: 'solid 3px #bbbbbb' }}>
             <p>
-              Алканы - органические ациклические соеденения, состоящие из атомов
-              химических элементов углерода и водорода, содержащие только одинарные связи.
+              {t('guide.alkanes.definitionText')}
             </p>
             <Typography variant='caption'>
-              С.А. Литвинова Н.В. Манкевич "Органическая химия в таблицах"
+              {t('guide.alkanes.definitionCredits')}
             </Typography>
           </Paper>
 

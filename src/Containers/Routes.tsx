@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import { Navigate, useRoutes } from 'react-router'
 import Home from '../Pages/Home'
 import AlkanesGuide from '../Pages/organic/alkanes/AlkanesGuide'
@@ -10,6 +11,7 @@ import PageTemplate from './layout/PageTemplate'
 type Props = {}
 
 const Routes = (props: Props) => {
+  const [t] = useTranslation()
 
   let routes = useRoutes([
     {
@@ -21,7 +23,7 @@ const Routes = (props: Props) => {
       children: [
         {
           path: 'alkanes',
-          element: <PageTemplate GuideLabel='Справочник Алканы' Guide={<AlkanesGuide />} Tasks={<AlkanesTasks />} TasksLabel='Задачник Алканы' />,
+          element: <PageTemplate GuideLabel={t('navigation.alkanes.handbook')} Guide={<AlkanesGuide />} Tasks={<AlkanesTasks />} TasksLabel={t('navigation.alkanes.tasks')} />,
         },
         // {
         //   path: '/cycloalkanes',

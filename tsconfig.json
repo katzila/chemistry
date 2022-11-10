@@ -25,6 +25,7 @@
     "strictNullChecks": true
   },
   "include": [
-    "src"
+    "src",
+    "react-i18next.d.ts"
   ]
 }
