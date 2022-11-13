@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Paper, Typography } from '@mui/material'
 import React from 'react'
 
 type Props = {
@@ -8,11 +8,11 @@ type Props = {
 const AlkanesTasks = (props: Props) => {
 
   return (
-    <div  >
+    <Paper  >
       <Box sx={{ p: 3 }}>
         <Typography>AlkanesTasks</Typography>
       </Box>
-    </div>
+    </Paper>
   )
 }
 

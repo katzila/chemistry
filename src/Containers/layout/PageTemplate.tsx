@@ -26,10 +26,8 @@ const PageTemplate = (props: PageTemplateProps) => {
         </Tabs>
       </Box>
       <Box sx={{ p: 2 }}>
-        <Paper>
-          {value === 'guide' && Guide}
-          {value === 'tasks' && Tasks}
-        </Paper>
+        {value === 'guide' && Guide}
+        {value === 'tasks' && Tasks}
       </Box>
     </Box>
   )

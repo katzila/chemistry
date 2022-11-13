@@ -1,4 +1,7 @@
-body {
+body,
+ol,
+ul,
+p {
   margin: 0;
 }
 
