@@ -1,9 +1,6 @@
 import { Box, Paper, Typography } from '@mui/material';
 import React from 'react'
 
-import Empirical from '../../../assets/alkanes/empir.png'
-import Methane from '../../../assets/alkanes/metan.png'
-import Ethane from '../../../assets/alkanes/etan.png'
 import Izomer1 from '../../../assets/alkanes/1.png'
 import Izomer2 from '../../../assets/alkanes/2.png'
 import Izomer3 from '../../../assets/alkanes/3.png'
@@ -13,11 +10,7 @@ import { useTranslation } from 'react-i18next';
 
 // import Pentane from '../../../assets/alkanes/пентан.html'
 
-type Props = {
-
-}
-
-const AlkanesGuide = (props: Props) => {
+const AlkanesGuide = () => {
   const [t] = useTranslation()
 
   return (
@@ -38,20 +31,18 @@ const AlkanesGuide = (props: Props) => {
           </Paper>
 
 
-          <Typography variant='h5'>Общая эмпирическая формула:</Typography>
+          <Typography variant='h5'>{t('guide.empiricalFormula')}</Typography>
 
           <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>C<sub>n</sub>H<sub>2n+2</sub></Typography>
 
 
-          <Typography variant='h5'>Примеры структурных формул:</Typography>
+          <Typography variant='h5'>{t('guide.structureFormulas')}</Typography>
+          <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>CH<sub>4</sub></Typography>
+          <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>CH<sub>3</sub> &#8722; CH<sub>3</sub></Typography>
 
-          <img src={Methane} alt='methane' style={{ maxWidth: '45px' }} />
-          <img src={Ethane} alt='ethane' style={{ maxWidth: '110px' }} />
+          <Typography variant='h5'>{t('guide.isomerism')}</Typography>
 
-
-          <Typography variant='h5'>Изомерия:</Typography>
-
-          <Typography variant='h6'>Разветвление углеродного скелета:</Typography>
+          <Typography variant='h6'>{t('guide.branchingCarbonSkeleton')}</Typography>
 
           <img src={Izomer1} alt='Izomer1' style={{ maxWidth: '315px' }} />
 
@@ -59,7 +50,7 @@ const AlkanesGuide = (props: Props) => {
 
           <img src={Izomer3} alt='Izomer3' style={{ maxWidth: '180px' }} />
 
-          <Typography variant='h5'>Физические свойства:</Typography>
+          <Typography variant='h5'>{t('guide.physicalProperties')}</Typography>
 
           <p>
             Первые четыре представителя алканов являются газами. Начиная с пентана - жидкости,
@@ -69,7 +60,7 @@ const AlkanesGuide = (props: Props) => {
           </p>
 
 
-          <Typography variant='h5'>Получение:</Typography>
+          <Typography variant='h5'>{t('guide.production')}</Typography>
           <ol>
             <li>
               <p>{'Гидрирование непредельных углеводородов (t, катализаторы: Ni, Pt, Pd):'}</p>
@@ -82,7 +73,7 @@ const AlkanesGuide = (props: Props) => {
           </ol>
 
 
-          <Typography variant='h5'>Применение:</Typography>
+          <Typography variant='h5'>{t('guide.applications')}</Typography>
           <ul>
             <li>Фреоны </li>
             <li>Растворители</li>

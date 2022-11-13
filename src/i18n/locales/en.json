@@ -12,6 +12,13 @@
   },
   "guide": {
     "definitionTitle": "Definition:",
+    "empiricalFormula": "Empirical formula:",
+    "structureFormulas": "Examples of structure formulas:",
+    "isomerism": "Isomerism:",
+    "branchingCarbonSkeleton": "Branching of the carbon skeleton:",
+    "physicalProperties": "Physical properties:",
+    "production": "Production:",
+    "applications": "Applications:",
     "alkanes": {
       "definitionText": "Alkanes - organic acyclic compounds, consist of hydrogen and carbon atoms, in which all the carbon–carbon bonds are single.",
       "definitionCredits": "S.A. Litvinova N.V. Mankevich \"Organic chemistry via tables\""
