@@ -1,5 +1,9 @@
 {
   "navigation": {
+    "languages": {
+      "en": "Английский",
+      "ru": "Русский"
+    },
     "alkanes": {
       "title": "Алканы",
       "handbook": "Справочник алканы",

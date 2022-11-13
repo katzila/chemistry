@@ -3,10 +3,10 @@ import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
+import LanguageDropdown from '../../components/LanguageDropdown'
 
-type Props = {}
 
-const Header = (props: Props) => {
+const Header = () => {
   const [t] = useTranslation()
   const [anchorElOrganic, setAnchorElOrganic] = useState<null | HTMLElement>(null)
   const [anchorElNonOrganic, setAnchorElNonOrganic] = useState<null | HTMLElement>(null)
@@ -57,7 +57,7 @@ const Header = (props: Props) => {
         >
           Химия
         </Typography>
-        <Box sx={{ flexGrow: 1, display: { xs: 'flex' } }}>
+        <Box sx={{ flexGrow: 1, display: { xs: 'flex' }, alignSelf: 'stretch' }}>
           <Button
             id="organic-button"
             sx={{ my: 2, color: 'inherit', display: 'block', margin: 0 }}
@@ -150,6 +150,8 @@ const Header = (props: Props) => {
             </MenuItem> */}
           </Menu>
         </Box>
+
+        <LanguageDropdown />
       </Toolbar>
     </AppBar>
   )
