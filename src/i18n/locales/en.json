@@ -19,9 +19,11 @@
     "physicalProperties": "Physical properties:",
     "production": "Production:",
     "applications": "Applications:",
+    "chemicalProperties": "Pic. Chemical properties.",
     "alkanes": {
       "definitionText": "Alkanes - organic acyclic compounds, consist of hydrogen and carbon atoms, in which all the carbon–carbon bonds are single.",
-      "definitionCredits": "S.A. Litvinova N.V. Mankevich \"Organic chemistry via tables\""
+      "definitionCredits": "S.A. Litvinova N.V. Mankevich \"Organic chemistry via tables\"",
+      "modelPentan": "Model. Pentan."
     },
     "alkenes": {},
     "alkynes": {}
