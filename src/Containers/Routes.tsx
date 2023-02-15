@@ -1,9 +1,9 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { Navigate, useRoutes } from 'react-router'
+
 import Home from '../Pages/Home'
-import AlkanesGuide from '../Pages/organic/alkanes/AlkanesGuide'
-import AlkanesTasks from '../Pages/organic/alkanes/AlkanesTasks'
+import { AlkanesGuide, AlkanesTasks, AlkenesGuide, AlkenesTasks, AlkynesGuide, AlkynesTasks } from '../Pages/organic'
 import PageTemplate from './layout/PageTemplate'
 
 
@@ -25,61 +25,76 @@ const Routes = (props: Props) => {
           path: 'alkanes',
           element: <PageTemplate GuideLabel={t('navigation.alkanes.handbook')} Guide={<AlkanesGuide />} Tasks={<AlkanesTasks />} TasksLabel={t('navigation.alkanes.tasks')} />,
         },
-        // {
-        //   path: '/cycloalkanes',
-        //   element: <CycloalkanesTasks />,
-        // },
-        // {
-        //   path: '/alkenes',
-        //   element: <AlkenesTasks />,
-        // },
-        // {
-        //   path: '/alkynes',
-        //   element: <AlkynesTasks />,
-        // },
-        // {
-        //   path: '/alkanes',
-        //   element: <AlkanesTasks />,
-        // },
-        // {
-        //   path: '/arenas',
-        //   element: <ArenasTasks />,
-        // },
-        // {
-        //   path: '/alcohols',
-        //   element: <AlcoholsTasks />,
-        // },
-        // {
-        //   path: '/fenols',
-        //   element: <FenolsTasks />,
-        // },
-        // {
-        //   path: '/aldehydes_ketones',
-        //   element: <AldehudesKetonesTasks />,
-        // },
-        // {
-        //   path: '/carboxylic_acids',
-        //   element: <CarboxylicAcidsTasks />,
-        // },
-        // {
-        //   path: '/complex_esters',
-        //   element: <ComplexEstersTasks />,
-        // },
-        // {
-        //   path: '/carbohydrates',
-        //   element: <CarbohydratesTasks />,
-        // },
-        // {
-        //   path: '/amines',
-        //   element: <AminesTasks />,
-        // },
-        // {
-        //   path: '/amino_acids',
-        //   element: <AminoAcidsTasks />,
-        // },
+        {
+          path: 'cycloalkanes',
+          element: <PageTemplate GuideLabel={t('navigation.cycloalkanes.handbook')} Guide={<AlkanesGuide />} Tasks={<AlkanesTasks />} TasksLabel={t('navigation.cycloalkanes.tasks')} />,
+        },
+        {
+          path: 'alkenes',
+          element: <PageTemplate GuideLabel={t('navigation.alkenes.handbook')} Guide={<AlkenesGuide />} Tasks={<AlkenesTasks />} TasksLabel={t('navigation.alkenes.tasks')} />,
+        },
+        {
+          path: 'alkynes',
+          element: <PageTemplate GuideLabel={t('navigation.alkynes.handbook')} Guide={<AlkynesGuide />} Tasks={<AlkynesTasks />} TasksLabel={t('navigation.alkynes.tasks')} />,
+        },
+        {
+          path: 'arenes',
+          element: <PageTemplate GuideLabel={t('navigation.arenes.handbook')} Guide={<AlkynesGuide />} Tasks={<AlkynesTasks />} TasksLabel={t('navigation.arenes.tasks')} />,
+        },
+        {
+          path: 'alcohols',
+          element: <PageTemplate GuideLabel={t('navigation.alcohols.handbook')} Guide={<AlkynesGuide />} Tasks={<AlkynesTasks />} TasksLabel={t('navigation.alcohols.tasks')} />,
+        },
+        {
+          path: 'phenols',
+          element: <PageTemplate GuideLabel={t('navigation.phenols.handbook')} Guide={<AlkynesGuide />} Tasks={<AlkynesTasks />} TasksLabel={t('navigation.phenols.tasks')} />,
+        },
+        {
+          path: 'aldehydes_ketones',
+          element: <PageTemplate GuideLabel={t('navigation.aldehydes_and_ketones.handbook')} Guide={<AlkynesGuide />} Tasks={<AlkynesTasks />} TasksLabel={t('navigation.aldehydes_and_ketones.tasks')} />,
+        },
+        {
+          path: 'carboxylic_acids',
+          element: <PageTemplate GuideLabel={t('navigation.carboxylic_acids.handbook')} Guide={<AlkynesGuide />} Tasks={<AlkynesTasks />} TasksLabel={t('navigation.carboxylic_acids.tasks')} />,
+        },
+        {
+          path: 'complex_esters',
+          element: <PageTemplate GuideLabel={t('navigation.complex_esters.handbook')} Guide={<AlkynesGuide />} Tasks={<AlkynesTasks />} TasksLabel={t('navigation.complex_esters.tasks')} />,
+        },
+        {
+          path: 'carbohydrates',
+          element: <PageTemplate GuideLabel={t('navigation.carbohydrates.handbook')} Guide={<AlkynesGuide />} Tasks={<AlkynesTasks />} TasksLabel={t('navigation.carbohydrates.tasks')} />,
+        },
+        {
+          path: 'amines',
+          element: <PageTemplate GuideLabel={t('navigation.amines.handbook')} Guide={<AlkynesGuide />} Tasks={<AlkynesTasks />} TasksLabel={t('navigation.amines.tasks')} />,
+        },
+        {
+          path: 'amino_acids',
+          element: <PageTemplate GuideLabel={t('navigation.amino_acids.handbook')} Guide={<AlkynesGuide />} Tasks={<AlkynesTasks />} TasksLabel={t('navigation.amino_acids.tasks')} />,
+        }
       ],
     },
-    // { path: "/nonOrganic", element: <NonOrganic /> },
+    {
+      path: "/inorganic", children: [
+        {
+          path: 'alkali_metals',
+          element: <PageTemplate GuideLabel={t('navigation.alkali_metals.handbook')} Guide={<AlkanesGuide />} Tasks={<AlkanesTasks />} TasksLabel={t('navigation.alkali_metals.tasks')} />,
+        },
+        {
+          path: 'alkaline_earth_metals',
+          element: <PageTemplate GuideLabel={t('navigation.alkaline_earth_metals.handbook')} Guide={<AlkanesGuide />} Tasks={<AlkanesTasks />} TasksLabel={t('navigation.alkaline_earth_metals.tasks')} />,
+        },
+        {
+          path: 'transition_metals',
+          element: <PageTemplate GuideLabel={t('navigation.transition_metals.handbook')} Guide={<AlkanesGuide />} Tasks={<AlkanesTasks />} TasksLabel={t('navigation.transition_metals.tasks')} />,
+        },
+        {
+          path: 'metalloids',
+          element: <PageTemplate GuideLabel={t('navigation.metalloids.handbook')} Guide={<AlkanesGuide />} Tasks={<AlkanesTasks />} TasksLabel={t('navigation.metalloids.tasks')} />,
+        }
+      ]
+    },
     { path: '*', element: <Navigate to={'/'} /> }
   ]);
 

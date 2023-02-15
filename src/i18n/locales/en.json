@@ -12,6 +12,11 @@
       "handbook": "Alkanes Handbook",
       "tasks": "Alkanes Tasks"
     },
+    "cycloalkanes": {
+      "title": "Cycloalkanes",
+      "handbook": "Cycloalkanes Handbook",
+      "tasks": "Cycloalkanes Tasks"
+    },
     "alkenes": {
       "title": "Alkenes",
       "handbook": "Alkenes Handbook",
@@ -22,40 +27,50 @@
       "handbook": "Alkynes Handbook",
       "tasks": "Alkynes Tasks"
     },
+    "arenes": {
+      "title": "Arenes",
+      "handbook": "Arenes Handbook",
+      "tasks": "Arenes Tasks"
+    },
     "alcohols": {
       "title": "Alcohols",
       "handbook": "Alcohols Handbook",
       "tasks": "Alcohols Tasks"
+    },
+    "phenols": {
+      "title": "Phenols",
+      "handbook": "Phenols Handbook",
+      "tasks": "Phenols Tasks"
     },
     "aldehydes_and_ketones": {
       "title": "Aldehydes and Ketones",
       "handbook": "Aldehydes and Ketones Handbook",
       "tasks": "Aldehydes and Ketones Tasks"
     },
-    "ethers": {
-      "title": "Ethers",
-      "handbook": "Ethers Handbook",
-      "tasks": "Ethers Tasks"
-    },
     "carboxylic_acids": {
       "title": "Carboxylic Acids",
       "handbook": "Carboxylic Acids Handbook",
       "tasks": "Carboxylic Acids Tasks"
     },
-    "esters": {
-      "title": "Esters",
-      "handbook": "Esters Handbook",
-      "tasks": "Esters Tasks"
+    "complex_esters": {
+      "title": "Complex Esters",
+      "handbook": "Complex Esters Handbook",
+      "tasks": "Complex Esters Tasks"
+    },
+    "carbohydrates": {
+      "title": "Carbohydrates",
+      "handbook": "Carbohydrates Handbook",
+      "tasks": "Carbohydrates Tasks"
     },
     "amines": {
       "title": "Amines",
       "handbook": "Amines Handbook",
       "tasks": "Amines Tasks"
     },
-    "aromatic_compounds": {
-      "title": "Aromatic Compounds",
-      "handbook": "Aromatic Compounds Handbook",
-      "tasks": "Aromatic Compounds Tasks"
+    "amino_acids": {
+      "title": "Amino Acids",
+      "handbook": "Amino Acids Handbook",
+      "tasks": "Amino Acids Tasks"
     },
     "inorganic": {
       "title": "Inorganic Chemistry"
@@ -109,17 +124,41 @@
     "alkanes": {
       "definitionText": "Alkanes are organic acyclic compounds that consist of hydrogen and carbon atoms, where all of the carbon–carbon bonds are single.",
       "definitionCredits": "S.A. Litvinova and N.V. Mankevich, \"Organic Chemistry via Tables\"",
-      "modelPentan": "Model: Pentan."
+      "physicalProperties": "First 3 alkanes are gases. Alkanes starting from pentane are liquids. Alkanes starting from C16 are solids. Alkanes are insoluble in water. Alkanes are soluble in organic solvents. Unbranched alkanes have higher boiling points than branched alkanes.",
+      "production1": "Hydrogenergation of unsaturated hydrocarbons. (t, catalysts: Ni, Pt, Pd):",
+      "production2": "Based on synthesis gas:",
+      "applications": {
+        "freons": "Freons",
+        "solvents": "Solvents",
+        "SynthesisGas": "Synthesis gas",
+        "sootRubber": "Soot,rubber",
+        "detergents": "Detergents",
+        "fuel": "Fuel"
+      },
+      "modelPentane": "Model: Pentane."
+    },
+    "cycloalkanes": {
+      "definitionText": "Cycloalkanes are organic compounds that consist of hydrogen and carbon atoms, where all of the carbon–carbon bonds are single, and the molecule is cyclic.",
+      "definitionCredits": "S.A. Litvinova and N.V. Mankevich, \"Organic Chemistry via Tables\"",
+      "physicalProperties": "Cycloalkanes are gases. Cycloalkanes are insoluble in water. Cycloalkanes are soluble in organic solvents. The boiling points of cycloalkanes increase with the number of carbon atoms in the ring.",
+      "production": "Hydrogenation of alkenes. (t, catalysts: Ni, Pt, Pd):",
+      "applications": {
+        "solvents": "Solvents",
+        "fuel": "Fuel"
+      },
+      "modelCyclopentane": "Model: Cyclopentane."
     },
     "alkenes": {
       "definitionText": "Alkenes are organic compounds that consist of hydrogen and carbon atoms, where at least one carbon–carbon double bond is present.",
-      "definitionCredits": "",
-      "modelEthene": "Model: Ethene."
+      "definitionCredits": "S.A. Litvinova and N.V. Mankevich, \"Organic Chemistry via Tables\"",
+      "physicalProperties": "First 3 alkenes are gases. Alkenes starting from pentene are liquids. Alkenes starting from C18 are solids. Alkenes are slightly soluble in water. Boiling points of unbranched alkenes and cis-isomers are higher, against branched and trans-isomers.",
+      "modelPentene": "Model: Pentene-1."
     },
     "alkynes": {
       "definitionText": "Alkynes are organic compounds that consist of hydrogen and carbon atoms, where at least one carbon–carbon triple bond is present.",
-      "definitionCredits": "",
-      "modelEthyne": "Model: Ethyne."
+      "definitionCredits": "S.A. Litvinova and N.V. Mankevich, \"Organic Chemistry via Tables\"",
+      "physicalProperties": " Like alkenes, the first three alkynes are gases, from C5 to C15 - liquids, from C16 - solids. Slightly soluble in water, density below water. The boiling and melting points of alkynes are higher than those of corresponding alkenes(especially for the first three). Unbranched alkynes have higher boiling points than branched ones.",
+      "modelPentyne": "Model: Pentyne-1."
     },
     "aldehydes_and_ketones": {
       "definitionText": "Aldehydes and ketones are organic compounds that contain a carbonyl functional group, consisting of a carbon atom double-bonded to an oxygen atom.",

@@ -90,10 +90,32 @@ const Header = () => {
                 variant="button"
                 noWrap
                 component={Link}
+                to='/organic/cycloalkanes'
+                sx={{ color: 'inherit', textDecoration: 'none' }}
+              >
+                {t('navigation.cycloalkanes.title')}
+              </Typography>
+            </MenuItem>
+            <MenuItem sx={{ textDecoration: 'none' }} onClick={() => handleClose('organic')}>
+              <Typography
+                variant="button"
+                noWrap
+                component={Link}
                 to='/organic/alkenes'
                 sx={{ color: 'inherit', textDecoration: 'none' }}
               >
                 {t('navigation.alkenes.title')}
+              </Typography>
+            </MenuItem>
+            <MenuItem sx={{ textDecoration: 'none' }} onClick={() => handleClose('organic')}>
+              <Typography
+                variant="button"
+                noWrap
+                component={Link}
+                to='/organic/alkynes'
+                sx={{ color: 'inherit', textDecoration: 'none' }}
+              >
+                {t('navigation.alkynes.title')}
               </Typography>
             </MenuItem>
             <MenuItem sx={{ textDecoration: 'none' }} onClick={() => handleClose('organic')}>

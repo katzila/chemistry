@@ -5,15 +5,15 @@ type Props = {
 
 }
 
-export const AlkanesTasks = (props: Props) => {
+export const AlkynesTasks = (props: Props) => {
 
   return (
     <Paper  >
       <Box sx={{ p: 3 }}>
-        <Typography>AlkanesTasks</Typography>
+        <Typography>AlkynesTasks</Typography>
       </Box>
     </Paper>
   )
 }
 
-export default AlkanesTasks
+export default AlkynesTasks

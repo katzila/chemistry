@@ -2,16 +2,13 @@ import { Box, Paper, Typography } from '@mui/material';
 import React from 'react'
 import { useTranslation } from 'react-i18next';
 
-import Izomer1 from '../../../assets/alkanes/1.png'
-import Izomer2 from '../../../assets/alkanes/2.png'
-import Izomer3 from '../../../assets/alkanes/3.png'
-import P1 from '../../../assets/alkanes/p1.png'
-import P2 from '../../../assets/alkanes/p2.png'
-import alkanesScheme from '../../../assets/alkanes/alkanesScheme.svg'
+import P1 from '../../../assets/alkynes/p1.png'
+import P2 from '../../../assets/alkynes/p2.png'
+import alkynesScheme from '../../../assets/alkynes/alkynesScheme.svg'
 
-// import Pentane from '../../../assets/alkanes/пентан.html'
+// import Pentane from '../../../assets/alkynes/пентан.html'
 
-export const AlkanesGuide = () => {
+export const AlkynesGuide = () => {
   const [t] = useTranslation()
 
   return (
@@ -24,10 +21,10 @@ export const AlkanesGuide = () => {
             <Typography variant='h5'>{t('guide.definitionTitle')}</Typography>
             <Paper elevation={0} sx={{ p: 1, borderLeft: 'solid 3px #bbbbbb' }}>
               <p>
-                {t('guide.alkanes.definitionText')}
+                {t('guide.alkynes.definitionText')}
               </p>
               <Typography variant='caption'>
-                {t('guide.alkanes.definitionCredits')}
+                {t('guide.alkynes.definitionCredits')}
               </Typography>
             </Paper>
           </Box>
@@ -46,19 +43,17 @@ export const AlkanesGuide = () => {
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
             <Typography variant='h5'>{t('guide.isomerism')}</Typography>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
-              <Typography variant='h6'>{t('guide.branchingCarbonSkeleton')}</Typography>
-              <img src={Izomer1} alt='Izomer1' style={{ width: '315px', maxWidth: '100%' }} />
-
-              <img src={Izomer2} alt='Izomer2' style={{ width: '250px', maxWidth: '100%' }} />
-
-              <img src={Izomer3} alt='Izomer3' style={{ width: '180px', maxWidth: '100%' }} />
+              <Typography variant='h6'>Разветвление углеродного скелета (см. Алканы)</Typography>
             </Box>
           </Box>
 
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
             <Typography variant='h5'>{t('guide.physicalProperties')}</Typography>
             <p>
-              {t('guide.alkanes.physicalProperties')}
+              Первые четыре представителя алканов являются газами. Начиная с пентана - жидкости,
+              алканы с числом атомов углерода 16 и более - твердые вещества. Они не растворимы в воде,
+              хорошо растворимы в органических растворителях, их плотности ниже плотности воды.
+              Неразветвленные алканы имеют более высокие температуры кипения и плавления, чем разветвленные.
             </p>
           </Box>
 
@@ -66,12 +61,11 @@ export const AlkanesGuide = () => {
             <Typography variant='h5'>{t('guide.production')}</Typography>
             <ol>
               <li>
-                <p>
-                  {t('guide.alkanes.production1')}</p>
+                <p>{'Гидрирование непредельных углеводородов (t, катализаторы: Ni, Pt, Pd):'}</p>
                 <img src={P1} alt='P1' style={{ width: '350px', maxWidth: '100%' }} />
               </li>
               <li>
-                <p>{t('guide.alkanes.production2')}</p>
+                <p>{'На основе "синтез-газа":'}</p>
                 <img src={P2} alt='P2' style={{ width: '500px', maxWidth: '100%' }} />
               </li>
             </ol>
@@ -80,25 +74,25 @@ export const AlkanesGuide = () => {
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
             <Typography variant='h5'>{t('guide.applications')}</Typography>
             <ul>
-              <li>{t('guide.alkanes.applications.freons')}</li>
-              <li>{t('guide.alkanes.applications.solvents')}</li>
-              <li>{t('guide.alkanes.applications.SynthesisGas')}</li>
-              <li>{t('guide.alkanes.applications.sootRubber')}</li>
-              <li>{t('guide.alkanes.applications.detergents')}</li>
-              <li>{t('guide.alkanes.applications.fuel')}</li>
+              <li>Фреоны </li>
+              <li>Растворители</li>
+              <li>"Синтез-газ"</li>
+              <li>Сажа, резина</li>
+              <li>Моющие средства</li>
+              <li>Топливо</li>
             </ul>
           </Box>
 
         </Box>
         <Box sx={{ width: '50%', pl: 2, textAlign: 'center', display: 'flex', flexDirection: 'column', gap: '20px' }}>
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
-            <iframe title='pentane' src="/pentane.html?autorotate&no_social" width="100%" //temporary
+            <iframe title='pentyne' src="/pentyne.html?autorotate&no_social" width="100%" //temporary
               height="600px" frameBorder="0" style={{ boxShadow: '0 0 10px rgba(0,0,0,0.5)' }} ></iframe>
-            <Typography variant='subtitle1' fontWeight='bold' >{t('guide.alkanes.modelPentane')}</Typography>
+            <Typography variant='subtitle1' fontWeight='bold' >{t('guide.alkynes.modelPentyne')}</Typography>
           </Box>
 
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
-            <img src={alkanesScheme} alt="alkanesScheme" style={{ maxWidth: '100%' }} />
+            <img src={alkynesScheme} alt="alkynesScheme" style={{ maxWidth: '100%' }} />
             <Typography variant='subtitle1' fontWeight='bold' >{t('guide.chemicalProperties')}</Typography>
           </Box>
         </Box>
@@ -107,4 +101,4 @@ export const AlkanesGuide = () => {
   )
 }
 
-export default AlkanesGuide
+export default AlkynesGuide
