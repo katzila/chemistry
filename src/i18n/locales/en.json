@@ -4,28 +4,157 @@
       "en": "English",
       "ru": "Russian"
     },
+    "organic": {
+      "title": "Organic Chemistry"
+    },
     "alkanes": {
-      "title": "alkanes",
-      "handbook": "Alkanes handbook",
-      "tasks": "Alkanes tasks"
+      "title": "Alkanes",
+      "handbook": "Alkanes Handbook",
+      "tasks": "Alkanes Tasks"
+    },
+    "alkenes": {
+      "title": "Alkenes",
+      "handbook": "Alkenes Handbook",
+      "tasks": "Alkenes Tasks"
+    },
+    "alkynes": {
+      "title": "Alkynes",
+      "handbook": "Alkynes Handbook",
+      "tasks": "Alkynes Tasks"
+    },
+    "alcohols": {
+      "title": "Alcohols",
+      "handbook": "Alcohols Handbook",
+      "tasks": "Alcohols Tasks"
+    },
+    "aldehydes_and_ketones": {
+      "title": "Aldehydes and Ketones",
+      "handbook": "Aldehydes and Ketones Handbook",
+      "tasks": "Aldehydes and Ketones Tasks"
+    },
+    "ethers": {
+      "title": "Ethers",
+      "handbook": "Ethers Handbook",
+      "tasks": "Ethers Tasks"
+    },
+    "carboxylic_acids": {
+      "title": "Carboxylic Acids",
+      "handbook": "Carboxylic Acids Handbook",
+      "tasks": "Carboxylic Acids Tasks"
+    },
+    "esters": {
+      "title": "Esters",
+      "handbook": "Esters Handbook",
+      "tasks": "Esters Tasks"
+    },
+    "amines": {
+      "title": "Amines",
+      "handbook": "Amines Handbook",
+      "tasks": "Amines Tasks"
+    },
+    "aromatic_compounds": {
+      "title": "Aromatic Compounds",
+      "handbook": "Aromatic Compounds Handbook",
+      "tasks": "Aromatic Compounds Tasks"
+    },
+    "inorganic": {
+      "title": "Inorganic Chemistry"
+    },
+    "alkali_metals": {
+      "title": "Alkali Metals",
+      "handbook": "Alkali Metals Handbook",
+      "tasks": "Alkali Metals Tasks"
+    },
+    "alkaline_earth_metals": {
+      "title": "Alkaline Earth Metals",
+      "handbook": "Alkaline Earth Metals Handbook",
+      "tasks": "Alkaline Earth Metals Tasks"
+    },
+    "transition_metals": {
+      "title": "Transition Metals",
+      "handbook": "Transition Metals Handbook",
+      "tasks": "Transition Metals Tasks"
+    },
+    "metalloids": {
+      "title": "Metalloids",
+      "handbook": "Metalloids Handbook",
+      "tasks": "Metalloids Tasks"
+    },
+    "nonmetals": {
+      "title": "Nonmetals",
+      "handbook": "Nonmetals Handbook",
+      "tasks": "Nonmetals Tasks"
+    },
+    "halogens": {
+      "title": "Halogens",
+      "handbook": "Halogens Handbook",
+      "tasks": "Halogens Tasks"
+    },
+    "noble_gases": {
+      "title": "Noble Gases",
+      "handbook": "Noble Gases Handbook",
+      "tasks": "Noble Gases Tasks"
     }
   },
   "guide": {
     "definitionTitle": "Definition:",
-    "empiricalFormula": "Empirical formula:",
-    "structureFormulas": "Examples of structure formulas:",
+    "empiricalFormula": "Empirical Formula:",
+    "structureFormulas": "Examples of Structure Formulas:",
     "isomerism": "Isomerism:",
-    "branchingCarbonSkeleton": "Branching of the carbon skeleton:",
-    "physicalProperties": "Physical properties:",
+    "branchingCarbonSkeleton": "Branching of the Carbon Skeleton:",
+    "physicalProperties": "Physical Properties:",
     "production": "Production:",
     "applications": "Applications:",
-    "chemicalProperties": "Pic. Chemical properties.",
+    "chemicalProperties": "Chemical Properties:",
     "alkanes": {
-      "definitionText": "Alkanes - organic acyclic compounds, consist of hydrogen and carbon atoms, in which all the carbon–carbon bonds are single.",
-      "definitionCredits": "S.A. Litvinova N.V. Mankevich \"Organic chemistry via tables\"",
-      "modelPentan": "Model. Pentan."
+      "definitionText": "Alkanes are organic acyclic compounds that consist of hydrogen and carbon atoms, where all of the carbon–carbon bonds are single.",
+      "definitionCredits": "S.A. Litvinova and N.V. Mankevich, \"Organic Chemistry via Tables\"",
+      "modelPentan": "Model: Pentan."
     },
-    "alkenes": {},
-    "alkynes": {}
+    "alkenes": {
+      "definitionText": "Alkenes are organic compounds that consist of hydrogen and carbon atoms, where at least one carbon–carbon double bond is present.",
+      "definitionCredits": "",
+      "modelEthene": "Model: Ethene."
+    },
+    "alkynes": {
+      "definitionText": "Alkynes are organic compounds that consist of hydrogen and carbon atoms, where at least one carbon–carbon triple bond is present.",
+      "definitionCredits": "",
+      "modelEthyne": "Model: Ethyne."
+    },
+    "aldehydes_and_ketones": {
+      "definitionText": "Aldehydes and ketones are organic compounds that contain a carbonyl functional group, consisting of a carbon atom double-bonded to an oxygen atom.",
+      "definitionCredits": "",
+      "modelFormaldehyde": "Model: Formaldehyde."
+    },
+    "alcohols": {
+      "definitionText": "Alcohols are organic compounds that contain a hydroxyl functional group (-OH) bonded to a carbon atom.",
+      "definitionCredits": "",
+      "modelEthanol": "Model: Ethanol."
+    },
+    "ethers": {
+      "definitionText": "Ethers are organic compounds that contain an ether functional group, consisting of two carbon atoms bonded to an oxygen atom.",
+      "definitionCredits": "",
+      "modelDiethylEther": "Model: Diethyl Ether."
+    },
+    "carboxylic_acids": {
+      "definitionText": "Carboxylic acids are organic acids that contain a carboxyl functional group (-COOH), consisting of a carbon atom double-bonded to an oxygen atom and also bonded to a hydroxyl group.",
+      "definitionCredits": "",
+      "modelFormicAcid": "Model: Formic Acid."
+    },
+    "esters": {
+      "definitionText": "Esters are organic compounds that contain an ester functional group, consisting of a carbon atom bonded to an oxygen atom and also bonded to an oxygen atom through a carbonyl group.",
+      "definitionCredits": "",
+      "modelEthylAcetate": "Model: Ethyl Acetate."
+    },
+    "amines": {
+      "definitionText": "Amines are organic compounds that contain a nitrogen atom bonded to one or more carbon atoms.",
+      "definitionCredits": "",
+      "modelEthanamine": "Model: Ethanamine."
+    },
+    "aromatic_compounds": {
+      "definitionText": "Aromatic compounds are organic compounds that contain a planar ring of atoms with alternating double bonds known as an aromatic ring or an arene.",
+      "definitionCredits": "",
+      "modelBenzene": "Model: Benzene."
+    }
   }
 }

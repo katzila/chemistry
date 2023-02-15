@@ -63,7 +63,7 @@ const Header = () => {
             sx={{ my: 2, color: 'inherit', display: 'block', margin: 0 }}
             onClick={handleClick}
           >
-            Органическая химия
+            {t('navigation.organic.title')}
           </Button>
           <Menu
             id="organic-menu"
@@ -80,10 +80,7 @@ const Header = () => {
                 noWrap
                 component={Link}
                 to='/organic/alkanes'
-                sx={{
-                  color: 'inherit',
-                  textDecoration: 'none',
-                }}
+                sx={{ color: 'inherit', textDecoration: 'none' }}
               >
                 {t('navigation.alkanes.title')}
               </Typography>
@@ -94,22 +91,42 @@ const Header = () => {
                 noWrap
                 component={Link}
                 to='/organic/alkenes'
-                sx={{
-                  color: 'inherit',
-                  textDecoration: 'none',
-                }}
+                sx={{ color: 'inherit', textDecoration: 'none' }}
               >
-                Алкены
+                {t('navigation.alkenes.title')}
+              </Typography>
+            </MenuItem>
+            <MenuItem sx={{ textDecoration: 'none' }} onClick={() => handleClose('organic')}>
+              <Typography
+                variant="button"
+                noWrap
+                component={Link}
+                to='/organic/alcohols'
+                sx={{ color: 'inherit', textDecoration: 'none' }}
+              >
+                {t('navigation.alcohols.title')}
+              </Typography>
+            </MenuItem>
+            <MenuItem sx={{ textDecoration: 'none' }} onClick={() => handleClose('organic')}>
+              <Typography
+                variant="button"
+                noWrap
+                component={Link}
+                to='/organic/aldehydes_and_ketones'
+                sx={{ color: 'inherit', textDecoration: 'none' }}
+              >
+                {t('navigation.aldehydes_and_ketones.title')}
               </Typography>
             </MenuItem>
           </Menu>
-
+        </Box>
+        <Box sx={{ display: { xs: 'flex' }, alignSelf: 'stretch' }}>
           <Button
             id="nonorganic-button"
             sx={{ my: 2, color: 'inherit', display: 'block', margin: 0 }}
             onClick={handleClick}
           >
-            Неорганическая химия
+            {t('navigation.inorganic.title')}
           </Button>
           <Menu
             id="nonorganic-menu"
@@ -120,37 +137,53 @@ const Header = () => {
               'aria-labelledby': 'nonorganic-button',
             }}
           >
-            {/* <MenuItem sx={{ textDecoration: 'none' }} onClick={() => handleClose('nonorganic')}>
+            <MenuItem sx={{ textDecoration: 'none' }} onClick={() => handleClose('nonorganic')}>
               <Typography
                 variant="button"
                 noWrap
                 component={Link}
-                to='/nonorganic/tasks'
-                sx={{
-                  color: 'inherit',
-                  textDecoration: 'none',
-                }}
+                to='/nonorganic/alkali_metals'
+                sx={{ color: 'inherit', textDecoration: 'none' }}
               >
-                Задачи
+                {t('navigation.alkali_metals.title')}
               </Typography>
             </MenuItem>
-            <MenuItem onClick={() => handleClose('nonorganic')}>
+            <MenuItem sx={{ textDecoration: 'none' }} onClick={() => handleClose('nonorganic')}>
               <Typography
                 variant="button"
                 noWrap
                 component={Link}
-                to='/nonorganic/guide'
-                sx={{
-                  color: 'inherit',
-                  textDecoration: 'none',
-                }}
+                to='/nonorganic/alkaline_earth_metals'
+                sx={{ color: 'inherit', textDecoration: 'none' }}
               >
-                Справочник
+                {t('navigation.alkaline_earth_metals.title')}
               </Typography>
-            </MenuItem> */}
+            </MenuItem>
+            <MenuItem sx={{ textDecoration: 'none' }} onClick={() => handleClose('nonorganic')}>
+              <Typography
+                variant="button"
+                noWrap
+                component={Link}
+                to='/nonorganic/noble_gases'
+                sx={{ color: 'inherit', textDecoration: 'none' }}
+              >
+                {t('navigation.noble_gases.title')}
+              </Typography>
+
+            </MenuItem>
+            <MenuItem sx={{ textDecoration: 'none' }} onClick={() => handleClose('nonorganic')}>
+              <Typography
+                variant="button"
+                noWrap
+                component={Link}
+                to='/nonorganic/halogens'
+                sx={{ color: 'inherit', textDecoration: 'none' }}
+              >
+                {t('navigation.halogens.title')}
+              </Typography>
+            </MenuItem>
           </Menu>
         </Box>
-
         <LanguageDropdown />
       </Toolbar>
     </AppBar>
