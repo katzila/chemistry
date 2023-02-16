@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { Navigate, useRoutes } from 'react-router'
 
 import Home from '../Pages/Home'
-import { AlkanesGuide, AlkanesTasks, AlkenesGuide, AlkenesTasks, AlkynesGuide, AlkynesTasks } from '../Pages/organic'
+import { AlkanesGuide, AlkanesTasks, AlkenesGuide, AlkenesTasks, AlkynesGuide, AlkynesTasks, AlcoholsGuide, AlcoholsTasks } from '../Pages/organic'
 import PageTemplate from './layout/PageTemplate'
 
 
@@ -43,7 +43,7 @@ const Routes = (props: Props) => {
         },
         {
           path: 'alcohols',
-          element: <PageTemplate GuideLabel={t('navigation.alcohols.handbook')} Guide={<AlkynesGuide />} Tasks={<AlkynesTasks />} TasksLabel={t('navigation.alcohols.tasks')} />,
+          element: <PageTemplate GuideLabel={t('navigation.alcohols.handbook')} Guide={<AlcoholsGuide />} Tasks={<AlcoholsTasks />} TasksLabel={t('navigation.alcohols.tasks')} />,
         },
         {
           path: 'phenols',

@@ -1,4 +1,7 @@
 {
+  "common": {
+    "or": "or"
+  },
   "navigation": {
     "title": "Chemistry",
     "languages": {
@@ -138,7 +141,7 @@
         "detergents": "Detergents",
         "fuel": "Fuel"
       },
-      "modelPentane": "Model: Pentane."
+      "modelPentane": "Model. Pentane."
     },
     "cycloalkanes": {
       "definitionText": "Cycloalkanes are organic compounds that consist of hydrogen and carbon atoms, where all of the carbon–carbon bonds are single, and the molecule is cyclic.",
@@ -149,7 +152,7 @@
         "solvents": "Solvents",
         "fuel": "Fuel"
       },
-      "modelCyclopentane": "Model: Cyclopentane."
+      "modelCyclopentane": "Model. Cyclopentane."
     },
     "alkenes": {
       "definitionText": "Alkenes are organic compounds that consist of hydrogen and carbon atoms, where at least one carbon–carbon double bond is present.",
@@ -167,7 +170,7 @@
         "photoreagents": "Photoreagents",
         "dyes": "Dyes"
       },
-      "modelPentene": "Model: Pentene-1."
+      "modelPentene": "Model. Pentene-1."
     },
     "alkynes": {
       "definitionText": "Alkynes are organic compounds that consist of hydrogen and carbon atoms, where at least one carbon–carbon triple bond is present.",
@@ -185,7 +188,7 @@
         "metalCuttingWelding": "Metal cutting, welding",
         "arenes": "Arenes"
       },
-      "modelPentyne": "Model: Pentyne-1."
+      "modelPentyne": "Model. Pentyne-1."
     },
     "arenes": {
       "definitionText": "Arenes are organic compounds that consist of hydrogen and carbon atoms, where at least one carbon–carbon double bond is present.",
@@ -200,8 +203,29 @@
     },
     "alcohols": {
       "definitionText": "Alcohols are organic compounds that contain an alcohol functional group, consisting of a hydroxyl group bonded to a carbon atom.",
-      "definitionCredits": "",
-      "modelMethanol": "Model: Methanol."
+      "definitionCredits": "S.A. Litvinova and N.V. Mankevich, \"Organic Chemistry via Tables\"",
+      "isomerism": {
+        "1": "Branching of the Carbon Skeleton:",
+        "2": "Functional group displacement:",
+        "3": "Interspecies isomerism:",
+        "4": "Stereoisomerism:"
+      },
+      "physicalProperties": "Lower alcohols are liquids, higher alcohols are solids. The compounds are volatile because hydrogen bonds are weak. The boiling point is higher than that of the corresponding hydrocarbons. They dissolve in water, hydrogen bonds form between the molecules of alcohols and water.",
+      "production": {
+        "1": "From alkenes:",
+        "2": "From halogen derivatives:",
+        "3": "From aldehydes:",
+        "4": "From ketones:",
+        "5": "From glucose:"
+      },
+      "applications": {
+        "foodIndustry": "Food industry",
+        "perfumeryCosmeticsHouseholdChemicals": "Perfumery, cosmetics and household chemicals",
+        "medicine": "Medicine",
+        "fuel": "Fuel",
+        "chemicalReagent": "Chemical Reagent"
+      },
+      "modelEthanol": "Model. Ethanol."
     },
     "phenols": {
       "definitionText": "Phenols are organic compounds that contain a phenol functional group, consisting of a hydroxyl group bonded to a benzene ring.",
