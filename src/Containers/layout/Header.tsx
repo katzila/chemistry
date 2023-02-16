@@ -7,20 +7,20 @@ import LanguageDropdown from '../../components/LanguageDropdown'
 
 
 const Header = () => {
-  const [t] = useTranslation()
+  const { t, i18n } = useTranslation()
   const [anchorElOrganic, setAnchorElOrganic] = useState<null | HTMLElement>(null)
-  const [anchorElNonOrganic, setAnchorElNonOrganic] = useState<null | HTMLElement>(null)
+  const [anchorElInorganic, setAnchorElInorganic] = useState<null | HTMLElement>(null)
 
   const openOrganic = Boolean(anchorElOrganic)
-  const openNonOrganic = Boolean(anchorElNonOrganic)
+  const openInorganic = Boolean(anchorElInorganic)
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     switch (event.currentTarget.id) {
       case 'organic-button':
         setAnchorElOrganic(event.currentTarget);
         break;
-      case 'nonorganic-button':
-        setAnchorElNonOrganic(event.currentTarget);
+      case 'inorganic-button':
+        setAnchorElInorganic(event.currentTarget);
         break;
       default:
     }
@@ -30,8 +30,8 @@ const Header = () => {
       case 'organic':
         setAnchorElOrganic(null);
         break;
-      case 'nonorganic':
-        setAnchorElNonOrganic(null);
+      case 'inorganic':
+        setAnchorElInorganic(null);
         break;
       default:
     }
@@ -50,12 +50,12 @@ const Header = () => {
             display: { xs: 'none', md: 'flex' },
             fontFamily: 'monospace',
             fontWeight: 700,
-            letterSpacing: '.3rem',
+            letterSpacing: `.${i18n.resolvedLanguage === 'ru' ? 3 : '05'}rem`,
             color: 'inherit',
             textDecoration: 'none',
           }}
         >
-          Химия
+          {t('navigation.title')}
         </Typography>
         <Box sx={{ flexGrow: 1, display: { xs: 'flex' }, alignSelf: 'stretch' }}>
           <Button
@@ -74,135 +74,102 @@ const Header = () => {
               'aria-labelledby': 'organic-button',
             }}
           >
-            <MenuItem sx={{ textDecoration: 'none' }} onClick={() => handleClose('organic')}>
-              <Typography
-                variant="button"
-                noWrap
-                component={Link}
-                to='/organic/alkanes'
-                sx={{ color: 'inherit', textDecoration: 'none' }}
-              >
-                {t('navigation.alkanes.title')}
-              </Typography>
+            <MenuItem
+              component={Link}
+              to='/organic/alkanes'
+              sx={{ textDecoration: 'none' }}
+              onClick={() => handleClose('organic')}
+            >
+              {t('navigation.alkanes.title')}
             </MenuItem>
-            <MenuItem sx={{ textDecoration: 'none' }} onClick={() => handleClose('organic')}>
-              <Typography
-                variant="button"
-                noWrap
-                component={Link}
-                to='/organic/cycloalkanes'
-                sx={{ color: 'inherit', textDecoration: 'none' }}
-              >
-                {t('navigation.cycloalkanes.title')}
-              </Typography>
+            <MenuItem
+              component={Link}
+              to='/organic/cycloalkanes'
+              sx={{ textDecoration: 'none' }}
+              onClick={() => handleClose('organic')}
+            >
+              {t('navigation.cycloalkanes.title')}
             </MenuItem>
-            <MenuItem sx={{ textDecoration: 'none' }} onClick={() => handleClose('organic')}>
-              <Typography
-                variant="button"
-                noWrap
-                component={Link}
-                to='/organic/alkenes'
-                sx={{ color: 'inherit', textDecoration: 'none' }}
-              >
-                {t('navigation.alkenes.title')}
-              </Typography>
+            <MenuItem
+              sx={{ textDecoration: 'none' }}
+              onClick={() => handleClose('organic')}
+              component={Link}
+              to='/organic/alkenes'
+            >
+              {t('navigation.alkenes.title')}
             </MenuItem>
-            <MenuItem sx={{ textDecoration: 'none' }} onClick={() => handleClose('organic')}>
-              <Typography
-                variant="button"
-                noWrap
-                component={Link}
-                to='/organic/alkynes'
-                sx={{ color: 'inherit', textDecoration: 'none' }}
-              >
-                {t('navigation.alkynes.title')}
-              </Typography>
+            <MenuItem
+              sx={{ textDecoration: 'none' }}
+              onClick={() => handleClose('organic')}
+              component={Link}
+              to='/organic/alkynes'
+            >
+              {t('navigation.alkynes.title')}
             </MenuItem>
-            <MenuItem sx={{ textDecoration: 'none' }} onClick={() => handleClose('organic')}>
-              <Typography
-                variant="button"
-                noWrap
-                component={Link}
-                to='/organic/alcohols'
-                sx={{ color: 'inherit', textDecoration: 'none' }}
-              >
-                {t('navigation.alcohols.title')}
-              </Typography>
+            <MenuItem
+              sx={{ textDecoration: 'none' }}
+              onClick={() => handleClose('organic')}
+              component={Link}
+              to='/organic/alcohols'
+            >
+              {t('navigation.alcohols.title')}
             </MenuItem>
-            <MenuItem sx={{ textDecoration: 'none' }} onClick={() => handleClose('organic')}>
-              <Typography
-                variant="button"
-                noWrap
-                component={Link}
-                to='/organic/aldehydes_and_ketones'
-                sx={{ color: 'inherit', textDecoration: 'none' }}
-              >
-                {t('navigation.aldehydes_and_ketones.title')}
-              </Typography>
+            <MenuItem
+              sx={{ textDecoration: 'none' }}
+              onClick={() => handleClose('organic')}
+              component={Link}
+              to='/organic/aldehydes_and_ketones'
+            >
+              {t('navigation.aldehydes_and_ketones.title')}
             </MenuItem>
           </Menu>
-        </Box>
-        <Box sx={{ display: { xs: 'flex' }, alignSelf: 'stretch' }}>
           <Button
-            id="nonorganic-button"
+            id="inorganic-button"
             sx={{ my: 2, color: 'inherit', display: 'block', margin: 0 }}
             onClick={handleClick}
           >
             {t('navigation.inorganic.title')}
           </Button>
           <Menu
-            id="nonorganic-menu"
-            anchorEl={anchorElNonOrganic}
-            open={openNonOrganic}
-            onClose={() => handleClose('nonorganic')}
+            id="inorganic-menu"
+            anchorEl={anchorElInorganic}
+            open={openInorganic}
+            onClose={() => handleClose('inorganic')}
             MenuListProps={{
-              'aria-labelledby': 'nonorganic-button',
+              'aria-labelledby': 'inorganic-button',
             }}
           >
-            <MenuItem sx={{ textDecoration: 'none' }} onClick={() => handleClose('nonorganic')}>
-              <Typography
-                variant="button"
-                noWrap
-                component={Link}
-                to='/nonorganic/alkali_metals'
-                sx={{ color: 'inherit', textDecoration: 'none' }}
-              >
-                {t('navigation.alkali_metals.title')}
-              </Typography>
+            <MenuItem
+              sx={{ textDecoration: 'none' }}
+              onClick={() => handleClose('inorganic')}
+              component={Link}
+              to='/inorganic/alkali_metals'
+            >
+              {t('navigation.alkali_metals.title')}
             </MenuItem>
-            <MenuItem sx={{ textDecoration: 'none' }} onClick={() => handleClose('nonorganic')}>
-              <Typography
-                variant="button"
-                noWrap
-                component={Link}
-                to='/nonorganic/alkaline_earth_metals'
-                sx={{ color: 'inherit', textDecoration: 'none' }}
-              >
-                {t('navigation.alkaline_earth_metals.title')}
-              </Typography>
+            <MenuItem
+              sx={{ textDecoration: 'none' }}
+              onClick={() => handleClose('inorganic')}
+              component={Link}
+              to='/inorganic/alkaline_earth_metals'
+            >
+              {t('navigation.alkaline_earth_metals.title')}
             </MenuItem>
-            <MenuItem sx={{ textDecoration: 'none' }} onClick={() => handleClose('nonorganic')}>
-              <Typography
-                variant="button"
-                noWrap
-                component={Link}
-                to='/nonorganic/noble_gases'
-                sx={{ color: 'inherit', textDecoration: 'none' }}
-              >
-                {t('navigation.noble_gases.title')}
-              </Typography>
-
+            <MenuItem
+              sx={{ textDecoration: 'none' }}
+              onClick={() => handleClose('inorganic')}
+              component={Link}
+              to='/inorganic/noble_gases'
+            >
+              {t('navigation.noble_gases.title')}
             </MenuItem>
-            <MenuItem sx={{ textDecoration: 'none' }} onClick={() => handleClose('nonorganic')}>
-              <Typography
-                variant="button"
-                noWrap
-                component={Link}
-                to='/nonorganic/halogens'
-                sx={{ color: 'inherit', textDecoration: 'none' }}
-              >
-                {t('navigation.halogens.title')}
-              </Typography>
+            <MenuItem
+              sx={{ textDecoration: 'none' }}
+              onClick={() => handleClose('inorganic')}
+              component={Link}
+              to='/inorganic/halogens'
+            >
+              {t('navigation.halogens.title')}
             </MenuItem>
           </Menu>
         </Box>
