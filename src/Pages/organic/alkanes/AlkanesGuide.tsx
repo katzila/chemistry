@@ -1,15 +1,13 @@
 import { Box, Paper, Typography } from '@mui/material';
-import React from 'react'
 import { useTranslation } from 'react-i18next';
 
-import Izomer1 from '../../../assets/alkanes/1.png'
-import Izomer2 from '../../../assets/alkanes/2.png'
-import Izomer3 from '../../../assets/alkanes/3.png'
-import P1 from '../../../assets/alkanes/p1.png'
-import P2 from '../../../assets/alkanes/p2.png'
+import Isomer1 from '../../../assets/alkanes/isomer1.png'
+import Isomer2 from '../../../assets/alkanes/isomer2.png'
+import Isomer3 from '../../../assets/alkanes/isomer3.png'
+import Production1 from '../../../assets/alkanes/production1.png'
+import Production2 from '../../../assets/alkanes/production2.png'
 import alkanesScheme from '../../../assets/alkanes/alkanesScheme.svg'
 
-// import Pentane from '../../../assets/alkanes/пентан.html'
 
 export const AlkanesGuide = () => {
   const [t] = useTranslation()
@@ -47,11 +45,11 @@ export const AlkanesGuide = () => {
             <Typography variant='h5'>{t('guide.isomerism')}</Typography>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
               <Typography variant='h6'>{t('guide.branchingCarbonSkeleton')}</Typography>
-              <img src={Izomer1} alt='Izomer1' style={{ width: '315px', maxWidth: '100%' }} />
+              <img src={Isomer1} alt='Isomer1' style={{ width: '315px', maxWidth: '100%' }} />
 
-              <img src={Izomer2} alt='Izomer2' style={{ width: '250px', maxWidth: '100%' }} />
+              <img src={Isomer2} alt='Isomer2' style={{ width: '250px', maxWidth: '100%' }} />
 
-              <img src={Izomer3} alt='Izomer3' style={{ width: '180px', maxWidth: '100%' }} />
+              <img src={Isomer3} alt='Isomer3' style={{ width: '180px', maxWidth: '100%' }} />
             </Box>
           </Box>
 
@@ -68,11 +66,11 @@ export const AlkanesGuide = () => {
               <li>
                 <p>
                   {t('guide.alkanes.production.1')}</p>
-                <img src={P1} alt='P1' style={{ width: '350px', maxWidth: '100%' }} />
+                <img src={Production1} alt='Production1' style={{ width: '350px', maxWidth: '100%' }} />
               </li>
               <li>
                 <p>{t('guide.alkanes.production.2')}</p>
-                <img src={P2} alt='P2' style={{ width: '500px', maxWidth: '100%' }} />
+                <img src={Production2} alt='Production2' style={{ width: '500px', maxWidth: '100%' }} />
               </li>
             </ol>
           </Box>
