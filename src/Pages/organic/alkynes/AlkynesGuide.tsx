@@ -31,29 +31,26 @@ export const AlkynesGuide = () => {
 
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
             <Typography variant='h5'>{t('guide.empiricalFormula')}</Typography>
-            <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>C<sub>n</sub>H<sub>2n+2</sub></Typography>
+            <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>C<sub>n</sub>H<sub>2n-2</sub></Typography>
           </Box>
 
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
             <Typography variant='h5'>{t('guide.structureFormulas')}</Typography>
-            <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>CH<sub>4</sub></Typography>
-            <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>CH<sub>3</sub> &#8722; CH<sub>3</sub></Typography>
+            <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>CH &#8801; CH</Typography>
+            <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>CH &#8801; C &#8722; CH<sub>3</sub></Typography>
           </Box>
 
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
             <Typography variant='h5'>{t('guide.isomerism')}</Typography>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
-              <Typography variant='h6'>Разветвление углеродного скелета (см. Алканы)</Typography>
+              {t('guide.alkynes.isomerism')}
             </Box>
           </Box>
 
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
             <Typography variant='h5'>{t('guide.physicalProperties')}</Typography>
             <p>
-              Первые четыре представителя алканов являются газами. Начиная с пентана - жидкости,
-              алканы с числом атомов углерода 16 и более - твердые вещества. Они не растворимы в воде,
-              хорошо растворимы в органических растворителях, их плотности ниже плотности воды.
-              Неразветвленные алканы имеют более высокие температуры кипения и плавления, чем разветвленные.
+              {t('guide.alkynes.physicalProperties')}
             </p>
           </Box>
 
@@ -61,11 +58,11 @@ export const AlkynesGuide = () => {
             <Typography variant='h5'>{t('guide.production')}</Typography>
             <ol>
               <li>
-                <p>{'Гидрирование непредельных углеводородов (t, катализаторы: Ni, Pt, Pd):'}</p>
+                <p>{t('guide.alkynes.production.1')}</p>
                 <img src={P1} alt='P1' style={{ width: '350px', maxWidth: '100%' }} />
               </li>
               <li>
-                <p>{'На основе "синтез-газа":'}</p>
+                <p>{t('guide.alkynes.production.2')}</p>
                 <img src={P2} alt='P2' style={{ width: '500px', maxWidth: '100%' }} />
               </li>
             </ol>
@@ -74,12 +71,11 @@ export const AlkynesGuide = () => {
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
             <Typography variant='h5'>{t('guide.applications')}</Typography>
             <ul>
-              <li>Фреоны </li>
-              <li>Растворители</li>
-              <li>"Синтез-газ"</li>
-              <li>Сажа, резина</li>
-              <li>Моющие средства</li>
-              <li>Топливо</li>
+              <li>{t('guide.alkynes.applications.chloroprene')}</li>
+              <li>{t('guide.alkynes.applications.isoprene')}</li>
+              <li>{t('guide.alkynes.applications.acetaldehyde')}</li>
+              <li>{t('guide.alkynes.applications.metalCuttingWelding')}</li>
+              <li>{t('guide.alkynes.applications.arenes')}</li>
             </ul>
           </Box>
 

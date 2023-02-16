@@ -172,7 +172,19 @@
     "alkynes": {
       "definitionText": "Alkynes are organic compounds that consist of hydrogen and carbon atoms, where at least one carbon–carbon triple bond is present.",
       "definitionCredits": "S.A. Litvinova and N.V. Mankevich, \"Organic Chemistry via Tables\"",
+      "isomerism": "Branching of the carbon skeleton (see Alkanes)",
       "physicalProperties": " Like alkenes, the first three alkynes are gases, from C5 to C15 - liquids, from C16 - solids. Slightly soluble in water, density below water. The boiling and melting points of alkynes are higher than those of corresponding alkenes(especially for the first three). Unbranched alkynes have higher boiling points than branched ones.",
+      "production": {
+        "1": "Dehydrogenation of hydrocarbons (thermal decomposition, cracking):",
+        "2": "Decomposition of calcium carbide with water or acid solution:"
+      },
+      "applications": {
+        "chloroprene": "Chloroprene",
+        "isoprene": "Isoprene",
+        "acetaldehyde": "Acetaldehyde",
+        "metalCuttingWelding": "Metal cutting, welding",
+        "arenes": "Arenes"
+      },
       "modelPentyne": "Model: Pentyne-1."
     },
     "arenes": {

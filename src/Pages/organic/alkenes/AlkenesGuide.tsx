@@ -43,7 +43,7 @@ export const AlkenesGuide = () => {
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
             <Typography variant='h5'>{t('guide.isomerism')}</Typography>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
-              <Typography variant='h6'>{t('guide.alkenes.isomerism')}</Typography>
+              {t('guide.alkenes.isomerism')}
             </Box>
           </Box>
 
