@@ -67,11 +67,11 @@ export const AlkanesGuide = () => {
             <ol>
               <li>
                 <p>
-                  {t('guide.alkanes.production1')}</p>
+                  {t('guide.alkanes.production.1')}</p>
                 <img src={P1} alt='P1' style={{ width: '350px', maxWidth: '100%' }} />
               </li>
               <li>
-                <p>{t('guide.alkanes.production2')}</p>
+                <p>{t('guide.alkanes.production.2')}</p>
                 <img src={P2} alt='P2' style={{ width: '500px', maxWidth: '100%' }} />
               </li>
             </ol>

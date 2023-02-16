@@ -51,15 +51,15 @@ const Routes = (props: Props) => {
         },
         {
           path: 'aldehydes_ketones',
-          element: <PageTemplate GuideLabel={t('navigation.aldehydes_and_ketones.handbook')} Guide={<AlkynesGuide />} Tasks={<AlkynesTasks />} TasksLabel={t('navigation.aldehydes_and_ketones.tasks')} />,
+          element: <PageTemplate GuideLabel={t('navigation.aldehydes_ketones.handbook')} Guide={<AlkynesGuide />} Tasks={<AlkynesTasks />} TasksLabel={t('navigation.aldehydes_ketones.tasks')} />,
         },
         {
           path: 'carboxylic_acids',
           element: <PageTemplate GuideLabel={t('navigation.carboxylic_acids.handbook')} Guide={<AlkynesGuide />} Tasks={<AlkynesTasks />} TasksLabel={t('navigation.carboxylic_acids.tasks')} />,
         },
         {
-          path: 'complex_esters',
-          element: <PageTemplate GuideLabel={t('navigation.complex_esters.handbook')} Guide={<AlkynesGuide />} Tasks={<AlkynesTasks />} TasksLabel={t('navigation.complex_esters.tasks')} />,
+          path: 'esters',
+          element: <PageTemplate GuideLabel={t('navigation.esters.handbook')} Guide={<AlkynesGuide />} Tasks={<AlkynesTasks />} TasksLabel={t('navigation.esters.tasks')} />,
         },
         {
           path: 'carbohydrates',

@@ -110,6 +110,14 @@ const Header = () => {
               sx={{ textDecoration: 'none' }}
               onClick={() => handleClose('organic')}
               component={Link}
+              to='/organic/arenes'
+            >
+              {t('navigation.arenes.title')}
+            </MenuItem>
+            <MenuItem
+              sx={{ textDecoration: 'none' }}
+              onClick={() => handleClose('organic')}
+              component={Link}
               to='/organic/alcohols'
             >
               {t('navigation.alcohols.title')}
@@ -118,9 +126,57 @@ const Header = () => {
               sx={{ textDecoration: 'none' }}
               onClick={() => handleClose('organic')}
               component={Link}
-              to='/organic/aldehydes_and_ketones'
+              to='/organic/phenols'
             >
-              {t('navigation.aldehydes_and_ketones.title')}
+              {t('navigation.phenols.title')}
+            </MenuItem>
+            <MenuItem
+              sx={{ textDecoration: 'none' }}
+              onClick={() => handleClose('organic')}
+              component={Link}
+              to='/organic/aldehydes_ketones'
+            >
+              {t('navigation.aldehydes_ketones.title')}
+            </MenuItem>
+            <MenuItem
+              sx={{ textDecoration: 'none' }}
+              onClick={() => handleClose('organic')}
+              component={Link}
+              to='/organic/carboxylic_acids'
+            >
+              {t('navigation.carboxylic_acids.title')}
+            </MenuItem>
+            <MenuItem
+              sx={{ textDecoration: 'none' }}
+              onClick={() => handleClose('organic')}
+              component={Link}
+              to='/organic/esters'
+            >
+              {t('navigation.esters.title')}
+            </MenuItem>
+            <MenuItem
+              sx={{ textDecoration: 'none' }}
+              onClick={() => handleClose('organic')}
+              component={Link}
+              to='/organic/carbohydrates'
+            >
+              {t('navigation.carbohydrates.title')}
+            </MenuItem>
+            <MenuItem
+              sx={{ textDecoration: 'none' }}
+              onClick={() => handleClose('organic')}
+              component={Link}
+              to='/organic/amines'
+            >
+              {t('navigation.amines.title')}
+            </MenuItem>
+            <MenuItem
+              sx={{ textDecoration: 'none' }}
+              onClick={() => handleClose('organic')}
+              component={Link}
+              to='/organic/amino_acids'
+            >
+              {t('navigation.amino_acids.title')}
             </MenuItem>
           </Menu>
           <Button

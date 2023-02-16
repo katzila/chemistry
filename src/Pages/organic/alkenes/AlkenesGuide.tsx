@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import P1 from '../../../assets/alkenes/p1.png'
 import P2 from '../../../assets/alkenes/p2.png'
-import alkanesScheme from '../../../assets/alkanes/alkanesScheme.svg'
+import alkenesScheme from '../../../assets/alkenes/alkenesScheme.svg'
 
 // import Pentane from '../../../assets/alkanes/пентан.html'
 
@@ -43,17 +43,14 @@ export const AlkenesGuide = () => {
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
             <Typography variant='h5'>{t('guide.isomerism')}</Typography>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
-              <Typography variant='h6'>Разветвление углеродного скелета (см. Алканы)</Typography>
+              <Typography variant='h6'>{t('guide.alkenes.isomerism')}</Typography>
             </Box>
           </Box>
 
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
             <Typography variant='h5'>{t('guide.physicalProperties')}</Typography>
             <p>
-              Первые четыре представителя алканов являются газами. Начиная с пентана - жидкости,
-              алканы с числом атомов углерода 16 и более - твердые вещества. Они не растворимы в воде,
-              хорошо растворимы в органических растворителях, их плотности ниже плотности воды.
-              Неразветвленные алканы имеют более высокие температуры кипения и плавления, чем разветвленные.
+              {t('guide.alkenes.physicalProperties')}
             </p>
           </Box>
 
@@ -61,11 +58,11 @@ export const AlkenesGuide = () => {
             <Typography variant='h5'>{t('guide.production')}</Typography>
             <ol>
               <li>
-                <p>{'Гидрирование непредельных углеводородов (t, катализаторы: Ni, Pt, Pd):'}</p>
+                <p>{t('guide.alkenes.production.1')}</p>
                 <img src={P1} alt='P1' style={{ width: '350px', maxWidth: '100%' }} />
               </li>
               <li>
-                <p>{'На основе "синтез-газа":'}</p>
+                <p>{t('guide.alkenes.production.2')}</p>
                 <img src={P2} alt='P2' style={{ width: '500px', maxWidth: '100%' }} />
               </li>
             </ol>
@@ -74,12 +71,11 @@ export const AlkenesGuide = () => {
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
             <Typography variant='h5'>{t('guide.applications')}</Typography>
             <ul>
-              <li>Фреоны </li>
-              <li>Растворители</li>
-              <li>"Синтез-газ"</li>
-              <li>Сажа, резина</li>
-              <li>Моющие средства</li>
-              <li>Топливо</li>
+              <li>{t('guide.alkenes.applications.explosives')}</li>
+              <li>{t('guide.alkenes.applications.plastics')}</li>
+              <li>{t('guide.alkenes.applications.medicine')}</li>
+              <li>{t('guide.alkenes.applications.photoreagents')}</li>
+              <li>{t('guide.alkenes.applications.dyes')}</li>
             </ul>
           </Box>
 
@@ -92,7 +88,7 @@ export const AlkenesGuide = () => {
           </Box>
 
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
-            <img src={alkanesScheme} alt="alkanesScheme" style={{ maxWidth: '100%' }} />
+            <img src={alkenesScheme} alt="alkenesScheme" style={{ maxWidth: '100%' }} />
             <Typography variant='subtitle1' fontWeight='bold' >{t('guide.chemicalProperties')}</Typography>
           </Box>
         </Box>

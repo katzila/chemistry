@@ -43,7 +43,7 @@
       "handbook": "Phenols Handbook",
       "tasks": "Phenols Tasks"
     },
-    "aldehydes_and_ketones": {
+    "aldehydes_ketones": {
       "title": "Aldehydes and Ketones",
       "handbook": "Aldehydes and Ketones Handbook",
       "tasks": "Aldehydes and Ketones Tasks"
@@ -53,10 +53,10 @@
       "handbook": "Carboxylic Acids Handbook",
       "tasks": "Carboxylic Acids Tasks"
     },
-    "complex_esters": {
-      "title": "Complex Esters",
-      "handbook": "Complex Esters Handbook",
-      "tasks": "Complex Esters Tasks"
+    "esters": {
+      "title": "Esters",
+      "handbook": "Esters Handbook",
+      "tasks": "Esters Tasks"
     },
     "carbohydrates": {
       "title": "Carbohydrates",
@@ -121,13 +121,15 @@
     "physicalProperties": "Physical Properties:",
     "production": "Production:",
     "applications": "Applications:",
-    "chemicalProperties": "Chemical Properties:",
+    "chemicalProperties": "Pic. Chemical Properties.",
     "alkanes": {
       "definitionText": "Alkanes are organic acyclic compounds that consist of hydrogen and carbon atoms, where all of the carbon–carbon bonds are single.",
       "definitionCredits": "S.A. Litvinova and N.V. Mankevich, \"Organic Chemistry via Tables\"",
       "physicalProperties": "First 3 alkanes are gases. Alkanes starting from pentane are liquids. Alkanes starting from C16 are solids. Alkanes are insoluble in water. Alkanes are soluble in organic solvents. Unbranched alkanes have higher boiling points than branched alkanes.",
-      "production1": "Hydrogenergation of unsaturated hydrocarbons. (t, catalysts: Ni, Pt, Pd):",
-      "production2": "Based on synthesis gas:",
+      "production": {
+        "1": "Hydrogenation of unsaturated hydrocarbons. (t, catalysts: Ni, Pt, Pd):",
+        "2": "Based on synthesis gas:"
+      },
       "applications": {
         "freons": "Freons",
         "solvents": "Solvents",
@@ -152,7 +154,19 @@
     "alkenes": {
       "definitionText": "Alkenes are organic compounds that consist of hydrogen and carbon atoms, where at least one carbon–carbon double bond is present.",
       "definitionCredits": "S.A. Litvinova and N.V. Mankevich, \"Organic Chemistry via Tables\"",
+      "isomerism": "Branching of the carbon skeleton (see Alkanes)",
       "physicalProperties": "First 3 alkenes are gases. Alkenes starting from pentene are liquids. Alkenes starting from C18 are solids. Alkenes are slightly soluble in water. Boiling points of unbranched alkenes and cis-isomers are higher, against branched and trans-isomers.",
+      "production": {
+        "1": "Dehydrogenation of alkanes, cracking:",
+        "2": "Hydrogenation of alkynes, alkadienes:"
+      },
+      "applications": {
+        "explosives": "Explosives",
+        "plastics": "Plastics",
+        "medicine": "Medicine",
+        "photoreagents": "Photoreagents",
+        "dyes": "Dyes"
+      },
       "modelPentene": "Model: Pentene-1."
     },
     "alkynes": {
@@ -161,15 +175,31 @@
       "physicalProperties": " Like alkenes, the first three alkynes are gases, from C5 to C15 - liquids, from C16 - solids. Slightly soluble in water, density below water. The boiling and melting points of alkynes are higher than those of corresponding alkenes(especially for the first three). Unbranched alkynes have higher boiling points than branched ones.",
       "modelPentyne": "Model: Pentyne-1."
     },
-    "aldehydes_and_ketones": {
+    "arenes": {
+      "definitionText": "Arenes are organic compounds that consist of hydrogen and carbon atoms, where at least one carbon–carbon double bond is present.",
+      "definitionCredits": "S.A. Litvinova and N.V. Mankevich, \"Organic Chemistry via Tables\"",
+      "physicalProperties": "Arenes are gases. Arenes are insoluble in water. Arenes are soluble in organic solvents. The boiling points of arenes increase with the number of carbon atoms in the ring.",
+      "production": "Hydrogenation of alkenes. (t, catalysts: Ni, Pt, Pd):",
+      "applications": {
+        "solvents": "Solvents",
+        "fuel": "Fuel"
+      },
+      "modelBenzene": "Model: Benzene."
+    },
+    "alcohols": {
+      "definitionText": "Alcohols are organic compounds that contain an alcohol functional group, consisting of a hydroxyl group bonded to a carbon atom.",
+      "definitionCredits": "",
+      "modelMethanol": "Model: Methanol."
+    },
+    "phenols": {
+      "definitionText": "Phenols are organic compounds that contain a phenol functional group, consisting of a hydroxyl group bonded to a benzene ring.",
+      "definitionCredits": "",
+      "modelPhenol": "Model: Phenol."
+    },
+    "aldehydes_ketones": {
       "definitionText": "Aldehydes and ketones are organic compounds that contain a carbonyl functional group, consisting of a carbon atom double-bonded to an oxygen atom.",
       "definitionCredits": "",
       "modelFormaldehyde": "Model: Formaldehyde."
-    },
-    "alcohols": {
-      "definitionText": "Alcohols are organic compounds that contain a hydroxyl functional group (-OH) bonded to a carbon atom.",
-      "definitionCredits": "",
-      "modelEthanol": "Model: Ethanol."
     },
     "ethers": {
       "definitionText": "Ethers are organic compounds that contain an ether functional group, consisting of two carbon atoms bonded to an oxygen atom.",
@@ -186,15 +216,20 @@
       "definitionCredits": "",
       "modelEthylAcetate": "Model: Ethyl Acetate."
     },
+    "carbohydrates": {
+      "definitionText": "Carbohydrates are organic compounds that contain carbon, hydrogen, and oxygen in the ratio of Cn(H2O)n, where n is a positive integer.",
+      "definitionCredits": "",
+      "modelGlucose": "Model: Glucose."
+    },
     "amines": {
       "definitionText": "Amines are organic compounds that contain a nitrogen atom bonded to one or more carbon atoms.",
       "definitionCredits": "",
       "modelEthanamine": "Model: Ethanamine."
     },
-    "aromatic_compounds": {
-      "definitionText": "Aromatic compounds are organic compounds that contain a planar ring of atoms with alternating double bonds known as an aromatic ring or an arene.",
+    "amino_acids": {
+      "definitionText": "Amino acids are organic compounds that contain both a carboxyl group (-COOH) and an amino group (-NH2).",
       "definitionCredits": "",
-      "modelBenzene": "Model: Benzene."
+      "modelAlanine": "Model: Alanine."
     }
   }
 }
