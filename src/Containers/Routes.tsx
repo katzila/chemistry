@@ -4,6 +4,7 @@ import { Navigate, useRoutes } from 'react-router'
 
 import Home from '../Pages/Home'
 import { AlkanesGuide, AlkanesTasks, AlkenesGuide, AlkenesTasks, AlkynesGuide, AlkynesTasks, AlcoholsGuide, AlcoholsTasks } from '../Pages/organic'
+import { CarboxylicAcidsGuide, CarboxylicAcidsTasks } from '../Pages/organic/carboxylicAcids'
 import PageTemplate from './layout/PageTemplate'
 
 
@@ -54,8 +55,8 @@ const Routes = (props: Props) => {
           element: <PageTemplate GuideLabel={t('navigation.aldehydes_ketones.handbook')} Guide={<AlkynesGuide />} Tasks={<AlkynesTasks />} TasksLabel={t('navigation.aldehydes_ketones.tasks')} />,
         },
         {
-          path: 'carboxylic_acids',
-          element: <PageTemplate GuideLabel={t('navigation.carboxylic_acids.handbook')} Guide={<AlkynesGuide />} Tasks={<AlkynesTasks />} TasksLabel={t('navigation.carboxylic_acids.tasks')} />,
+          path: 'carboxylicAcids',
+          element: <PageTemplate GuideLabel={t('navigation.carboxylicAcids.handbook')} Guide={<CarboxylicAcidsGuide />} Tasks={<CarboxylicAcidsTasks />} TasksLabel={t('navigation.carboxylicAcids.tasks')} />,
         },
         {
           path: 'esters',

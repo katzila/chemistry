@@ -142,9 +142,9 @@ const Header = () => {
               sx={{ textDecoration: 'none' }}
               onClick={() => handleClose('organic')}
               component={Link}
-              to='/organic/carboxylic_acids'
+              to='/organic/carboxylicAcids'
             >
-              {t('navigation.carboxylic_acids.title')}
+              {t('navigation.carboxylicAcids.title')}
             </MenuItem>
             <MenuItem
               sx={{ textDecoration: 'none' }}

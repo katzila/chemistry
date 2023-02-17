@@ -51,7 +51,7 @@
       "handbook": "Aldehydes and Ketones Handbook",
       "tasks": "Aldehydes and Ketones Tasks"
     },
-    "carboxylic_acids": {
+    "carboxylicAcids": {
       "title": "Carboxylic Acids",
       "handbook": "Carboxylic Acids Handbook",
       "tasks": "Carboxylic Acids Tasks"
@@ -118,6 +118,7 @@
   "guide": {
     "definitionTitle": "Definition:",
     "empiricalFormula": "Empirical Formula:",
+    "structureFormula": "Structure Formula:",
     "structureFormulas": "Examples of Structure Formulas:",
     "isomerism": "Isomerism:",
     "branchingCarbonSkeleton": "Branching of the Carbon Skeleton:",
@@ -242,10 +243,30 @@
       "definitionCredits": "",
       "modelDiethylEther": "Model: Diethyl Ether."
     },
-    "carboxylic_acids": {
-      "definitionText": "Carboxylic acids are organic acids that contain a carboxyl functional group (-COOH), consisting of a carbon atom double-bonded to an oxygen atom and also bonded to a hydroxyl group.",
-      "definitionCredits": "",
-      "modelFormicAcid": "Model: Formic Acid."
+    "carboxylicAcids": {
+      "definitionText": "Carboxylic acids are a class of organic compounds whose molecules contain one or more functional carboxyl groups - COOH.",
+      "definitionCredits": "S.A. Litvinova and N.V. Mankevich, \"Organic Chemistry via Tables\"",
+      "isomerism": {
+        "1": "Branching of the carbon chain",
+        "2": "Intergroup isomerism (complex esters)"
+      },
+      "physicalProperties": "Saturated straight-chain carboxylic acids containing 1 to 9 carbon atoms, as well as branched ones up to 13 carbon atoms, are liquids, and starting from butyric acid (C4H8O2), they become viscous liquids. Acids containing 1 to 3 carbon atoms have a sharp odor and are miscible with water in any proportions. As the chain grows, their solubility in water decreases. Higher carboxylic acids containing 10 or more carbon atoms are solid substances with no odor and are insoluble in water. Aromatic and dibasic acids are colorless crystalline substances that are readily soluble in water. Their solubility in water, like that of other acids, decreases with increasing carbon chain length.",
+      "production": {
+        "1": "Oxidation of aldehydes",
+        "2": "Oxidation of alcohols",
+        "3": "Hydrolysis of complex esters",
+        "4": "Interaction of carboxylic acid salts with mineral acids"
+      },
+      "applications": {
+        "textileIndustry": "Textile industry",
+        "pharmaceuticalIndustry": "Pharmaceutical industry",
+        "solvents": "Solvents",
+        "plastics": "Plastics",
+        "catalysts": "Catalysts",
+        "dyes": "Dyes",
+        "pesticides": "Pesticides"
+      },
+      "modelFormicAcid": "Model. Formic Acid."
     },
     "esters": {
       "definitionText": "Esters are organic compounds that contain an ester functional group, consisting of a carbon atom bonded to an oxygen atom and also bonded to an oxygen atom through a carbonyl group.",
