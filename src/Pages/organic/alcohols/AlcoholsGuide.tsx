@@ -67,8 +67,6 @@ export const AlcoholsGuide = () => {
                   <img src={Isomer4} alt='Isomer4' style={{ width: '500px', maxWidth: '100%' }} />
                 </li>
               </ol>
-
-
             </Box>
           </Box>
 

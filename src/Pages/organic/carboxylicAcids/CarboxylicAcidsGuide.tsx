@@ -2,7 +2,7 @@ import { Box, Paper, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 
 import Structure from '../../../assets/carboxylicAcids/structure.png'
-import StructureExample from '../../../assets/carboxylicAcids/example.png'
+import StructureExample from '../../../assets/carboxylicAcids/structureExample.png'
 import Isomer1 from '../../../assets/carboxylicAcids/isomer1.png'
 import Isomer2 from '../../../assets/carboxylicAcids/isomer2.png'
 import Production1 from '../../../assets/carboxylicAcids/production1.png'
