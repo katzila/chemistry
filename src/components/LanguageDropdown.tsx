@@ -21,6 +21,7 @@ const LanguageDropdown = () => {
 
   const changeLanguage = (language: 'en' | 'ru') => {
     i18next.changeLanguage(language);
+    localStorage.setItem('locale', language)
     setAnchorElLanguage(null);
   }
 
