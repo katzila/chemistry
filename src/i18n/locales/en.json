@@ -273,9 +273,24 @@
       "modelFormicAcid": "Model. Formic Acid."
     },
     "esters": {
-      "definitionText": "Esters are organic compounds that contain an ester functional group, consisting of a carbon atom bonded to an oxygen atom and also bonded to an oxygen atom through a carbonyl group.",
-      "definitionCredits": "",
-      "modelEthylAcetate": "Model: Ethyl Acetate."
+      "definitionText": "Esters are derivatives of acids (both organic and inorganic), where the hydrogen atom in the COOH carboxyl group is replaced by a hydrocarbon radical.",
+      "definitionCredits": "S.A. Litvinova and N.V. Mankevich, \"Organic Chemistry via Tables\"",
+      "isomerism": {
+        "1": "Branching of the Carbon Skeleton:",
+        "2": "Isomerism of the position of the –CO-O- group:",
+        "3": "Interspecies isomerism:"
+      },
+      "physicalProperties": "Esters of lower carboxylic acids and simple monohydric alcohols are colorless volatile liquids with a characteristic fruity odor. Esters of higher carboxylic acids are colorless solids, insoluble in water. They have a lower boiling point than the corresponding acids.",
+      "production": {
+        "1": "The main reaction is the esterification reaction"
+      },
+      "applications": {
+        "metalworking": "Metalworking",
+        "lubricants": "Used as lubricants in the form of natural fats",
+        "plasticizers": "Plasticizers to lower temperature",
+        "synthesis": "Used in the synthesis of tertiary alcohols"
+      },
+      "modelEthylMethylEther": "Model: Ethyl methyl ether."
     },
     "carbohydrates": {
       "definitionText": "Carbohydrates are organic compounds that contain carbon, hydrogen, and oxygen in the ratio of Cn(H2O)n, where n is a positive integer.",

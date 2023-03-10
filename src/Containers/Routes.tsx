@@ -3,7 +3,22 @@ import { useTranslation } from 'react-i18next'
 import { Navigate, useRoutes } from 'react-router'
 
 import Home from '../Pages/Home'
-import { AlkanesGuide, AlkanesTasks, AlkenesGuide, AlkenesTasks, AlkynesGuide, AlkynesTasks, AlcoholsGuide, AlcoholsTasks, CarboxylicAcidsGuide, CarboxylicAcidsTasks, PhenolsGuide, PhenolsTasks } from '../Pages/organic'
+import {
+  AlkanesGuide,
+  AlkanesTasks,
+  AlkenesGuide,
+  AlkenesTasks,
+  AlkynesGuide,
+  AlkynesTasks,
+  AlcoholsGuide,
+  AlcoholsTasks,
+  CarboxylicAcidsGuide,
+  CarboxylicAcidsTasks,
+  PhenolsGuide,
+  PhenolsTasks,
+  EstersGuide,
+  EstersTasks
+} from '../Pages/organic'
 import PageTemplate from './layout/PageTemplate'
 
 
@@ -59,7 +74,7 @@ const Routes = (props: Props) => {
         },
         {
           path: 'esters',
-          element: <PageTemplate GuideLabel={t('navigation.esters.handbook')} Guide={<AlkynesGuide />} Tasks={<AlkynesTasks />} TasksLabel={t('navigation.esters.tasks')} />,
+          element: <PageTemplate GuideLabel={t('navigation.esters.handbook')} Guide={<EstersGuide />} Tasks={<EstersTasks />} TasksLabel={t('navigation.esters.tasks')} />,
         },
         {
           path: 'carbohydrates',
