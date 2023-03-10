@@ -229,9 +229,13 @@
       "modelEthanol": "Model. Ethanol."
     },
     "phenols": {
-      "definitionText": "Phenols are organic compounds that contain a phenol functional group, consisting of a hydroxyl group bonded to a benzene ring.",
-      "definitionCredits": "",
-      "modelPhenol": "Model: Phenol."
+      "definitionText": "Phenols are hydroxyl derivatives of benzene. They can contain one or several hydroxyl groups in the benzene ring.",
+      "definitionCredits": "S.A. Litvinova and N.V. Mankevich, \"Organic Chemistry via Tables\"",
+      "isomerism": {},
+      "physicalProperties": "Phenol is a colorless crystalline substance with a characteristic odor. It turns pink in air. It is poorly soluble in water, but dissolves completely at temperatures above 70°C. It is highly toxic.",
+      "production": {},
+      "applications": {},
+      "modelPhenol": "Model. Phenol."
     },
     "aldehydes_ketones": {
       "definitionText": "Aldehydes and ketones are organic compounds that contain a carbonyl functional group, consisting of a carbon atom double-bonded to an oxygen atom.",

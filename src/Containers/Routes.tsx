@@ -3,8 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { Navigate, useRoutes } from 'react-router'
 
 import Home from '../Pages/Home'
-import { AlkanesGuide, AlkanesTasks, AlkenesGuide, AlkenesTasks, AlkynesGuide, AlkynesTasks, AlcoholsGuide, AlcoholsTasks } from '../Pages/organic'
-import { CarboxylicAcidsGuide, CarboxylicAcidsTasks } from '../Pages/organic/carboxylicAcids'
+import { AlkanesGuide, AlkanesTasks, AlkenesGuide, AlkenesTasks, AlkynesGuide, AlkynesTasks, AlcoholsGuide, AlcoholsTasks, CarboxylicAcidsGuide, CarboxylicAcidsTasks, PhenolsGuide, PhenolsTasks } from '../Pages/organic'
 import PageTemplate from './layout/PageTemplate'
 
 
@@ -48,7 +47,7 @@ const Routes = (props: Props) => {
         },
         {
           path: 'phenols',
-          element: <PageTemplate GuideLabel={t('navigation.phenols.handbook')} Guide={<AlkynesGuide />} Tasks={<AlkynesTasks />} TasksLabel={t('navigation.phenols.tasks')} />,
+          element: <PageTemplate GuideLabel={t('navigation.phenols.handbook')} Guide={<PhenolsGuide />} Tasks={<PhenolsTasks />} TasksLabel={t('navigation.phenols.tasks')} />,
         },
         {
           path: 'aldehydes_ketones',
