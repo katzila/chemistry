@@ -15,7 +15,7 @@ const LayoutContainer = (props: Props) => {
   return (
     <div id='app' >
       <Header />
-      <Box >
+      <Box component="div" >
         {props.children}
       </Box>
     </div>

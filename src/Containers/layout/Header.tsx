@@ -57,7 +57,7 @@ const Header = () => {
         >
           {t('navigation.title')}
         </Typography>
-        <Box sx={{ flexGrow: 1, display: { xs: 'flex' }, alignSelf: 'stretch' }}>
+        <Box component="div" sx={{ flexGrow: 1, display: { xs: 'flex' }, alignSelf: 'stretch' }}>
           <Button
             id="organic-button"
             sx={{ my: 2, color: 'inherit', display: 'block', margin: 0 }}

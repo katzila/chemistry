@@ -25,9 +25,9 @@ export const AlcoholsGuide = () => {
     <Paper
       role="tabpanel"
     >
-      <Box sx={{ p: 2, display: 'flex' }}>
-        <Box sx={{ width: '50%', pr: 2, display: 'flex', flexDirection: 'column', gap: '20px' }}>
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+      <Box component="div" sx={{ p: 2, display: 'flex' }}>
+        <Box component="div" sx={{ width: '50%', pr: 2, display: 'flex', flexDirection: 'column', gap: '20px' }}>
+          <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
             <Typography variant='h5'>{t('guide.definitionTitle')}</Typography>
             <Paper elevation={0} sx={{ p: 1, borderLeft: 'solid 3px #bbbbbb' }}>
               <p>
@@ -39,16 +39,16 @@ export const AlcoholsGuide = () => {
             </Paper>
           </Box>
 
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+          <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
             <Typography variant='h5'>{t('guide.empiricalFormula')}</Typography>
             <Typography variant='h5' sx={{ fontStyle: 'italic' }}>
               {empiricalFormula1} {t('common.or')} {empiricalFormula2} {t('common.or')} {empiricalFormula3}
             </Typography>
           </Box>
 
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+          <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
             <Typography variant='h5'>{t('guide.isomerism')}</Typography>
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+            <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
               <ol>
                 <li>
                   <Typography variant='h6'>{t('guide.alcohols.isomerism.1')}</Typography>
@@ -70,14 +70,14 @@ export const AlcoholsGuide = () => {
             </Box>
           </Box>
 
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+          <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
             <Typography variant='h5'>{t('guide.physicalProperties')}</Typography>
             <p>
               {t('guide.alcohols.physicalProperties')}
             </p>
           </Box>
 
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+          <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
             <Typography variant='h5'>{t('guide.production')}</Typography>
             <ol>
               <li>
@@ -104,7 +104,7 @@ export const AlcoholsGuide = () => {
             </ol>
           </Box>
 
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+          <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
             <Typography variant='h5'>{t('guide.applications')}</Typography>
             <ul>
               <li>{t('guide.alcohols.applications.foodIndustry')}</li>
@@ -116,14 +116,14 @@ export const AlcoholsGuide = () => {
           </Box>
 
         </Box>
-        <Box sx={{ width: '50%', pl: 2, textAlign: 'center', display: 'flex', flexDirection: 'column', gap: '20px' }}>
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+        <Box component="div" sx={{ width: '50%', pl: 2, textAlign: 'center', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+          <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
             <iframe title='ethanol' src="/ethanol.html?autorotate&no_social" width="100%" //temporary
               height="600px" frameBorder="0" style={{ boxShadow: '0 0 10px rgba(0,0,0,0.5)' }} ></iframe>
             <Typography variant='subtitle1' fontWeight='bold' >{t('guide.alcohols.modelEthanol')}</Typography>
           </Box>
 
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+          <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
             <img src={alcoholsScheme} alt="alcoholsScheme" style={{ maxWidth: '100%' }} />
             <Typography variant='subtitle1' fontWeight='bold' >{t('guide.chemicalProperties')}</Typography>
           </Box>

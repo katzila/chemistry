@@ -15,10 +15,9 @@ const queryClient = new QueryClient();
 const App = (props: Props) => {
   // const [mode, setMode] = React.useState('light')
 
-
   return (
     <QueryClientProvider client={queryClient} >
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <ThemeProvider theme={theme}>
           <LayoutContainer>
             <Routes />

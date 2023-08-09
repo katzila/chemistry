@@ -9,7 +9,7 @@ export const EstersTasks = (props: Props) => {
 
   return (
     <Paper  >
-      <Box sx={{ p: 3 }}>
+      <Box component="div" sx={{ p: 3 }}>
         <Typography>EstersTasks</Typography>
       </Box>
     </Paper>

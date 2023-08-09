@@ -7,6 +7,7 @@ import Isomer3 from '../../../assets/alkanes/isomer3.png'
 import Production1 from '../../../assets/alkanes/production1.png'
 import Production2 from '../../../assets/alkanes/production2.png'
 import alkanesScheme from '../../../assets/alkanes/alkanesScheme.svg'
+import ModelViewer from '../../../ModelViewer';
 
 
 export const AlkanesGuide = () => {
@@ -16,9 +17,9 @@ export const AlkanesGuide = () => {
     <Paper
       role="tabpanel"
     >
-      <Box sx={{ p: 2, display: 'flex' }}>
-        <Box sx={{ width: '50%', pr: 2, display: 'flex', flexDirection: 'column', gap: '20px' }}>
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+      <Box component="div" sx={{ p: 2, display: 'flex' }}>
+        <Box component="div" sx={{ width: '50%', pr: 2, display: 'flex', flexDirection: 'column', gap: '20px' }}>
+          <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
             <Typography variant='h5'>{t('guide.definitionTitle')}</Typography>
             <Paper elevation={0} sx={{ p: 1, borderLeft: 'solid 3px #bbbbbb' }}>
               <p>
@@ -30,20 +31,20 @@ export const AlkanesGuide = () => {
             </Paper>
           </Box>
 
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+          <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
             <Typography variant='h5'>{t('guide.empiricalFormula')}</Typography>
             <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>C<sub>n</sub>H<sub>2n+2</sub></Typography>
           </Box>
 
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+          <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
             <Typography variant='h5'>{t('guide.structureFormulas')}</Typography>
             <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>CH<sub>4</sub></Typography>
             <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>CH<sub>3</sub> &#8722; CH<sub>3</sub></Typography>
           </Box>
 
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+          <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
             <Typography variant='h5'>{t('guide.isomerism')}</Typography>
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+            <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
               <Typography variant='h6'>{t('guide.branchingCarbonSkeleton')}</Typography>
               <img src={Isomer1} alt='Isomer1' style={{ width: '315px', maxWidth: '100%' }} />
 
@@ -53,14 +54,14 @@ export const AlkanesGuide = () => {
             </Box>
           </Box>
 
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+          <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
             <Typography variant='h5'>{t('guide.physicalProperties')}</Typography>
             <p>
               {t('guide.alkanes.physicalProperties')}
             </p>
           </Box>
 
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+          <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
             <Typography variant='h5'>{t('guide.production')}</Typography>
             <ol>
               <li>
@@ -75,7 +76,7 @@ export const AlkanesGuide = () => {
             </ol>
           </Box>
 
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+          <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
             <Typography variant='h5'>{t('guide.applications')}</Typography>
             <ul>
               <li>{t('guide.alkanes.applications.freons')}</li>
@@ -88,14 +89,16 @@ export const AlkanesGuide = () => {
           </Box>
 
         </Box>
-        <Box sx={{ width: '50%', pl: 2, textAlign: 'center', display: 'flex', flexDirection: 'column', gap: '20px' }}>
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
-            <iframe title='pentane' src="/pentane.html?autorotate&no_social" width="100%" //temporary
-              height="600px" frameBorder="0" style={{ boxShadow: '0 0 10px rgba(0,0,0,0.5)' }} ></iframe>
+        <Box component="div" sx={{ width: '50%', pl: 2, textAlign: 'center', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+          <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+            <ModelViewer scale={4} modelPath={"/pentane.glb"} />
+            {/* <PentaneCanvas /> */}
+            {/* <iframe title='pentane' src="/pentane.html?autorotate&no_social" width="100%" //temporary
+              height="600px" frameBorder="0" style={{ boxShadow: '0 0 10px rgba(0,0,0,0.5)' }} ></iframe> */}
             <Typography variant='subtitle1' fontWeight='bold' >{t('guide.alkanes.modelPentane')}</Typography>
           </Box>
 
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+          <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
             <img src={alkanesScheme} alt="alkanesScheme" style={{ maxWidth: '100%' }} />
             <Typography variant='subtitle1' fontWeight='bold' >{t('guide.chemicalProperties')}</Typography>
           </Box>

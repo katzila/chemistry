@@ -9,7 +9,7 @@ export const AlkanesTasks = (props: Props) => {
 
   return (
     <Paper  >
-      <Box sx={{ p: 3 }}>
+      <Box component="div" sx={{ p: 3 }}>
         <Typography>AlkanesTasks</Typography>
       </Box>
     </Paper>

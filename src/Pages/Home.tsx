@@ -5,7 +5,7 @@ type Props = {}
 
 const Home = (props: Props) => {
   return (
-    <Box sx={{ padding: '1em' }}>
+    <Box component="div" sx={{ padding: '1em' }}>
       <Paper sx={{ p: 3 }}>
         <Typography variant='h5'>
           О сайте

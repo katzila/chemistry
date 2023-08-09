@@ -18,14 +18,14 @@ const PageTemplate = (props: PageTemplateProps) => {
     setValue(newValue);
   };
   return (
-    <Box sx={{ width: '100%' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+    <Box component="div" sx={{ width: '100%' }}>
+      <Box component="div" sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} variant='fullWidth'>
           <Tab label={GuideLabel} value='guide' />
           <Tab label={TasksLabel} value='tasks' />
         </Tabs>
       </Box>
-      <Box sx={{ p: 2 }}>
+      <Box component="div" sx={{ p: 2 }}>
         {value === 'guide' && Guide}
         {value === 'tasks' && Tasks}
       </Box>
