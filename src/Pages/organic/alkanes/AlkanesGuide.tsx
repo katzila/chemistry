@@ -91,10 +91,10 @@ export const AlkanesGuide = () => {
         </Box>
         <Box component="div" sx={{ width: '50%', pl: 2, textAlign: 'center', display: 'flex', flexDirection: 'column', gap: '20px' }}>
           <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
-            <ModelViewer scale={4} modelPath={"/pentane.glb"} />
-            {/* <PentaneCanvas /> */}
-            {/* <iframe title='pentane' src="/pentane.html?autorotate&no_social" width="100%" //temporary
-              height="600px" frameBorder="0" style={{ boxShadow: '0 0 10px rgba(0,0,0,0.5)' }} ></iframe> */}
+            <ModelViewer
+              scale={4}
+              modelPath={"/pentane.glb"}
+            />
             <Typography variant='subtitle1' fontWeight='bold' >{t('guide.alkanes.modelPentane')}</Typography>
           </Box>
 
