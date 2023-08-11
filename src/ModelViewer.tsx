@@ -16,8 +16,9 @@ const ModelViewer: FC<ModelViewerProps> = ({ modelPath, scale = 40, position = [
   return (
     <Canvas
       style={{
-        width: '100%',
+        width: 'auto',
         height: '600px',
+        margin: '-8px'
       }}
       onMouseEnter={() => hover(true)}
       onMouseLeave={() => hover(false)}

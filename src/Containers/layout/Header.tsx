@@ -46,7 +46,8 @@ const Header = () => {
           component={Link}
           to='/'
           sx={{
-            mr: 2,
+            mr: 1,
+            p: 1,
             display: { xs: 'none', md: 'flex' },
             fontFamily: 'monospace',
             fontWeight: 700,
