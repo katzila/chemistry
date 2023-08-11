@@ -2,11 +2,11 @@ import React, { FC } from 'react'
 import { Typography } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 
-import { compoundName } from '../types'
+import { organicCompoundName } from '../types'
 
 
 interface CompoundEmpiricalFormulaProps {
-  compound: compoundName
+  compound: organicCompoundName
 }
 
 const CompoundEmpiricalFormula: FC<CompoundEmpiricalFormulaProps> = (props) => {

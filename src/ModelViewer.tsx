@@ -1,4 +1,5 @@
 import React, { Suspense, FC, useState } from "react";
+import { useMediaQuery, useTheme } from "@mui/material";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 
@@ -13,6 +14,10 @@ interface ModelViewerProps {
 
 const ModelViewer: FC<ModelViewerProps> = ({ modelPath, scale = 40, position = [0, 0, 0] }) => {
   const [hovered, hover] = useState(false);
+  const theme = useTheme()
+  const sm = useMediaQuery(theme.breakpoints.up('sm'))
+  const md = useMediaQuery(theme.breakpoints.up('md'))
+
   return (
     <Canvas
       style={{
@@ -57,7 +62,7 @@ const ModelViewer: FC<ModelViewerProps> = ({ modelPath, scale = 40, position = [
       <Suspense fallback={null}>
         <GLTFModel
           modelPath={process.env.PUBLIC_URL + modelPath}
-          scale={scale}
+          scale={md ? scale : sm ? scale * 3 / 4 : scale * 1 / 2}
           position={position}
           hovered={hovered}
         />

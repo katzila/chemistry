@@ -1,11 +1,11 @@
 import React, { FC } from 'react'
 import { Box } from '@mui/material'
 
-import { compoundName } from '../../types'
+import { organicCompoundName } from '../../types'
 
 
 interface TasksTemplateProps {
-  compound: compoundName
+  compound: organicCompoundName
 }
 
 const TasksTemplate: FC<TasksTemplateProps> = (props) => {

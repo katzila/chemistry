@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import i18next from 'i18next'
-import { Button, Menu, MenuItem } from '@mui/material'
+import { Button, Menu, MenuItem, useMediaQuery, useTheme } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 
 
 const LanguageDropdown = () => {
   const [anchorElLanguage, setAnchorElLanguage] = useState<null | HTMLElement>(null)
   const [t] = useTranslation()
+  const theme = useTheme()
+  const sm = useMediaQuery(theme.breakpoints.up('sm'))
 
   const openLanguage = !!anchorElLanguage
 
@@ -29,10 +31,15 @@ const LanguageDropdown = () => {
     <>
       <Button
         id="language-button"
-        sx={{ my: 2, color: 'inherit', display: 'block', margin: 0, alignSelf: 'stretch' }}
+        sx={{ 
+          color: 'inherit', 
+          display: 'block', 
+          m: 0, 
+          alignSelf: 'stretch'
+         }}
         onClick={handleClick}
       >
-        {t(`navigation.languages.${i18next.language as 'en' | 'ru'}`)}
+        {t(`navigation.languages.${i18next.language as 'en' | 'ru'}`).slice(0, sm ? undefined : 2)}
       </Button>
       <Menu
         id="language-menu"
@@ -41,6 +48,7 @@ const LanguageDropdown = () => {
         onClose={() => setAnchorElLanguage(null)}
         MenuListProps={{
           'aria-labelledby': 'language-button',
+          sx: { textDecoration: 'none' },
         }}
         anchorOrigin={{
           vertical: 'bottom',
@@ -51,11 +59,17 @@ const LanguageDropdown = () => {
           horizontal: 'right',
         }}
       >
-        <MenuItem sx={{ textDecoration: 'none' }} onClick={() => changeLanguage('en')}>
-          {t('navigation.languages.en')}
+        <MenuItem
+          onClick={() => changeLanguage('en')}
+          title={t('navigation.languages.en')}
+        >
+          English
         </MenuItem>
-        <MenuItem sx={{ textDecoration: 'none' }} onClick={() => changeLanguage('ru')}>
-          {t('navigation.languages.ru')}
+        <MenuItem
+          onClick={() => changeLanguage('ru')}
+          title={t('navigation.languages.ru')}
+        >
+          Русский
         </MenuItem>
       </Menu>
     </>
