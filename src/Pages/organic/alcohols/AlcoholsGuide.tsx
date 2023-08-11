@@ -120,7 +120,7 @@ export const AlcoholsGuide = () => {
           <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
             <iframe title='ethanol' src="/ethanol.html?autorotate&no_social" width="100%" //temporary
               height="600px" frameBorder="0" style={{ boxShadow: '0 0 10px rgba(0,0,0,0.5)' }} ></iframe>
-            <Typography variant='subtitle1' fontWeight='bold' >{t('guide.alcohols.modelEthanol')}</Typography>
+            <Typography variant='subtitle1' fontWeight='bold' >{t('guide.alcohols.model')}</Typography>
           </Box>
 
           <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>

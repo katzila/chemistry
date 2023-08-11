@@ -1,20 +1,23 @@
+import React, { useEffect, useState } from 'react'
 import { Box, Tab, Tabs } from '@mui/material';
-import React, { ReactNode, useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+
+import { compoundName } from '../../types';
+import GuideTemplate from './GuideTemplate';
+import TasksTemplate from './TasksTemplate';
 
 
 interface PageTemplateProps {
-  Guide: ReactNode
-  Tasks: ReactNode
-  GuideLabel: string
-  TasksLabel: string
+  compound: compoundName
 }
 
 const PageTemplate = (props: PageTemplateProps) => {
-  const { Guide, GuideLabel, Tasks, TasksLabel } = props
+  const { compound } = props
   const [searchParams, setSearchParams] = useSearchParams()
   const searchParamsTab = searchParams.get('tab') === 'tasks' ? 'tasks' : 'guide'
   const [value, setValue] = useState(searchParamsTab)
+  const [t] = useTranslation()
 
   const handleChange = (_e: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
@@ -32,12 +35,12 @@ const PageTemplate = (props: PageTemplateProps) => {
     <Box component="div" sx={{ width: '100%' }}>
       <Box component="div" sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} variant='fullWidth'>
-          <Tab label={GuideLabel} value='guide' />
-          <Tab label={TasksLabel} value='tasks' />
+          <Tab label={t(`navigation.${compound}.handbook`)} value='guide' />
+          <Tab label={t(`navigation.${compound}.tasks`)} value='tasks' />
         </Tabs>
       </Box>
-      {value === 'guide' && Guide}
-      {value === 'tasks' && Tasks}
+      {value === 'guide' && <GuideTemplate compound={compound} />}
+      {value === 'tasks' && <TasksTemplate compound={compound} />}
     </Box>
   )
 }

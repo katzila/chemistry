@@ -1,18 +1,25 @@
+import { useEffect, FC } from 'react';
 import { Box, Link, Paper, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { Link as RouterLink, useLocation, useSearchParams } from 'react-router-dom';
-import { useEffect } from 'react';
 
-import Isomer1 from '../../../assets/alkanes/isomer1.png'
-import Isomer2 from '../../../assets/alkanes/isomer2.png'
-import Isomer3 from '../../../assets/alkanes/isomer3.png'
-import Production1 from '../../../assets/alkanes/production1.png'
-import Production2 from '../../../assets/alkanes/production2.png'
-import alkanesScheme from '../../../assets/alkanes/alkanesScheme.svg'
-import ModelViewer from '../../../ModelViewer';
+import Isomer1 from '../../assets/alkanes/isomer1.png'
+import Isomer2 from '../../assets/alkanes/isomer2.png'
+import Isomer3 from '../../assets/alkanes/isomer3.png'
+import Production1 from '../../assets/alkanes/production1.png'
+import Production2 from '../../assets/alkanes/production2.png'
+import alkanesScheme from '../../assets/alkanes/alkanesScheme.svg'
+import ModelViewer from '../../ModelViewer';
+import { compoundName } from '../../types';
+import CompoundEmpiricalFormula from '../../components/CompoundEmpiricalFormula';
 
 
-export const AlkanesGuide = () => {
+interface GuideTemplateProps {
+  compound: compoundName
+}
+
+const GuideTemplate: FC<GuideTemplateProps> = (props) => {
+  const { compound } = props
   const [t] = useTranslation()
   const [searchParams] = useSearchParams()
   const location = useLocation()
@@ -52,8 +59,8 @@ export const AlkanesGuide = () => {
           sx={{
             display: 'flex',
             flexDirection: 'column',
-            gap: '10px',
-            p: 1,
+            gap: '20px',
+            p: 2,
           }}
           id='definition'
         >
@@ -67,10 +74,10 @@ export const AlkanesGuide = () => {
           </Link>
           <Paper elevation={0} sx={{ p: 1, borderLeft: 'solid 3px #bbbbbb' }}>
             <p>
-              {t('guide.alkanes.definitionText')}
+              {t(`guide.${compound}.definitionText`)}
             </p>
             <Typography variant='caption'>
-              {t('guide.alkanes.definitionCredits')}
+              {t(`guide.${compound}.definitionCredits`)}
             </Typography>
           </Paper>
         </Paper>
@@ -80,8 +87,8 @@ export const AlkanesGuide = () => {
           sx={{
             display: 'flex',
             flexDirection: 'column',
-            gap: '10px',
-            p: 1,
+            gap: '20px',
+            p: 2,
           }}
           id='empiricalFormula'
         >
@@ -93,7 +100,7 @@ export const AlkanesGuide = () => {
           >
             {t('guide.empiricalFormula')}
           </Link>
-          <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>C<sub>n</sub>H<sub>2n+2</sub></Typography>
+          <CompoundEmpiricalFormula compound={compound} />
         </Paper>
 
         <Paper
@@ -101,8 +108,8 @@ export const AlkanesGuide = () => {
           sx={{
             display: 'flex',
             flexDirection: 'column',
-            gap: '10px',
-            p: 1,
+            gap: '20px',
+            p: 2,
           }}
           id='structureFormulas'
         >
@@ -114,8 +121,10 @@ export const AlkanesGuide = () => {
           >
             {t('guide.structureFormulas')}
           </Link>
-          <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>CH<sub>4</sub></Typography>
-          <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>CH<sub>3</sub> &#8722; CH<sub>3</sub></Typography>
+          <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+            <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>CH<sub>4</sub></Typography>
+            <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>CH<sub>3</sub> &#8722; CH<sub>3</sub></Typography>
+          </Box>
         </Paper>
 
         <Paper
@@ -123,8 +132,8 @@ export const AlkanesGuide = () => {
           sx={{
             display: 'flex',
             flexDirection: 'column',
-            gap: '10px',
-            p: 1,
+            gap: '20px',
+            p: 2,
           }}
           id='isomerism'
         >
@@ -151,8 +160,8 @@ export const AlkanesGuide = () => {
           sx={{
             display: 'flex',
             flexDirection: 'column',
-            gap: '10px',
-            p: 1,
+            gap: '20px',
+            p: 2,
           }}
           id='physicalProperties'
         >
@@ -165,7 +174,7 @@ export const AlkanesGuide = () => {
             {t('guide.physicalProperties')}
           </Link>
           <p>
-            {t('guide.alkanes.physicalProperties')}
+            {t(`guide.${compound}.physicalProperties`)}
           </p>
         </Paper>
 
@@ -174,8 +183,8 @@ export const AlkanesGuide = () => {
           sx={{
             display: 'flex',
             flexDirection: 'column',
-            gap: '10px',
-            p: 1,
+            gap: '20px',
+            p: 2,
           }}
           id='production'
         >
@@ -205,8 +214,8 @@ export const AlkanesGuide = () => {
           sx={{
             display: 'flex',
             flexDirection: 'column',
-            gap: '10px',
-            p: 1,
+            gap: '20px',
+            p: 2,
           }}
           id='applications'
         >
@@ -246,8 +255,8 @@ export const AlkanesGuide = () => {
           sx={{
             display: 'flex',
             flexDirection: 'column',
-            gap: '10px',
-            p: 1,
+            gap: '20px',
+            p: 2,
           }}
           id='model'
         >
@@ -262,7 +271,7 @@ export const AlkanesGuide = () => {
             component={RouterLink}
             to={`${searchParams.toString() ? `?${searchParams.toString()}` : ''}#model`}
           >
-            {t('guide.alkanes.model')}
+            {t(`guide.${compound}.model`)}
           </Link>
         </Paper>
 
@@ -271,8 +280,8 @@ export const AlkanesGuide = () => {
           sx={{
             display: 'flex',
             flexDirection: 'column',
-            gap: '10px',
-            p: 1,
+            gap: '20px',
+            p: 2,
           }}
           id='chemicalProperties'
         >
@@ -292,4 +301,4 @@ export const AlkanesGuide = () => {
   )
 }
 
-export default AlkanesGuide
+export default GuideTemplate

@@ -112,7 +112,7 @@ export const CarboxylicAcidsGuide = () => {
           <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
             <iframe title='formicAcid' src="/formicAcid.html?autorotate&no_social" width="100%" //temporary
               height="600px" frameBorder="0" style={{ boxShadow: '0 0 10px rgba(0,0,0,0.5)' }} ></iframe>
-            <Typography variant='subtitle1' fontWeight='bold' >{t('guide.carboxylicAcids.modelFormicAcid')}</Typography>
+            <Typography variant='subtitle1' fontWeight='bold' >{t('guide.carboxylicAcids.model')}</Typography>
           </Box>
 
           <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>

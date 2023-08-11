@@ -142,7 +142,7 @@
         "detergents": "Detergents",
         "fuel": "Fuel"
       },
-      "modelPentane": "Model. Pentane."
+      "model": "Model. Pentane."
     },
     "cycloalkanes": {
       "definitionText": "Cycloalkanes are organic compounds that consist of hydrogen and carbon atoms, where all of the carbon–carbon bonds are single, and the molecule is cyclic.",
@@ -153,7 +153,7 @@
         "solvents": "Solvents",
         "fuel": "Fuel"
       },
-      "modelCyclopentane": "Model. Cyclopentane."
+      "model": "Model. Cyclopentane."
     },
     "alkenes": {
       "definitionText": "Alkenes are organic compounds that consist of hydrogen and carbon atoms, where at least one carbon–carbon double bond is present.",
@@ -171,7 +171,7 @@
         "photoreagents": "Photoreagents",
         "dyes": "Dyes"
       },
-      "modelPentene": "Model. Pentene-1."
+      "model": "Model. Pentene-1."
     },
     "alkynes": {
       "definitionText": "Alkynes are organic compounds that consist of hydrogen and carbon atoms, where at least one carbon–carbon triple bond is present.",
@@ -189,7 +189,7 @@
         "metalCuttingWelding": "Metal cutting, welding",
         "arenes": "Arenes"
       },
-      "modelPentyne": "Model. Pentyne-1."
+      "model": "Model. Pentyne-1."
     },
     "arenes": {
       "definitionText": "Arenes are organic compounds that consist of hydrogen and carbon atoms, where at least one carbon–carbon double bond is present.",
@@ -200,7 +200,7 @@
         "solvents": "Solvents",
         "fuel": "Fuel"
       },
-      "modelBenzene": "Model: Benzene."
+      "model": "Model: Benzene."
     },
     "alcohols": {
       "definitionText": "Alcohols are organic compounds that contain an alcohol functional group, consisting of a hydroxyl group bonded to a carbon atom.",
@@ -226,7 +226,7 @@
         "fuel": "Fuel",
         "chemicalReagent": "Chemical Reagent"
       },
-      "modelEthanol": "Model. Ethanol."
+      "model": "Model. Ethanol."
     },
     "phenols": {
       "definitionText": "Phenols are hydroxyl derivatives of benzene. They can contain one or several hydroxyl groups in the benzene ring.",
@@ -235,17 +235,19 @@
       "physicalProperties": "Phenol is a colorless crystalline substance with a characteristic odor. It turns pink in air. It is poorly soluble in water, but dissolves completely at temperatures above 70°C. It is highly toxic.",
       "production": {},
       "applications": {},
-      "modelPhenol": "Model. Phenol."
+      "model": "Model. Phenol."
     },
     "aldehydes_ketones": {
       "definitionText": "Aldehydes and ketones are organic compounds that contain a carbonyl functional group, consisting of a carbon atom double-bonded to an oxygen atom.",
       "definitionCredits": "",
-      "modelFormaldehyde": "Model: Formaldehyde."
+      "physicalProperties": "First 3 alkanes are gases. Alkanes starting from pentane are liquids. Alkanes starting from C16 are solids. Alkanes are insoluble in water. Alkanes are soluble in organic solvents. Unbranched alkanes have higher boiling points than branched alkanes.",
+      "model": "Model: Formaldehyde."
     },
     "ethers": {
       "definitionText": "Ethers are organic compounds that contain an ether functional group, consisting of two carbon atoms bonded to an oxygen atom.",
       "definitionCredits": "",
-      "modelDiethylEther": "Model: Diethyl Ether."
+      "physicalProperties": "First 3 alkanes are gases. Alkanes starting from pentane are liquids. Alkanes starting from C16 are solids. Alkanes are insoluble in water. Alkanes are soluble in organic solvents. Unbranched alkanes have higher boiling points than branched alkanes.",
+      "model": "Model: Diethyl Ether."
     },
     "carboxylicAcids": {
       "definitionText": "Carboxylic acids are a class of organic compounds whose molecules contain one or more functional carboxyl groups - COOH.",
@@ -270,7 +272,7 @@
         "dyes": "Dyes",
         "pesticides": "Pesticides"
       },
-      "modelFormicAcid": "Model. Formic Acid."
+      "model": "Model. Formic Acid."
     },
     "esters": {
       "definitionText": "Esters are derivatives of acids (both organic and inorganic), where the hydrogen atom in the COOH carboxyl group is replaced by a hydrocarbon radical.",
@@ -290,22 +292,25 @@
         "plasticizers": "Plasticizers to lower temperature",
         "synthesis": "Used in the synthesis of tertiary alcohols"
       },
-      "modelEthylMethylEther": "Model: Ethyl methyl ether."
+      "model": "Model: Ethyl methyl ether."
     },
     "carbohydrates": {
       "definitionText": "Carbohydrates are organic compounds that contain carbon, hydrogen, and oxygen in the ratio of Cn(H2O)n, where n is a positive integer.",
       "definitionCredits": "",
-      "modelGlucose": "Model: Glucose."
+      "physicalProperties": "First 3 alkanes are gases. Alkanes starting from pentane are liquids. Alkanes starting from C16 are solids. Alkanes are insoluble in water. Alkanes are soluble in organic solvents. Unbranched alkanes have higher boiling points than branched alkanes.",
+      "model": "Model: Glucose."
     },
     "amines": {
       "definitionText": "Amines are organic compounds that contain a nitrogen atom bonded to one or more carbon atoms.",
       "definitionCredits": "",
-      "modelEthanamine": "Model: Ethanamine."
+      "physicalProperties": "First 3 alkanes are gases. Alkanes starting from pentane are liquids. Alkanes starting from C16 are solids. Alkanes are insoluble in water. Alkanes are soluble in organic solvents. Unbranched alkanes have higher boiling points than branched alkanes.",
+      "model": "Model: Ethanamine."
     },
     "amino_acids": {
       "definitionText": "Amino acids are organic compounds that contain both a carboxyl group (-COOH) and an amino group (-NH2).",
       "definitionCredits": "",
-      "modelAlanine": "Model: Alanine."
+      "physicalProperties": "First 3 alkanes are gases. Alkanes starting from pentane are liquids. Alkanes starting from C16 are solids. Alkanes are insoluble in water. Alkanes are soluble in organic solvents. Unbranched alkanes have higher boiling points than branched alkanes.",
+      "model": "Model: Alanine."
     }
   }
 }

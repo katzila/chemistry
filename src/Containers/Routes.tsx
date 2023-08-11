@@ -1,34 +1,13 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next'
 import { Navigate, useRoutes } from 'react-router'
 
 import Home from '../Pages/Home'
-import {
-  AlkanesGuide,
-  AlkanesTasks,
-  AlkenesGuide,
-  AlkenesTasks,
-  AlkynesGuide,
-  AlkynesTasks,
-  AlcoholsGuide,
-  AlcoholsTasks,
-  CarboxylicAcidsGuide,
-  CarboxylicAcidsTasks,
-  PhenolsGuide,
-  PhenolsTasks,
-  EstersGuide,
-  EstersTasks
-} from '../Pages/organic'
 import PageTemplate from './layout/PageTemplate'
 
 
+const Routes = () => {
 
-type Props = {}
-
-const Routes = (props: Props) => {
-  const [t] = useTranslation()
-
-  let routes = useRoutes([
+  const routes = useRoutes([
     {
       path: '/',
       element: <Home />,
@@ -38,55 +17,55 @@ const Routes = (props: Props) => {
       children: [
         {
           path: 'alkanes',
-          element: <PageTemplate GuideLabel={t('navigation.alkanes.handbook')} Guide={<AlkanesGuide />} Tasks={<AlkanesTasks />} TasksLabel={t('navigation.alkanes.tasks')} />,
+          element: <PageTemplate compound='alkanes' />,
         },
         {
           path: 'cycloalkanes',
-          element: <PageTemplate GuideLabel={t('navigation.cycloalkanes.handbook')} Guide={<AlkanesGuide />} Tasks={<AlkanesTasks />} TasksLabel={t('navigation.cycloalkanes.tasks')} />,
+          element: <PageTemplate compound='cycloalkanes' />,
         },
         {
           path: 'alkenes',
-          element: <PageTemplate GuideLabel={t('navigation.alkenes.handbook')} Guide={<AlkenesGuide />} Tasks={<AlkenesTasks />} TasksLabel={t('navigation.alkenes.tasks')} />,
+          element: <PageTemplate compound='alkenes' />,
         },
         {
           path: 'alkynes',
-          element: <PageTemplate GuideLabel={t('navigation.alkynes.handbook')} Guide={<AlkynesGuide />} Tasks={<AlkynesTasks />} TasksLabel={t('navigation.alkynes.tasks')} />,
+          element: <PageTemplate compound='alkynes' />,
         },
         {
           path: 'arenes',
-          element: <PageTemplate GuideLabel={t('navigation.arenes.handbook')} Guide={<AlkynesGuide />} Tasks={<AlkynesTasks />} TasksLabel={t('navigation.arenes.tasks')} />,
+          element: <PageTemplate compound='arenes' />,
         },
         {
           path: 'alcohols',
-          element: <PageTemplate GuideLabel={t('navigation.alcohols.handbook')} Guide={<AlcoholsGuide />} Tasks={<AlcoholsTasks />} TasksLabel={t('navigation.alcohols.tasks')} />,
+          element: <PageTemplate compound='alcohols' />,
         },
         {
           path: 'phenols',
-          element: <PageTemplate GuideLabel={t('navigation.phenols.handbook')} Guide={<PhenolsGuide />} Tasks={<PhenolsTasks />} TasksLabel={t('navigation.phenols.tasks')} />,
+          element: <PageTemplate compound='phenols' />,
         },
         {
           path: 'aldehydes_ketones',
-          element: <PageTemplate GuideLabel={t('navigation.aldehydes_ketones.handbook')} Guide={<AlkynesGuide />} Tasks={<AlkynesTasks />} TasksLabel={t('navigation.aldehydes_ketones.tasks')} />,
+          element: <PageTemplate compound='aldehydes_ketones' />,
         },
         {
           path: 'carboxylicAcids',
-          element: <PageTemplate GuideLabel={t('navigation.carboxylicAcids.handbook')} Guide={<CarboxylicAcidsGuide />} Tasks={<CarboxylicAcidsTasks />} TasksLabel={t('navigation.carboxylicAcids.tasks')} />,
+          element: <PageTemplate compound='carboxylicAcids' />,
         },
         {
           path: 'esters',
-          element: <PageTemplate GuideLabel={t('navigation.esters.handbook')} Guide={<EstersGuide />} Tasks={<EstersTasks />} TasksLabel={t('navigation.esters.tasks')} />,
+          element: <PageTemplate compound='esters' />,
         },
         {
           path: 'carbohydrates',
-          element: <PageTemplate GuideLabel={t('navigation.carbohydrates.handbook')} Guide={<AlkynesGuide />} Tasks={<AlkynesTasks />} TasksLabel={t('navigation.carbohydrates.tasks')} />,
+          element: <PageTemplate compound='carbohydrates' />,
         },
         {
           path: 'amines',
-          element: <PageTemplate GuideLabel={t('navigation.amines.handbook')} Guide={<AlkynesGuide />} Tasks={<AlkynesTasks />} TasksLabel={t('navigation.amines.tasks')} />,
+          element: <PageTemplate compound='amines' />,
         },
         {
           path: 'amino_acids',
-          element: <PageTemplate GuideLabel={t('navigation.amino_acids.handbook')} Guide={<AlkynesGuide />} Tasks={<AlkynesTasks />} TasksLabel={t('navigation.amino_acids.tasks')} />,
+          element: <PageTemplate compound='amino_acids' />,
         }
       ],
     },
@@ -94,19 +73,19 @@ const Routes = (props: Props) => {
       path: "/inorganic", children: [
         {
           path: 'alkali_metals',
-          element: <PageTemplate GuideLabel={t('navigation.alkali_metals.handbook')} Guide={<AlkanesGuide />} Tasks={<AlkanesTasks />} TasksLabel={t('navigation.alkali_metals.tasks')} />,
+          element: <PageTemplate compound='alkanes' />,
         },
         {
           path: 'alkaline_earth_metals',
-          element: <PageTemplate GuideLabel={t('navigation.alkaline_earth_metals.handbook')} Guide={<AlkanesGuide />} Tasks={<AlkanesTasks />} TasksLabel={t('navigation.alkaline_earth_metals.tasks')} />,
+          element: <PageTemplate compound='alkanes' />,
         },
         {
           path: 'transition_metals',
-          element: <PageTemplate GuideLabel={t('navigation.transition_metals.handbook')} Guide={<AlkanesGuide />} Tasks={<AlkanesTasks />} TasksLabel={t('navigation.transition_metals.tasks')} />,
+          element: <PageTemplate compound='alkanes' />,
         },
         {
           path: 'metalloids',
-          element: <PageTemplate GuideLabel={t('navigation.metalloids.handbook')} Guide={<AlkanesGuide />} Tasks={<AlkanesTasks />} TasksLabel={t('navigation.metalloids.tasks')} />,
+          element: <PageTemplate compound='alkanes' />,
         }
       ]
     },
