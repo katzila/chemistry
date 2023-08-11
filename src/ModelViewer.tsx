@@ -17,6 +17,8 @@ const ModelViewer: FC<ModelViewerProps> = ({ modelPath, scale = 40, position = [
   const theme = useTheme()
   const sm = useMediaQuery(theme.breakpoints.up('sm'))
   const md = useMediaQuery(theme.breakpoints.up('md'))
+  const lg = useMediaQuery(theme.breakpoints.up('lg'))
+  const xl = useMediaQuery(theme.breakpoints.up('xl'))
 
   return (
     <Canvas
@@ -62,7 +64,7 @@ const ModelViewer: FC<ModelViewerProps> = ({ modelPath, scale = 40, position = [
       <Suspense fallback={null}>
         <GLTFModel
           modelPath={process.env.PUBLIC_URL + modelPath}
-          scale={md ? scale : sm ? scale * 3 / 4 : scale * 1 / 2}
+          scale={xl ? scale : lg ? scale * 7 / 8 : md ? scale : sm ? scale * 7 / 8 : scale * 5 / 8}
           position={position}
           hovered={hovered}
         />
