@@ -243,12 +243,6 @@
       "physicalProperties": "First 3 alkanes are gases. Alkanes starting from pentane are liquids. Alkanes starting from C16 are solids. Alkanes are insoluble in water. Alkanes are soluble in organic solvents. Unbranched alkanes have higher boiling points than branched alkanes.",
       "model": "Model: Formaldehyde."
     },
-    "ethers": {
-      "definitionText": "Ethers are organic compounds that contain an ether functional group, consisting of two carbon atoms bonded to an oxygen atom.",
-      "definitionCredits": "",
-      "physicalProperties": "First 3 alkanes are gases. Alkanes starting from pentane are liquids. Alkanes starting from C16 are solids. Alkanes are insoluble in water. Alkanes are soluble in organic solvents. Unbranched alkanes have higher boiling points than branched alkanes.",
-      "model": "Model: Diethyl Ether."
-    },
     "carboxylicAcids": {
       "definitionText": "Carboxylic acids are a class of organic compounds whose molecules contain one or more functional carboxyl groups - COOH.",
       "definitionCredits": "S.A. Litvinova and N.V. Mankevich, \"Organic Chemistry via Tables\"",
