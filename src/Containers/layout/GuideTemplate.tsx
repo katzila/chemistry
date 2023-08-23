@@ -3,15 +3,14 @@ import { Box, Link, Paper, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { Link as RouterLink, useLocation, useSearchParams } from 'react-router-dom';
 
-import Isomer1 from '../../assets/alkanes/isomer1.png'
-import Isomer2 from '../../assets/alkanes/isomer2.png'
-import Isomer3 from '../../assets/alkanes/isomer3.png'
 import Production1 from '../../assets/alkanes/production1.png'
 import Production2 from '../../assets/alkanes/production2.png'
 import alkanesScheme from '../../assets/alkanes/alkanesScheme.svg'
 import ModelViewer from '../../ModelViewer';
 import { organicCompoundName } from '../../types';
 import CompoundEmpiricalFormula from '../../components/CompoundEmpiricalFormula';
+import CompoundStructureFormulas from '../../components/CompoundStructureFormulas';
+import CompoundIsomerism from '../../components/CompoundIsomerism';
 
 
 interface GuideTemplateProps {
@@ -82,78 +81,11 @@ const GuideTemplate: FC<GuideTemplateProps> = (props) => {
           </Paper>
         </Paper>
 
-        <Paper
-          elevation={3}
-          sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '20px',
-            p: 2,
-          }}
-          id='empiricalFormula'
-        >
-          <Link
-            variant='h5'
-            underline='none'
-            component={RouterLink}
-            to={`${searchParams.toString() ? `?${searchParams.toString()}` : ''}#empiricalFormula`}
-          >
-            {t('guide.empiricalFormula')}
-          </Link>
-          <CompoundEmpiricalFormula compound={compound} />
-        </Paper>
+        <CompoundEmpiricalFormula compound={compound} />
 
-        <Paper
-          elevation={3}
-          sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '20px',
-            p: 2,
-          }}
-          id='structureFormulas'
-        >
-          <Link
-            variant='h5'
-            underline='none'
-            component={RouterLink}
-            to={`${searchParams.toString() ? `?${searchParams.toString()}` : ''}#structureFormulas`}
-          >
-            {t('guide.structureFormulas')}
-          </Link>
-          <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
-            <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>CH<sub>4</sub></Typography>
-            <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>CH<sub>3</sub> &#8722; CH<sub>3</sub></Typography>
-          </Box>
-        </Paper>
+        <CompoundStructureFormulas compound={compound} />
 
-        <Paper
-          elevation={3}
-          sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '20px',
-            p: 2,
-          }}
-          id='isomerism'
-        >
-          <Link
-            variant='h5'
-            underline='none'
-            component={RouterLink}
-            to={`${searchParams.toString() ? `?${searchParams.toString()}` : ''}#isomerism`}
-          >
-            {t('guide.isomerism')}
-          </Link>
-          <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
-            <Typography variant='h6'>{t('guide.branchingCarbonSkeleton')}</Typography>
-            <img src={Isomer1} alt='Isomer1' style={{ width: '315px', maxWidth: '100%' }} />
-
-            <img src={Isomer2} alt='Isomer2' style={{ width: '250px', maxWidth: '100%' }} />
-
-            <img src={Isomer3} alt='Isomer3' style={{ width: '180px', maxWidth: '100%' }} />
-          </Box>
-        </Paper>
+        <CompoundIsomerism compound={compound} />
 
         <Paper
           elevation={3}
