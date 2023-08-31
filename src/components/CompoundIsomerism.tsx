@@ -2,8 +2,9 @@ import React, { FC, ReactNode } from 'react'
 import { Box, Link, Paper, Typography } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import { Link as RouterLink, useSearchParams } from 'react-router-dom';
-import { AlcoholIsomers } from '../assets/isomers';
-import { AlkaneIsomers } from '../assets/isomers';
+
+import { AlcoholIsomers } from '../assets/alcohols/isomers';
+import { AlkaneIsomers } from '../assets/alkanes/isomers';
 
 import { organicCompoundName } from '../types'
 

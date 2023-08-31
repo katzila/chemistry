@@ -3,14 +3,13 @@ import { Box, Link, Paper, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { Link as RouterLink, useLocation, useSearchParams } from 'react-router-dom';
 
-import Production1 from '../../assets/alkanes/production1.png'
-import Production2 from '../../assets/alkanes/production2.png'
-import alkanesScheme from '../../assets/alkanes/alkanesScheme.svg'
-import ModelViewer from '../../ModelViewer';
 import { organicCompoundName } from '../../types';
 import CompoundEmpiricalFormula from '../../components/CompoundEmpiricalFormula';
 import CompoundStructureFormulas from '../../components/CompoundStructureFormulas';
 import CompoundIsomerism from '../../components/CompoundIsomerism';
+import CompoundModel from '../../components/CompoundModel';
+import CompoundProduction from '../../components/CompoundProduction';
+import CompoundChemicalProperties from '../../components/CompoundChemicalProperties';
 
 
 interface GuideTemplateProps {
@@ -110,36 +109,7 @@ const GuideTemplate: FC<GuideTemplateProps> = (props) => {
           </p>
         </Paper>
 
-        <Paper
-          elevation={3}
-          sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '20px',
-            p: 2,
-          }}
-          id='production'
-        >
-          <Link
-            variant='h5'
-            underline='none'
-            component={RouterLink}
-            to={`${searchParams.toString() ? `?${searchParams.toString()}` : ''}#production`}
-          >
-            {t('guide.production')}
-          </Link>
-          <ol>
-            <li>
-              <p>
-                {t('guide.alkanes.production.1')}</p>
-              <img src={Production1} alt='Production1' style={{ width: '350px', maxWidth: '100%' }} />
-            </li>
-            <li>
-              <p>{t('guide.alkanes.production.2')}</p>
-              <img src={Production2} alt='Production2' style={{ width: '500px', maxWidth: '100%' }} />
-            </li>
-          </ol>
-        </Paper>
+        <CompoundProduction compound={compound} />
 
         <Paper
           elevation={3}
@@ -182,52 +152,9 @@ const GuideTemplate: FC<GuideTemplateProps> = (props) => {
           gap: '20px'
         }}
       >
-        <Paper
-          elevation={3}
-          sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '20px',
-            p: 2,
-          }}
-          id='model'
-        >
-          <ModelViewer
-            scale={4}
-            modelPath={"/pentane.glb"}
-          />
-          <Link
-            variant='subtitle1'
-            fontWeight='bold'
-            underline='none'
-            component={RouterLink}
-            to={`${searchParams.toString() ? `?${searchParams.toString()}` : ''}#model`}
-          >
-            {t(`guide.${compound}.model`)}
-          </Link>
-        </Paper>
+        <CompoundModel compound={compound} />
 
-        <Paper
-          elevation={3}
-          sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '20px',
-            p: 2,
-          }}
-          id='chemicalProperties'
-        >
-          <img src={alkanesScheme} alt="alkanesScheme" style={{ maxWidth: '100%' }} />
-          <Link
-            variant='subtitle1'
-            fontWeight='bold'
-            underline='none'
-            component={RouterLink}
-            to={`${searchParams.toString() ? `?${searchParams.toString()}` : ''}#chemicalProperties`}
-          >
-            {t('guide.chemicalProperties')}
-          </Link>
-        </Paper>
+        <CompoundChemicalProperties compound={compound} />
       </Box>
     </Box >
   )
