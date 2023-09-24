@@ -17,7 +17,7 @@ const App = (props: Props) => {
 
   return (
     <QueryClientProvider client={queryClient} >
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter>
         <ThemeProvider theme={theme}>
           <LayoutContainer>
             <Routes />

@@ -43,6 +43,7 @@ const Header = () => {
 
   const organicMenuItem = (compound: organicCompoundName) => (
     <MenuItem
+      key={compound}
       component={Link}
       to={`/organic/${compound}`}
       onClick={() => handleClose('organic')}
