@@ -11,7 +11,7 @@ interface CompoundModelProps {
   compound: organicCompoundName
 }
 
-const CompoundModel: FC<CompoundModelProps> = (props) => {
+export const CompoundModel: FC<CompoundModelProps> = (props) => {
   const { compound } = props
   const [t] = useTranslation()
   const [searchParams] = useSearchParams()

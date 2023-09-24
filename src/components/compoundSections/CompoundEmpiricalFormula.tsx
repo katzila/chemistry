@@ -10,7 +10,7 @@ interface CompoundEmpiricalFormulaProps {
   compound: organicCompoundName
 }
 
-const CompoundEmpiricalFormula: FC<CompoundEmpiricalFormulaProps> = (props) => {
+export const CompoundEmpiricalFormula: FC<CompoundEmpiricalFormulaProps> = (props) => {
   const { compound } = props
   const [t] = useTranslation()
   const [searchParams] = useSearchParams()

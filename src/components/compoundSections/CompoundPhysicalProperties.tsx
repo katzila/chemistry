@@ -10,7 +10,7 @@ interface CompoundPhysicalPropertiesProps {
   compound: organicCompoundName
 }
 
-const CompoundPhysicalProperties: FC<CompoundPhysicalPropertiesProps> = (props) => {
+export const CompoundPhysicalProperties: FC<CompoundPhysicalPropertiesProps> = (props) => {
   const { compound } = props
   const [t] = useTranslation()
   const [searchParams] = useSearchParams()

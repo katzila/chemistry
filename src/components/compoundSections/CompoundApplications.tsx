@@ -10,7 +10,7 @@ interface CompoundApplicationsProps {
   compound: organicCompoundName
 }
 
-const CompoundApplications: FC<CompoundApplicationsProps> = (props) => {
+export const CompoundApplications: FC<CompoundApplicationsProps> = (props) => {
   const { compound } = props
   const [t] = useTranslation()
   const [searchParams] = useSearchParams()

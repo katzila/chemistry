@@ -13,7 +13,7 @@ interface CompoundIsomerismProps {
   compound: organicCompoundName
 }
 
-const CompoundIsomerism: FC<CompoundIsomerismProps> = (props) => {
+export const CompoundIsomerism: FC<CompoundIsomerismProps> = (props) => {
   const { compound } = props
   const [t] = useTranslation()
   const [searchParams] = useSearchParams()
