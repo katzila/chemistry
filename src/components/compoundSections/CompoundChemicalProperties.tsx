@@ -6,6 +6,7 @@ import { Link as RouterLink, useSearchParams } from 'react-router-dom';
 import alcoholsScheme from '../../assets/alcohols/alcoholsScheme.svg'
 import alkanesScheme from '../../assets/alkanes/alkanesScheme.svg'
 import alkenesScheme from '../../assets/alkenes/alkenesScheme.svg'
+import alkynesScheme from '../../assets/alkynes/alkynesScheme.svg'
 
 import { organicCompoundName } from '../../types'
 
@@ -23,7 +24,7 @@ export const CompoundChemicalProperties: FC<CompoundChemicalPropertiesProps> = (
     'alcohols': alcoholsScheme,
     'alkanes': alkanesScheme,
     'alkenes': alkenesScheme,
-    'alkynes': '',
+    'alkynes': alkynesScheme,
   }
 
   const scheme = compound in schemeMap ? schemeMap[compound as keyof typeof schemeMap] : null

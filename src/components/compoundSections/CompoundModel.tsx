@@ -5,6 +5,7 @@ import { Link as RouterLink, useSearchParams } from 'react-router-dom';
 
 import { organicCompoundName } from '../../types'
 import ModelViewer from '../ModelViewer';
+import { MODEL_NAME_MAP } from '../../constants'
 
 
 interface CompoundModelProps {
@@ -16,14 +17,7 @@ export const CompoundModel: FC<CompoundModelProps> = (props) => {
   const [t] = useTranslation()
   const [searchParams] = useSearchParams()
 
-  const modelNameMap = {
-    'alcohols': '',
-    'alkanes': 'pentane',
-    'alkenes': 'pentene',
-    'alkynes': '',
-  }
-
-  const modelName = compound in modelNameMap ? modelNameMap[compound as keyof typeof modelNameMap] : null
+  const modelName = compound in MODEL_NAME_MAP ? MODEL_NAME_MAP[compound as keyof typeof MODEL_NAME_MAP] : null
   if (!modelName) return null
 
   return (

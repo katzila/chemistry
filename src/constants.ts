@@ -1,6 +1,6 @@
 import { organicCompoundName } from "./types";
 
-export const organicCompounds: Array<organicCompoundName> = [
+export const organicCompounds: ReadonlyArray<organicCompoundName> = [
   'alkanes',
   'cycloalkanes',
   'alkenes',
@@ -14,4 +14,10 @@ export const organicCompounds: Array<organicCompoundName> = [
   'carbohydrates',
   'amines',
   'amino_acids',
-]
+] as const
+
+export const MODEL_NAME_MAP: { [key: string]: string } = {
+  'alkanes': 'pentane',
+  'alkenes': 'pentene',
+  'alkynes': 'pentyne',
+} as const

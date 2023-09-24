@@ -6,6 +6,7 @@ import { Link as RouterLink, useSearchParams } from 'react-router-dom';
 import { AlcoholProductions } from '../../assets/alcohols/productions';
 import { AlkaneProductions } from '../../assets/alkanes/productions';
 import { AlkeneProductions } from '../../assets/alkenes/productions';
+import { AlkyneProductions } from '../../assets/alkynes/productions';
 
 import { organicCompoundName } from '../../types'
 
@@ -66,7 +67,7 @@ export const CompoundProduction: FC<CompoundProductionProps> = (props) => {
       )
       break
     }
-    case 'alkenes':{
+    case 'alkenes': {
       productionInner = (
         <ol>
           <li>
@@ -76,6 +77,21 @@ export const CompoundProduction: FC<CompoundProductionProps> = (props) => {
           <li>
             <p>{t('guide.alkenes.production.2')}</p>
             <img src={AlkeneProductions[1]} alt='Production2' style={{ width: '500px', maxWidth: '100%' }} />
+          </li>
+        </ol>
+      )
+      break
+    }
+    case 'alkynes': {
+      productionInner = (
+        <ol>
+          <li>
+            <p>{t('guide.alkynes.production.1')}</p>
+            <img src={AlkyneProductions[0]} alt='Production1' style={{ width: '300px', maxWidth: '100%' }} />
+          </li>
+          <li>
+            <p>{t('guide.alkynes.production.2')}</p>
+            <img src={AlkyneProductions[1]} alt='Production2' style={{ width: '420px', maxWidth: '100%' }} />
           </li>
         </ol>
       )
