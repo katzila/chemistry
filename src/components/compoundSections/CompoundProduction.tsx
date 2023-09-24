@@ -5,6 +5,7 @@ import { Link as RouterLink, useSearchParams } from 'react-router-dom';
 
 import { AlcoholProductions } from '../../assets/alcohols/productions';
 import { AlkaneProductions } from '../../assets/alkanes/productions';
+import { AlkeneProductions } from '../../assets/alkenes/productions';
 
 import { organicCompoundName } from '../../types'
 
@@ -21,22 +22,6 @@ export const CompoundProduction: FC<CompoundProductionProps> = (props) => {
   let productionInner: ReactNode = null
 
   switch (compound) {
-    case 'alkanes': {
-      productionInner = (
-        <ol>
-          <li>
-            <p>
-              {t('guide.alkanes.production.1')}</p>
-            <img src={AlkaneProductions[0]} alt='Production1' style={{ width: '350px', maxWidth: '100%' }} />
-          </li>
-          <li>
-            <p>{t('guide.alkanes.production.2')}</p>
-            <img src={AlkaneProductions[1]} alt='Production2' style={{ width: '500px', maxWidth: '100%' }} />
-          </li>
-        </ol>
-      )
-      break
-    }
     case 'alcohols': {
       productionInner = (
         <ol>
@@ -60,6 +45,37 @@ export const CompoundProduction: FC<CompoundProductionProps> = (props) => {
           <li>
             <p>{t('guide.alcohols.production.5')}</p>
             <img src={AlcoholProductions[4]} alt='Production5' style={{ width: '350px', maxWidth: '100%' }} />
+          </li>
+        </ol>
+      )
+      break
+    }
+    case 'alkanes': {
+      productionInner = (
+        <ol>
+          <li>
+            <p>
+              {t('guide.alkanes.production.1')}</p>
+            <img src={AlkaneProductions[0]} alt='Production1' style={{ width: '350px', maxWidth: '100%' }} />
+          </li>
+          <li>
+            <p>{t('guide.alkanes.production.2')}</p>
+            <img src={AlkaneProductions[1]} alt='Production2' style={{ width: '500px', maxWidth: '100%' }} />
+          </li>
+        </ol>
+      )
+      break
+    }
+    case 'alkenes':{
+      productionInner = (
+        <ol>
+          <li>
+            <p>{t('guide.alkenes.production.1')}</p>
+            <img src={AlkeneProductions[0]} alt='Production1' style={{ width: '350px', maxWidth: '100%' }} />
+          </li>
+          <li>
+            <p>{t('guide.alkenes.production.2')}</p>
+            <img src={AlkeneProductions[1]} alt='Production2' style={{ width: '500px', maxWidth: '100%' }} />
           </li>
         </ol>
       )

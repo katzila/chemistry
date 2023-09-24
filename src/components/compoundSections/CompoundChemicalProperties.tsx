@@ -3,8 +3,9 @@ import { Link, Paper } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import { Link as RouterLink, useSearchParams } from 'react-router-dom';
 
-import alkanesScheme from '../../assets/alkanes/alkanesScheme.svg'
 import alcoholsScheme from '../../assets/alcohols/alcoholsScheme.svg'
+import alkanesScheme from '../../assets/alkanes/alkanesScheme.svg'
+import alkenesScheme from '../../assets/alkenes/alkenesScheme.svg'
 
 import { organicCompoundName } from '../../types'
 
@@ -21,7 +22,7 @@ export const CompoundChemicalProperties: FC<CompoundChemicalPropertiesProps> = (
   const schemeMap = {
     'alcohols': alcoholsScheme,
     'alkanes': alkanesScheme,
-    'alkenes': '',
+    'alkenes': alkenesScheme,
     'alkynes': '',
   }
 

@@ -19,7 +19,7 @@ export const CompoundModel: FC<CompoundModelProps> = (props) => {
   const modelNameMap = {
     'alcohols': '',
     'alkanes': 'pentane',
-    'alkenes': '',
+    'alkenes': 'pentene',
     'alkynes': '',
   }
 
