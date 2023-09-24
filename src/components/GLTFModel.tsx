@@ -40,6 +40,5 @@ const GLTFModel: FC<GLTFModelProps> = (props) => {
     />
   )
 };
-useGLTF.preload(process.env.PUBLIC_URL + "/pentane.glb");
 
 export default GLTFModel;

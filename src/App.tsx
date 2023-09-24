@@ -1,18 +1,18 @@
 import * as React from 'react';
 import { ThemeProvider } from '@mui/material/styles';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import { theme } from './theme';
 import { BrowserRouter } from 'react-router-dom';
+import { useGLTF } from '@react-three/drei';
+
+import { theme } from './theme';
 import Routes from './Containers/Routes';
 import LayoutContainer from './Containers/layout/LayoutContainer';
-
-type Props = {}
+import { MODEL_NAME_MAP } from './constants';
 
 
 const queryClient = new QueryClient();
 
-
-const App = (props: Props) => {
+const App = () => {
   // const [mode, setMode] = React.useState('light')
 
   return (
@@ -27,5 +27,7 @@ const App = (props: Props) => {
     </QueryClientProvider>
   );
 }
+
+useGLTF.preload(Object.values(MODEL_NAME_MAP).map((modelName) => `/${modelName}.glb`))
 
 export default App
