@@ -3,8 +3,8 @@ import { Link, Paper } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import { Link as RouterLink, useSearchParams } from 'react-router-dom';
 
-import alkanesScheme from '../assets/alkanes/alkanesScheme.svg'
-import alcoholsScheme from '../assets/alcohols/alcoholsScheme.svg'
+import alkanesScheme from '../../assets/alkanes/alkanesScheme.svg'
+import alcoholsScheme from '../../assets/alcohols/alcoholsScheme.svg'
 
 import { organicCompoundName } from '../../types'
 
@@ -13,7 +13,7 @@ interface CompoundChemicalPropertiesProps {
   compound: organicCompoundName
 }
 
-const CompoundChemicalProperties: FC<CompoundChemicalPropertiesProps> = (props) => {
+export const CompoundChemicalProperties: FC<CompoundChemicalPropertiesProps> = (props) => {
   const { compound } = props
   const [t] = useTranslation()
   const [searchParams] = useSearchParams()
