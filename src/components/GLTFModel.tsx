@@ -1,4 +1,4 @@
-import React, { useRef, FC } from "react";
+import React, { useRef, FC, useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
 import { Mesh } from "three";
@@ -20,6 +20,7 @@ const GLTFModel: FC<GLTFModelProps> = (props) => {
   } = props
   const ref = useRef<Mesh>(null!);
   const gltf = useGLTF(modelPath);
+  const scene = useMemo(() => gltf.scene.clone(), [gltf])
 
   useFrame((state, delta) => {
     if (ref.current && hovered && ref.current.scale.x < scale * 1.2) {
@@ -34,7 +35,7 @@ const GLTFModel: FC<GLTFModelProps> = (props) => {
   return (
     <primitive
       ref={ref}
-      object={gltf.scene}
+      object={scene}
       position={position}
       scale={scale}
     />
