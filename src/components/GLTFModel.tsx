@@ -1,4 +1,4 @@
-import React, { useRef, useState, FC } from "react";
+import React, { useRef, FC } from "react";
 import { useFrame } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
 import { Mesh } from "three";

@@ -9,7 +9,7 @@ import Isomer3 from '../../../assets/alkanes/isomer3.png'
 import Production1 from '../../../assets/alkanes/production1.png'
 import Production2 from '../../../assets/alkanes/production2.png'
 import alkanesScheme from '../../../assets/alkanes/alkanesScheme.svg'
-import ModelViewer from '../../../ModelViewer';
+import ModelViewer from '../../../components/ModelViewer';
 
 
 export const AlkanesGuide = () => {

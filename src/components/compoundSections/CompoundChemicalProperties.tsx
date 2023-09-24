@@ -6,7 +6,7 @@ import { Link as RouterLink, useSearchParams } from 'react-router-dom';
 import alkanesScheme from '../assets/alkanes/alkanesScheme.svg'
 import alcoholsScheme from '../assets/alcohols/alcoholsScheme.svg'
 
-import { organicCompoundName } from '../types'
+import { organicCompoundName } from '../../types'
 
 
 interface CompoundChemicalPropertiesProps {

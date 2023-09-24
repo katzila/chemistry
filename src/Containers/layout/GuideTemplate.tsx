@@ -3,15 +3,15 @@ import { Box } from '@mui/material';
 import { useLocation } from 'react-router-dom';
 
 import { organicCompoundName } from '../../types';
-import CompoundEmpiricalFormula from '../../components/CompoundEmpiricalFormula';
-import CompoundStructureFormulas from '../../components/CompoundStructureFormulas';
-import CompoundIsomerism from '../../components/CompoundIsomerism';
-import CompoundModel from '../../components/CompoundModel';
-import CompoundProduction from '../../components/CompoundProduction';
-import CompoundChemicalProperties from '../../components/CompoundChemicalProperties';
-import CompoundApplications from '../../components/CompoundApplications';
-import CompoundPhysicalProperties from '../../components/CompoundPhysicalProperties';
-import CompoundDefinition from '../../components/CompoundDefinition';
+import CompoundEmpiricalFormula from '../../components/compoundSections/CompoundEmpiricalFormula';
+import CompoundStructureFormulas from '../../components/compoundSections/CompoundStructureFormulas';
+import CompoundIsomerism from '../../components/compoundSections/CompoundIsomerism';
+import CompoundModel from '../../components/compoundSections/CompoundModel';
+import CompoundProduction from '../../components/compoundSections/CompoundProduction';
+import CompoundChemicalProperties from '../../components/compoundSections/CompoundChemicalProperties';
+import CompoundApplications from '../../components/compoundSections/CompoundApplications';
+import CompoundPhysicalProperties from '../../components/compoundSections/CompoundPhysicalProperties';
+import CompoundDefinition from '../../components/compoundSections/CompoundDefinition';
 
 
 interface GuideTemplateProps {

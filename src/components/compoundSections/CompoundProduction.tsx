@@ -3,10 +3,10 @@ import { Link, Paper } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import { Link as RouterLink, useSearchParams } from 'react-router-dom';
 
-import { AlcoholProductions } from '../assets/alcohols/productions';
-import { AlkaneProductions } from '../assets/alkanes/productions';
+import { AlcoholProductions } from '../../assets/alcohols/productions';
+import { AlkaneProductions } from '../../assets/alkanes/productions';
 
-import { organicCompoundName } from '../types'
+import { organicCompoundName } from '../../types'
 
 
 interface CompoundProductionProps {
