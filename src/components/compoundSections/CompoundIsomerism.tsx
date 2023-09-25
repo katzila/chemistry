@@ -26,7 +26,7 @@ export const CompoundIsomerism: FC<CompoundIsomerismProps> = (props) => {
       isomerismInner = (
         <Box component="ol" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
           {AlcoholIsomers.map((isomer, index) => (
-            <Box component='li'>
+            <Box component='li' key={isomer}>
               <Typography variant='h6'>{t(`guide.alcohols.isomerism.${(index + 1) as 1 | 2 | 3 | 4}`)}</Typography>
               <img src={isomer} alt={`Isomer${index + 1}`} style={{ width: index === 3 ? '500px' : '400px', maxWidth: '100%' }} />
             </Box>
