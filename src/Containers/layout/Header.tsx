@@ -13,19 +13,19 @@ const Header = () => {
   const theme = useTheme()
   const sm = useMediaQuery(theme.breakpoints.up('sm'))
   const [anchorElOrganic, setAnchorElOrganic] = useState<null | HTMLElement>(null)
-  const [anchorElInorganic, setAnchorElInorganic] = useState<null | HTMLElement>(null)
+  // const [anchorElInorganic, setAnchorElInorganic] = useState<null | HTMLElement>(null)
 
   const openOrganic = Boolean(anchorElOrganic)
-  const openInorganic = Boolean(anchorElInorganic)
+  // const openInorganic = Boolean(anchorElInorganic)
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     switch (event.currentTarget.id) {
       case 'organic-button':
         setAnchorElOrganic(event.currentTarget);
         break;
-      case 'inorganic-button':
-        setAnchorElInorganic(event.currentTarget);
-        break;
+      // case 'inorganic-button':
+      //   setAnchorElInorganic(event.currentTarget);
+      //   break;
       default:
     }
   };
@@ -34,9 +34,9 @@ const Header = () => {
       case 'organic':
         setAnchorElOrganic(null);
         break;
-      case 'inorganic':
-        setAnchorElInorganic(null);
-        break;
+      // case 'inorganic':
+      //   setAnchorElInorganic(null);
+      //   break;
       default:
     }
   }
