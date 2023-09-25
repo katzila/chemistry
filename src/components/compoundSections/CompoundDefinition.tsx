@@ -35,9 +35,9 @@ export const CompoundDefinition: FC<CompoundDefinitionProps> = (props) => {
         {t('guide.definitionTitle')}
       </Link>
       <Paper elevation={0} sx={{ p: 1, borderLeft: 'solid 3px #bbbbbb' }}>
-        <p>
+        <Typography variant='body1'>
           {t(`guide.${compound}.definitionText`)}
-        </p>
+        </Typography>
         <br />
         <Typography variant='caption'>
           {t(`guide.${compound}.definitionCredits`)}

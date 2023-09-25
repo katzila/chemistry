@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from 'react'
+import React, { FC } from 'react'
 import { Box, Link, Paper, Typography } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import { Link as RouterLink, useSearchParams } from 'react-router-dom';
@@ -15,81 +15,69 @@ export const CompoundApplications: FC<CompoundApplicationsProps> = (props) => {
   const [t] = useTranslation()
   const [searchParams] = useSearchParams()
 
-  let applicationsInner: ReactNode = null
+  let applicationsInner: string[] = []
 
   switch (compound) {
     case 'alcohols': {
-      applicationsInner = (
-        <ul>
-          <li>{t('guide.alcohols.applications.foodIndustry')}</li>
-          <li>{t('guide.alcohols.applications.perfumeryCosmeticsHouseholdChemicals')}</li>
-          <li>{t('guide.alcohols.applications.medicine')}</li>
-          <li>{t('guide.alcohols.applications.fuel')}</li>
-          <li>{t('guide.alcohols.applications.chemicalReagent')}</li>
-        </ul>
-      )
+      applicationsInner = [
+        t('guide.alcohols.applications.foodIndustry'),
+        t('guide.alcohols.applications.perfumeryCosmeticsHouseholdChemicals'),
+        t('guide.alcohols.applications.medicine'),
+        t('guide.alcohols.applications.fuel'),
+        t('guide.alcohols.applications.chemicalReagent'),
+      ]
       break
     }
     case 'alkanes': {
-      applicationsInner = (
-        <ul>
-          <li>{t('guide.alkanes.applications.freons')}</li>
-          <li>{t('guide.alkanes.applications.solvents')}</li>
-          <li>{t('guide.alkanes.applications.SynthesisGas')}</li>
-          <li>{t('guide.alkanes.applications.sootRubber')}</li>
-          <li>{t('guide.alkanes.applications.detergents')}</li>
-          <li>{t('guide.alkanes.applications.fuel')}</li>
-        </ul>
-      )
+      applicationsInner = [
+        t('guide.alkanes.applications.freons'),
+        t('guide.alkanes.applications.solvents'),
+        t('guide.alkanes.applications.SynthesisGas'),
+        t('guide.alkanes.applications.sootRubber'),
+        t('guide.alkanes.applications.detergents'),
+        t('guide.alkanes.applications.fuel'),
+      ]
       break
     }
     case 'alkenes': {
-      applicationsInner = (
-        <ul>
-          <li>{t('guide.alkenes.applications.explosives')}</li>
-          <li>{t('guide.alkenes.applications.plastics')}</li>
-          <li>{t('guide.alkenes.applications.medicine')}</li>
-          <li>{t('guide.alkenes.applications.photoreagents')}</li>
-          <li>{t('guide.alkenes.applications.dyes')}</li>
-        </ul>
-      )
+      applicationsInner = [
+        t('guide.alkenes.applications.explosives'),
+        t('guide.alkenes.applications.plastics'),
+        t('guide.alkenes.applications.medicine'),
+        t('guide.alkenes.applications.photoreagents'),
+        t('guide.alkenes.applications.dyes'),
+      ]
       break
     }
     case 'alkynes': {
-      applicationsInner = (
-        <ul>
-          <li>{t('guide.alkynes.applications.chloroprene')}</li>
-          <li>{t('guide.alkynes.applications.isoprene')}</li>
-          <li>{t('guide.alkynes.applications.acetaldehyde')}</li>
-          <li>{t('guide.alkynes.applications.metalCuttingWelding')}</li>
-          <li>{t('guide.alkynes.applications.arenes')}</li>
-        </ul>
-      )
+      applicationsInner = [
+        t('guide.alkynes.applications.chloroprene'),
+        t('guide.alkynes.applications.isoprene'),
+        t('guide.alkynes.applications.acetaldehyde'),
+        t('guide.alkynes.applications.metalCuttingWelding'),
+        t('guide.alkynes.applications.arenes'),
+      ]
       break
     }
     case 'carboxylicAcids': {
-      applicationsInner = (
-        <ul>
-          <li>{t('guide.carboxylicAcids.applications.textileIndustry')}</li>
-          <li>{t('guide.carboxylicAcids.applications.pharmaceuticalIndustry')}</li>
-          <li>{t('guide.carboxylicAcids.applications.solvents')}</li>
-          <li>{t('guide.carboxylicAcids.applications.plastics')}</li>
-          <li>{t('guide.carboxylicAcids.applications.catalysts')}</li>
-          <li>{t('guide.carboxylicAcids.applications.dyes')}</li>
-          <li>{t('guide.carboxylicAcids.applications.pesticides')}</li>
-        </ul>
-      )
+      applicationsInner = [
+        t('guide.carboxylicAcids.applications.textileIndustry'),
+        t('guide.carboxylicAcids.applications.pharmaceuticalIndustry'),
+        t('guide.carboxylicAcids.applications.solvents'),
+        t('guide.carboxylicAcids.applications.plastics'),
+        t('guide.carboxylicAcids.applications.catalysts'),
+        t('guide.carboxylicAcids.applications.dyes'),
+        t('guide.carboxylicAcids.applications.pesticides'),
+      ]
       break
     }
     case 'esters': {
-      applicationsInner = (
-        <Box component="ul" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
-          <li><Typography variant='subtitle1'>{t('guide.esters.applications.metalworking')}</Typography></li>
-          <li><Typography variant='subtitle1'>{t('guide.esters.applications.lubricants')}</Typography></li>
-          <li><Typography variant='subtitle1'>{t('guide.esters.applications.plasticizers')}</Typography></li>
-          <li><Typography variant='subtitle1'>{t('guide.esters.applications.synthesis')}</Typography></li>
-        </Box>
-      )
+      applicationsInner = [
+        t('guide.esters.applications.metalworking'),
+        t('guide.esters.applications.lubricants'),
+        t('guide.esters.applications.plasticizers'),
+        t('guide.esters.applications.synthesis'),
+      ]
       break
     }
     default:
@@ -115,7 +103,15 @@ export const CompoundApplications: FC<CompoundApplicationsProps> = (props) => {
       >
         {t('guide.applications')}
       </Link>
-      {applicationsInner}
+      <Box component="ul" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+        {applicationsInner.map((application) => (
+          <li key={application}>
+            <Typography variant='subtitle1'>
+              {application}
+            </Typography>
+          </li>
+        ))}
+      </Box>
     </Paper>
   )
 }

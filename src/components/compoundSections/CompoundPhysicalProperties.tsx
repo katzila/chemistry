@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { Link, Paper } from '@mui/material'
+import { Link, Paper, Typography } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import { Link as RouterLink, useSearchParams } from 'react-router-dom';
 
@@ -34,9 +34,9 @@ export const CompoundPhysicalProperties: FC<CompoundPhysicalPropertiesProps> = (
       >
         {t('guide.physicalProperties')}
       </Link>
-      <p>
+      <Typography variant='body1'>
         {t(`guide.${compound}.physicalProperties`)}
-      </p>
+      </Typography>
     </Paper>
   )
 }
