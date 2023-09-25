@@ -3,6 +3,8 @@ import { Box, Link, Paper, Typography } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import { Link as RouterLink, useSearchParams } from 'react-router-dom';
 
+import CarboxylicAcidsStructureFormulasExample from '../../assets/carboxylicAcids/structureExample.png'
+
 import { organicCompoundName } from '../../types'
 
 
@@ -48,6 +50,12 @@ export const CompoundStructureFormulas: FC<CompoundStructureFormulasProps> = (pr
           <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>CH &#8801; CH</Typography>
           <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>CH &#8801; C &#8722; CH<sub>3</sub></Typography>
         </>
+      )
+      break
+    }
+    case 'carboxylicAcids': {
+      structureFormulasInner = (
+        <img src={CarboxylicAcidsStructureFormulasExample} alt='Carboxylic Acids Structure Formulas Example' style={{ width: '336px', maxWidth: '100%' }} />
       )
       break
     }

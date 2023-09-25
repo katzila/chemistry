@@ -7,6 +7,7 @@ import { AlcoholProductions } from '../../assets/alcohols/productions';
 import { AlkaneProductions } from '../../assets/alkanes/productions';
 import { AlkeneProductions } from '../../assets/alkenes/productions';
 import { AlkyneProductions } from '../../assets/alkynes/productions';
+import { CarboxylicAcidsProductions } from '../../assets/carboxylicAcids/productions';
 
 import { organicCompoundName } from '../../types'
 
@@ -92,6 +93,29 @@ export const CompoundProduction: FC<CompoundProductionProps> = (props) => {
           <li>
             <p>{t('guide.alkynes.production.2')}</p>
             <img src={AlkyneProductions[1]} alt='Production2' style={{ width: '420px', maxWidth: '100%' }} />
+          </li>
+        </ol>
+      )
+      break
+    }
+    case 'carboxylicAcids': {
+      productionInner = (
+        <ol>
+          <li>
+            <p> {t('guide.carboxylicAcids.production.1')}</p>
+            <img src={CarboxylicAcidsProductions[0]} alt='Production1' style={{ width: '500px', maxWidth: '100%' }} />
+          </li>
+          <li>
+            <p>{t('guide.carboxylicAcids.production.2')}</p>
+            <img src={CarboxylicAcidsProductions[1]} alt='Production2' style={{ width: '250px', maxWidth: '100%' }} />
+          </li>
+          <li>
+            <p>{t('guide.carboxylicAcids.production.3')}</p>
+            <img src={CarboxylicAcidsProductions[2]} alt='Production3' style={{ width: '425px', maxWidth: '100%' }} />
+          </li>
+          <li>
+            <p>{t('guide.carboxylicAcids.production.4')}</p>
+            <img src={CarboxylicAcidsProductions[3]} alt='Production4' style={{ width: '400px', maxWidth: '100%' }} />
           </li>
         </ol>
       )

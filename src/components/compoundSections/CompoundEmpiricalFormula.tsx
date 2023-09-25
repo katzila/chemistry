@@ -52,6 +52,12 @@ export const CompoundEmpiricalFormula: FC<CompoundEmpiricalFormulaProps> = (prop
       )
       break
     }
+    case 'carboxylicAcids': {
+      empiricalFormulaInner = (
+        <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>C<sub>n</sub>H<sub>2n</sub>O<sub>2</sub></Typography>
+      )
+      break
+    }
     default:
       return null
   }

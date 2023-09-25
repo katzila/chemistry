@@ -21,4 +21,5 @@ export const MODEL_NAME_MAP = {
   'alkanes': 'pentane',
   'alkenes': 'pentene',
   'alkynes': 'pentyne',
+  'carboxylicAcids': 'formicAcid',
 } as const

@@ -7,6 +7,7 @@ import alcoholsScheme from '../../assets/alcohols/alcoholsScheme.svg'
 import alkanesScheme from '../../assets/alkanes/alkanesScheme.svg'
 import alkenesScheme from '../../assets/alkenes/alkenesScheme.svg'
 import alkynesScheme from '../../assets/alkynes/alkynesScheme.svg'
+import carboxylicAcidsScheme from '../../assets/carboxylicAcids/carboxylicAcidsScheme.svg'
 
 import { organicCompoundName } from '../../types'
 
@@ -25,6 +26,7 @@ export const CompoundChemicalProperties: FC<CompoundChemicalPropertiesProps> = (
     'alkanes': alkanesScheme,
     'alkenes': alkenesScheme,
     'alkynes': alkynesScheme,
+    'carboxylicAcids': carboxylicAcidsScheme,
   }
 
   const scheme = compound in schemeMap ? schemeMap[compound as keyof typeof schemeMap] : null

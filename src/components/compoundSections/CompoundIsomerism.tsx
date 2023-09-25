@@ -5,6 +5,7 @@ import { Link as RouterLink, useSearchParams } from 'react-router-dom';
 
 import { AlcoholIsomers } from '../../assets/alcohols/isomers';
 import { AlkaneIsomers } from '../../assets/alkanes/isomers';
+import { CarboxylicAcidsIsomers } from '../../assets/carboxylicAcids/isomers';
 
 import { organicCompoundName } from '../../types'
 
@@ -54,6 +55,21 @@ export const CompoundIsomerism: FC<CompoundIsomerismProps> = (props) => {
         <p>
           {t('guide.isomerismSeeAlkanes')}
         </p>
+      )
+      break
+    }
+    case 'carboxylicAcids': {
+      isomerismInner = (
+        <Box component="ol" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+          <Box component='li'>
+            <Typography variant='h6'>{t('guide.carboxylicAcids.isomerism.1')}</Typography>
+            <img src={CarboxylicAcidsIsomers[0]} alt='Isomer1' style={{ width: '650px', maxWidth: '100%' }} />
+          </Box>
+          <Box component='li'>
+            <Typography variant='h6'>{t('guide.carboxylicAcids.isomerism.2')}</Typography>
+            <img src={CarboxylicAcidsIsomers[1]} alt='Isomer2' style={{ width: '500px', maxWidth: '100%' }} />
+          </Box>
+        </Box>
       )
       break
     }
