@@ -14,9 +14,18 @@ const resources = {
   }
 }
 
+const navigatorLanguage = navigator.language?.split('-')[0]
+const localStorageLanguage = localStorage.getItem('locale')
+
+const initialLanguage: 'en' | 'ru' = localStorageLanguage === 'ru' || localStorageLanguage === 'en' ?
+  localStorageLanguage
+  : navigatorLanguage === 'ru' ?
+    'ru'
+    : 'en'
+
 export default i18next
   .use(initReactI18next)
   .init({
     resources,
-    lng: localStorage.getItem('locale') || "en"
+    lng: initialLanguage
   });
