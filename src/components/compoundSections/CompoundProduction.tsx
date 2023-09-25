@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from 'react'
-import { Link, Paper } from '@mui/material'
+import { Link, Paper, Typography } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import { Link as RouterLink, useSearchParams } from 'react-router-dom';
 
@@ -8,6 +8,7 @@ import { AlkaneProductions } from '../../assets/alkanes/productions';
 import { AlkeneProductions } from '../../assets/alkenes/productions';
 import { AlkyneProductions } from '../../assets/alkynes/productions';
 import { CarboxylicAcidsProductions } from '../../assets/carboxylicAcids/productions';
+import EsterProduction from '../../assets/esters/production1.png'
 
 import { organicCompoundName } from '../../types'
 
@@ -116,6 +117,17 @@ export const CompoundProduction: FC<CompoundProductionProps> = (props) => {
           <li>
             <p>{t('guide.carboxylicAcids.production.4')}</p>
             <img src={CarboxylicAcidsProductions[3]} alt='Production4' style={{ width: '400px', maxWidth: '100%' }} />
+          </li>
+        </ol>
+      )
+      break
+    }
+    case 'esters': {
+      productionInner = (
+        <ol>
+          <li>
+            <Typography variant='h6'>{t('guide.esters.production.1')}</Typography>
+            <img src={EsterProduction} alt='Production1' style={{ width: '500px', maxWidth: '100%' }} />
           </li>
         </ol>
       )

@@ -73,6 +73,22 @@ export const CompoundIsomerism: FC<CompoundIsomerismProps> = (props) => {
       )
       break
     }
+    case 'esters': {
+      isomerismInner = (
+        <Box component="ol" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+          <Box component='li'>
+            <Typography variant='h6'>{t('guide.esters.isomerism.1')}</Typography>
+          </Box>
+          <Box component='li'>
+            <Typography variant='h6'>{t('guide.esters.isomerism.2')}</Typography>
+          </Box>
+          <Box component='li'>
+            <Typography variant='h6'>{t('guide.esters.isomerism.3')}</Typography>
+          </Box>
+        </Box>
+      )
+      break
+    }
     default:
       return null
   }

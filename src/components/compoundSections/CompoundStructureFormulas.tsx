@@ -59,6 +59,15 @@ export const CompoundStructureFormulas: FC<CompoundStructureFormulasProps> = (pr
       )
       break
     }
+    case 'esters': {
+      structureFormulasInner = (
+        <>
+          <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>CH<sub>3</sub> &#8722; COO &#8722; C<sub>2</sub>H<sub>5</sub></Typography>
+          <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>C<sub>2</sub>H<sub>5</sub> &#8722; COO &#8722; C<sub>3</sub>H<sub>7</sub></Typography>
+        </>
+      )
+      break
+    }
     default:
       return null
   }

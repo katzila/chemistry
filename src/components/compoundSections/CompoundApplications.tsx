@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from 'react'
-import { Link, Paper } from '@mui/material'
+import { Box, Link, Paper, Typography } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import { Link as RouterLink, useSearchParams } from 'react-router-dom';
 
@@ -83,12 +83,12 @@ export const CompoundApplications: FC<CompoundApplicationsProps> = (props) => {
     }
     case 'esters': {
       applicationsInner = (
-        <ul>
-          <li>{t('guide.esters.applications.metalworking')}</li>
-          <li>{t('guide.esters.applications.lubricants')}</li>
-          <li>{t('guide.esters.applications.plasticizers')}</li>
-          <li>{t('guide.esters.applications.synthesis')}</li>
-        </ul>
+        <Box component="ul" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+          <li><Typography variant='subtitle1'>{t('guide.esters.applications.metalworking')}</Typography></li>
+          <li><Typography variant='subtitle1'>{t('guide.esters.applications.lubricants')}</Typography></li>
+          <li><Typography variant='subtitle1'>{t('guide.esters.applications.plasticizers')}</Typography></li>
+          <li><Typography variant='subtitle1'>{t('guide.esters.applications.synthesis')}</Typography></li>
+        </Box>
       )
       break
     }
