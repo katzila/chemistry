@@ -16,7 +16,8 @@ export const organicCompounds: ReadonlyArray<organicCompoundName> = [
   'amino_acids',
 ] as const
 
-export const MODEL_NAME_MAP: { [key: string]: string } = {
+export const MODEL_NAME_MAP = {
+  'alcohols': 'ethanol',
   'alkanes': 'pentane',
   'alkenes': 'pentene',
   'alkynes': 'pentyne',

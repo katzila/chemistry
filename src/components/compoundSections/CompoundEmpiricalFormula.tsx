@@ -18,6 +18,17 @@ export const CompoundEmpiricalFormula: FC<CompoundEmpiricalFormulaProps> = (prop
   let empiricalFormulaInner: ReactNode = null
 
   switch (compound) {
+    case 'alcohols': {
+      const empiricalFormula1 = <b>ROH</b>
+      const empiricalFormula2 = <b>C<sub>n</sub>H<sub>2n+1</sub>OH</b>
+      const empiricalFormula3 = <b>C<sub>n</sub>H<sub>2n+2</sub>O</b>
+      empiricalFormulaInner = (
+        <Typography variant='h5' sx={{ fontStyle: 'italic' }}>
+          {empiricalFormula1} {t('common.or')} {empiricalFormula2} {t('common.or')} {empiricalFormula3}
+        </Typography>
+      )
+      break
+    }
     case 'alkanes': {
       empiricalFormulaInner = (
         <Typography
@@ -38,17 +49,6 @@ export const CompoundEmpiricalFormula: FC<CompoundEmpiricalFormulaProps> = (prop
     case 'alkynes': {
       empiricalFormulaInner = (
         <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>C<sub>n</sub>H<sub>2n-2</sub></Typography>
-      )
-      break
-    }
-    case 'alcohols': {
-      const empiricalFormula1 = <b>ROH</b>
-      const empiricalFormula2 = <b>C<sub>n</sub>H<sub>2n+1</sub>OH</b>
-      const empiricalFormula3 = <b>C<sub>n</sub>H<sub>2n+2</sub>O</b>
-      empiricalFormulaInner = (
-        <Typography variant='h5' sx={{ fontStyle: 'italic' }}>
-          {empiricalFormula1} {t('common.or')} {empiricalFormula2} {t('common.or')} {empiricalFormula3}
-        </Typography>
       )
       break
     }

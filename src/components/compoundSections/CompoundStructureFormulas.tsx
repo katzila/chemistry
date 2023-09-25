@@ -18,6 +18,12 @@ export const CompoundStructureFormulas: FC<CompoundStructureFormulasProps> = (pr
   let structureFormulasInner: ReactNode = null
 
   switch (compound) {
+    case 'alcohols': {
+      structureFormulasInner = (
+        <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>CH<sub>3</sub> &#8722; CH<sub>2</sub> &#8722; OH</Typography>
+      )
+      break
+    }
     case 'alkanes': {
       structureFormulasInner = (
         <>
@@ -42,12 +48,6 @@ export const CompoundStructureFormulas: FC<CompoundStructureFormulasProps> = (pr
           <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>CH &#8801; CH</Typography>
           <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>CH &#8801; C &#8722; CH<sub>3</sub></Typography>
         </>
-      )
-      break
-    }
-    case 'alcohols': {
-      structureFormulasInner = (
-        <Typography variant='h5' sx={{ fontWeight: 'bold', fontStyle: 'italic' }}>CH<sub>3</sub> &#8722; CH<sub>2</sub> &#8722; OH</Typography>
       )
       break
     }
