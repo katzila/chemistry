@@ -1,7 +1,2 @@
-export * from './alkanes'
-export * from './alkenes'
-export * from './alkynes'
-export * from './alcohols'
-export * from './carboxylicAcids'
 export * from './phenols'
 export * from './esters'
