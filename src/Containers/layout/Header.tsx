@@ -99,7 +99,7 @@ const Header = () => {
           >
             {organicCompounds.map(organicMenuItem)}
           </Menu>
-          <Button
+         {/*   <Button
             id="inorganic-button"
             sx={{
               color: 'inherit',
@@ -112,7 +112,7 @@ const Header = () => {
           >
             {t('navigation.inorganic.title')}
           </Button>
-          <Menu
+         <Menu
             id="inorganic-menu"
             anchorEl={anchorElInorganic}
             open={openInorganic}
@@ -150,7 +150,7 @@ const Header = () => {
             >
               {t('navigation.halogens.title')}
             </MenuItem>
-          </Menu>
+          </Menu> */}
         </Box>
         <LanguageDropdown />
       </Toolbar>
