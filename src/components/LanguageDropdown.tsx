@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
-import i18next from 'i18next'
 import { Button, Menu, MenuItem, useMediaQuery, useTheme } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 
 
 const LanguageDropdown = () => {
   const [anchorElLanguage, setAnchorElLanguage] = useState<null | HTMLElement>(null)
-  const [t] = useTranslation()
+  const { t, i18n } = useTranslation()
   const theme = useTheme()
   const sm = useMediaQuery(theme.breakpoints.up('sm'))
 
@@ -22,7 +21,7 @@ const LanguageDropdown = () => {
   };
 
   const changeLanguage = (language: 'en' | 'ru') => {
-    i18next.changeLanguage(language);
+    i18n.changeLanguage(language);
     localStorage.setItem('locale', language)
     setAnchorElLanguage(null);
   }
@@ -31,15 +30,15 @@ const LanguageDropdown = () => {
     <>
       <Button
         id="language-button"
-        sx={{ 
-          color: 'inherit', 
-          display: 'block', 
-          m: 0, 
+        sx={{
+          color: 'inherit',
+          display: 'block',
+          m: 0,
           alignSelf: 'stretch'
-         }}
+        }}
         onClick={handleClick}
       >
-        {t(`navigation.languages.${i18next.language as 'en' | 'ru'}`).slice(0, sm ? undefined : 2)}
+        {t(`navigation.languages.${i18n.language as 'en' | 'ru'}`).slice(0, sm ? undefined : 2)}
       </Button>
       <Menu
         id="language-menu"

@@ -68,7 +68,7 @@ export const TaskTemplate: FC<TaskTemplateProps> = (props) => {
       >
         {index}
       </Link>
-      <Box component="ul" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+      <Box component="div" sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
         <Typography variant='body1'>
           {text}
         </Typography>

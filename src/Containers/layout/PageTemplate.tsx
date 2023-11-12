@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useLayoutEffect, useState } from 'react'
 import { Box, Tab, Tabs, useMediaQuery, useTheme } from '@mui/material';
 import { useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -28,7 +28,7 @@ const PageTemplate = (props: PageTemplateProps) => {
     setSearchParams({ tab: newValue })
   }
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const tab = searchParams.get('tab')
     if (tab === 'tasks' || tab === 'guide') {
       setValue(tab)

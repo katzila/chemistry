@@ -3,17 +3,31 @@ import { ThemeProvider } from '@mui/material/styles';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { BrowserRouter } from 'react-router-dom';
 import { useGLTF } from '@react-three/drei';
+import { createTheme } from "@mui/material";
 
-import { theme } from './theme';
+import { DEFAULT_THEME } from './theme';
 import Routes from './Containers/Routes';
 import LayoutContainer from './Containers/layout/LayoutContainer';
 import { MODEL_NAME_MAP } from './constants';
+import useDarkModeStore from './stores/darkModeStore';
 
 
 const queryClient = new QueryClient();
 
 const App = () => {
-  // const [mode, setMode] = React.useState('light')
+  const { darkMode } = useDarkModeStore()
+
+  const theme = React.useMemo(
+    () =>
+      createTheme({
+        ...DEFAULT_THEME,
+        palette: {
+          ...DEFAULT_THEME.palette,
+          mode: darkMode ? 'dark' : 'light',
+        },
+      }),
+    [darkMode],
+  )
 
   return (
     <QueryClientProvider client={queryClient} >

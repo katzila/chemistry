@@ -2,6 +2,7 @@ import { AppBar, Box, Button, Menu, MenuItem, Toolbar, Typography, useMediaQuery
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
+import DarkModeSwitch from '../../components/DarkModeSwitch'
 
 import LanguageDropdown from '../../components/LanguageDropdown'
 import { ORGANIC_COMPOUNDS } from '../../constants'
@@ -152,6 +153,7 @@ const Header = () => {
             </MenuItem>
           </Menu> */}
         </Box>
+        <DarkModeSwitch />
         <LanguageDropdown />
       </Toolbar>
     </AppBar>

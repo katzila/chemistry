@@ -31,7 +31,7 @@ const ModelViewer: FC<ModelViewerProps> = ({ modelPath, scale = 40, position = [
       onMouseLeave={() => hover(false)}
       shadows
     >
-      <color attach="background" args={['0xffffff']} />
+      <color attach="background" args={[theme.palette.background.paper]} />
       <ambientLight intensity={0.8} />
       <spotLight
         color={'#ffffff'}
