@@ -1,6 +1,5 @@
-import { useEffect, FC } from 'react';
+import { FC } from 'react';
 import { Box } from '@mui/material';
-import { useLocation } from 'react-router-dom';
 
 import { organicCompoundName } from '../../types';
 import {
@@ -22,17 +21,6 @@ interface GuideTemplateProps {
 
 const GuideTemplate: FC<GuideTemplateProps> = (props) => {
   const { compound } = props
-  const location = useLocation()
-
-  useEffect(() => {
-    const hash = location.hash
-    if (hash) {
-      const element = document.querySelector(hash);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    }
-  }, [location.hash])
 
   return (
     <Box

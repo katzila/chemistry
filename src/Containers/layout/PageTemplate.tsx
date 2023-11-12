@@ -21,6 +21,8 @@ const PageTemplate = (props: PageTemplateProps) => {
   const [value, setValue] = useState(searchParamsTab)
   const [t] = useTranslation()
 
+  document.title = `${t(`navigation.${compound}.title`)} | ${t('common.appName')}`
+
   const handleChange = (_e: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
     setSearchParams({ tab: newValue })

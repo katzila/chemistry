@@ -1,6 +1,4 @@
-import { organicCompoundName } from "./types";
-
-export const organicCompounds: ReadonlyArray<organicCompoundName> = [
+export const ORGANIC_COMPOUNDS = [
   'alkanes',
   'cycloalkanes',
   'alkenes',

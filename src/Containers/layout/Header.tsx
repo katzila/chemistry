@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
 import LanguageDropdown from '../../components/LanguageDropdown'
-import { organicCompounds } from '../../constants'
+import { ORGANIC_COMPOUNDS } from '../../constants'
 import { organicCompoundName } from '../../types'
 
 
@@ -97,7 +97,7 @@ const Header = () => {
               sx: { textDecoration: 'none' },
             }}
           >
-            {organicCompounds.map(organicMenuItem)}
+            {ORGANIC_COMPOUNDS.map(organicMenuItem)}
           </Menu>
          {/*   <Button
             id="inorganic-button"

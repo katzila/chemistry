@@ -1,6 +1,11 @@
 {
   "common": {
-    "or": "or"
+    "or": "or",
+    "appName": "Handbook of Chemistry"
+  },
+  "homepage": {
+    "aboutTitle": "About",
+    "aboutText": "<mainBody>Chemistry is a fascinating subject, but not all students can easily understand it. Therefore, our team of developers decided to create an online workbook that includes brief reference material on the required topics. The workbook consists of two sections for 10th and 11th grade material: organic and inorganic chemistry. In these sections, you can find both reference material (substances, their structural formulas, properties, applications, methods of production, and even ball-and-stick models) and problems on various topics.</mainBody><subText>We hope you will find it interesting to explore chemistry with our workbook, so we wish you good luck!</subText>"
   },
   "navigation": {
     "title": "Chemistry",
@@ -230,7 +235,7 @@
     "phenols": {
       "definitionText": "Phenols are hydroxyl derivatives of benzene. They can contain one or several hydroxyl groups in the benzene ring.",
       "definitionCredits": "S.A. Litvinova and N.V. Mankevich, \"Organic Chemistry via Tables\"",
-      "physicalProperties": "Phenol is a colorless crystalline substance with a characteristic odor. It turns pink in air. It is poorly soluble in water, but dissolves completely at temperatures above 70°C. It is highly toxic.",
+      "physicalProperties": "Phenol is a colorless crystalline substance with a characteristic odor. It turns pink when exposed to air. It is poorly soluble in water, but becomes completely soluble when the temperature is raised to 70°C (158°F). It is highly toxic!",
       "model": ""
     },
     "aldehydes_ketones": {
@@ -293,13 +298,13 @@
     "amines": {
       "definitionText": "Amines are organic compounds that are derivatives of ammonia, in which one, two, or three hydrogen atoms are replaced by hydrocarbon radicals.",
       "definitionCredits": "S.A. Litvinova, N.V. Mankevich \"Organic Chemistry in Tables\"",
-      "physicalProperties": "Amines such as methylamine, ethylamine, dimethylamine, and trimethylamine are gases at room temperature and have an unpleasant fishy odor. Starting with propylamine and higher, they are liquids. Higher amines (C>10) are solids that are almost odorless. Lower amines are soluble in water, with ethylamine and butylamine being infinitely soluble. Higher amines do not dissolve in water. Due to intermolecular hydrogen bonding, amines have high boiling and melting points.",
+      "physicalProperties": "Amines such as methylamine, ethylamine, dimethylamine, and trimethylamine are gases at room temperature with an unpleasant fishy smell. Starting from propylamine and above, they are liquids. Higher amines (C>10) are solid substances, almost odorless. Lower amines dissolve well in water, with ethylamine and butylamine being infinitely soluble. Higher amines do not dissolve in water. Due to intermolecular hydrogen bonds, amines have high boiling and melting points.",
       "model": ""
     },
     "amino_acids": {
       "definitionText": "Amino acids are organic compounds that contain one or more carboxyl groups and one or more amino groups, linked to hydrocarbon groups.",
       "definitionCredits": "S.A. Litvinova and N.V. Mankevich, \"Organic Chemistry via Tables\"",
-      "physicalProperties": "Amino acids are colorless crystalline substances that are well soluble in water. Amino acids of the D-series are sweet to the taste, while this property is not characteristic of the L-series. The melting points of amino acids are relatively high. For homologs of glycine, the melting points increase with the number of carbon atoms in the molecules.",
+      "physicalProperties": "Amino acids are colorless crystalline substances that are highly soluble in water. Amino acids of the D-series have a sweet taste. This characteristic is not typical for the L-series. The melting points of amino acids are relatively high. For glycine homologs, the melting points increase with the number of carbon atoms in the molecules.",
       "model": ""
     }
   }

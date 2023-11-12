@@ -1,21 +1,40 @@
-import { Box, Paper, Typography } from '@mui/material'
 import React from 'react'
+import { Box, Link, Paper, Typography } from '@mui/material'
+import { Trans, useTranslation } from 'react-i18next'
+import { Link as RouterLink } from 'react-router-dom';
 
-type Props = {}
 
-const Home = (props: Props) => {
+const Home = () => {
+  const { t } = useTranslation()
+  document.title = t('common.appName')
+
   return (
-    <Box component="div" sx={{ padding: '1em' }}>
-      <Paper sx={{ p: 3 }}>
-        <Typography variant='h5'>
-          О сайте
-        </Typography>
-        <p>
-          Химия – увлекательнейший предмет, в котором далеко не все ученики могут хорошо разобраться. Поэтому наша команда разработчиков решила создать онлайновый задачник, включающий в себя краткий справочный материал по требуемым темам. Задачник включает в себя два раздела по материалу 10-ого и 11-ого классов: органическая и неорганическая химия. В этих разделах можно найти как справочный материал (вещества, их структурные формулы, свойства, применение, способы получения и даже шаро-стержневые модели), так и задачи на разные темы.
-        </p>
-        <Typography variant='subtitle2'>
-          Надеемся, вам будет интересно познавать химию с нашим задачником, поэтому желаем удачи!
-        </Typography>
+    <Box component="div" sx={{ p: 4 }}>
+      <Paper
+        elevation={3}
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '20px',
+          p: 2,
+        }}
+        id='about'
+      >
+        <Link
+          variant='h5'
+          underline='none'
+          component={RouterLink}
+          to='#about'
+        >
+          {t('homepage.aboutTitle')}
+        </Link>
+        <Trans
+          i18nKey={'homepage.aboutText'}
+          components={{
+            mainBody: <p />,
+            subText: <Typography variant='subtitle2' />,
+          }}
+        />
       </Paper>
     </Box>
   )

@@ -1,5 +1,6 @@
 import { Box } from '@mui/material';
-import React, { ReactNode } from 'react'
+import React, { ReactNode, useEffect } from 'react'
+import { useLocation } from 'react-router';
 
 import Header from './Header';
 
@@ -10,7 +11,17 @@ type Props = {
 
 
 const LayoutContainer = (props: Props) => {
-  // const [t] = useTranslation();
+  const location = useLocation()
+
+  useEffect(() => {
+    const hash = location.hash
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  }, [location.hash])
 
   return (
     <div id='app' >
