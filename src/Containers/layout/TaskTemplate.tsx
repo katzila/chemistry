@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react'
 import { Box, Button, InputAdornment, Link, Paper, TextField, Typography } from '@mui/material'
-import { useTranslation } from 'react-i18next'
+// import { useTranslation } from 'react-i18next'
 import { Link as RouterLink, useSearchParams } from 'react-router-dom';
 
 
@@ -18,7 +18,7 @@ export const TaskTemplate: FC<TaskTemplateProps> = (props) => {
     answer,
     index,
   } = props
-  const [t] = useTranslation()
+  // const [t] = useTranslation()
   const [searchParams] = useSearchParams()
   const [answerValue, setAnswerValue] = useState('')
   const [answerStatus, setAnswerStatus] = useState<'hidden' | 'correct' | 'incorrect' | 'surrendered' | 'ask'>('hidden')
