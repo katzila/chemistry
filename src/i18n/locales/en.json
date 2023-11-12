@@ -307,5 +307,178 @@
       "physicalProperties": "Amino acids are colorless crystalline substances that are highly soluble in water. Amino acids of the D-series have a sweet taste. This characteristic is not typical for the L-series. The melting points of amino acids are relatively high. For glycine homologs, the melting points increase with the number of carbon atoms in the molecules.",
       "model": ""
     }
+  },
+  "tasks": {
+    "alkanes": {
+      "level1": {
+        "1": {
+          "text": "When 0.144 g of a saturated hydrocarbon is burned, 0.44 g of carbon dioxide is produced. Determine the formula of the hydrocarbon."
+        },
+        "2": {
+          "text": "Determine the saturated hydrocarbon in which the carbon content is 82.76% by mass."
+        },
+        "3": {
+          "text": "Establish the molecular formula of a dibromoalkane containing 79.21% bromine."
+        },
+        "4": {
+          "text": "Determine the formula of a saturated hydrocarbon. If it is known that 8.6 g of it produced 13.44 L of carbon dioxide during complete combustion."
+        },
+        "5": {
+          "text": "To burn a certain alkane, 8 times the volume of oxygen is required compared to the volume of the hydrocarbon vapor under the same conditions. Determine the formula of the alkane."
+        },
+        "6": {
+          "text": "When 7 g of a cycloalkane is burned, 22 g of carbon oxide (IV) is produced. What volume of oxygen, measured at standard conditions, is consumed in this process?"
+        },
+        "7": {
+          "text": "When 28.8 g of the sodium salt of a saturated monocarboxylic acid is melted with excess sodium hydroxide, 4.63 L of gas (at standard conditions) is released, which is 79% of the theoretical yield. Determine the molecular formula of the gas released."
+        },
+        "8": {
+          "text": "How many liters of air are required for the complete combustion of 6 L of a mixture of propane and butane containing 40% butane?"
+        },
+        "9": {
+          "text": "Natural gas from one deposit consists of 85% methane, 8% ethane, 2% nitrogen, and 3% carbon dioxide. Determine the volume of air needed to burn 2 m³ of this gas."
+        },
+        "10": {
+          "text": "During the chlorination of 112 cm³ of a gaseous hydrocarbon (at standard conditions), 0.73 g of hydrogen chloride is obtained. How many chlorine atoms have been replaced by chlorine in the hydrocarbon?"
+        },
+        "11": {
+          "text": "When 2016 mL (at standard conditions) of methane are chlorinated, 0.1 moles of chlorine are consumed. Determine the amount (in moles) of the resulting substances."
+        },
+        "12": {
+          "text": "During the chlorination of 17.92 L (at standard conditions) of methane, 109.4 g of a mixture of trichloromethane and tetrachloromethane is obtained. Find the mass percentages of the chlorination products of methane in their mixture."
+        },
+        "13": {
+          "text": "Upon heating 49 g of a mixture consisting of potassium acetate and excess potassium hydroxide, a gas is released that reacts with bromine vapor when illuminated. As a result, 25.3 g of tribromomethane is obtained with a 50% yield. Determine the mass fractions of substances in the initial mixture."
+        },
+        "14": {
+          "text": "How much chloroform (1.5 g/mL) can be obtained from 160 L of natural gas (at standard conditions) containing 92% methane? The yield of chloroform is 76% of the theoretical."
+        },
+        "15": {
+          "text": "From 50 L of natural gas (at standard conditions), 40.4 g of methyl chloride is obtained. Calculate the volumetric percentage of methane in the natural gas, if the mass fraction of methyl chloride yield is 44%."
+        },
+        "16": {
+          "text": "Natural gas with a volume of 240 L (at standard conditions) was used to produce acetylene. The volumetric fraction of methane in the gas is 85%. Determine the volume of acetylene (at standard conditions) produced if the yield is 60%."
+        },
+        "17": {
+          "text": "From 40 L of natural gas (at standard conditions), 30.3 g of chloromethane is obtained. Determine the volumetric fraction of methane in the natural gas, if the yield of chloromethane is 60%."
+        },
+        "18": {
+          "text": "When iodomethane with a mass of 2.84 g is heated with metallic sodium with a mass of 0.69 g, ethane is produced, the volume of which at normal conditions is 179.2 mL. Determine the product yield."
+        },
+        "19": {
+          "text": "A sample of technical aluminum carbide with a mass of 16 g is treated with excess water. Determine the volume of gas produced in this process, if the mass fraction of impurities in the carbide is 10%, and the yield of the reaction product is 75%. Calculate the volume of gas at standard conditions."
+        }
+      },
+      "level2": {
+        "1": {
+          "text": "To burn a portion of an alkane containing 1∙10^23 molecules, a portion of oxygen containing 1.6∙10^24 atoms is required. Determine the composition and possible structure.",
+          "answer": "C5H12"
+        },
+        "2": {
+          "text": "The sodium salt of a monocarboxylic acid with a mass of 84 g was heated with excess caustic soda, and the reaction proceeded with a yield of 75%. To burn the resulting hydrocarbon, 14.7 L (at standard conditions) of oxygen was required. Determine the formula of the original salt.",
+          "answer": "CH3CH2COONa"
+        },
+        "3": {
+          "text": "56 mL of gaseous hydrocarbon were mixed with 672 mL of oxygen and burned. When the combustion products were passed through a solution of barium hydroxide, 1.97 g of precipitate was obtained. Determine the formula of the original hydrocarbon.",
+          "answer": "C4H10"
+        },
+        "4": {
+          "text": "A gaseous alkane with a volume of 224 mL (at standard conditions) was burned, and the reaction products were passed through 1 L of lime water containing 0.148% calcium hydroxide (1 g/mL). Some of the initially formed precipitate dissolved. The mass of the undissolved residue was 1.00 g. What is the formula of the alkane?",
+          "answer": "C3H8"
+        },
+        "5": {
+          "text": "A mixture of 5 mL of gaseous hydrocarbon and 20 mL of oxygen was exploded. After the reaction, the volume of the gas mixture was 12.5 mL, and after passing it through a solution of alkali, the volume decreased to 2.5 mL, with the remaining gas supporting combustion. Determine the formula of the hydrocarbon.",
+          "answer": "C2H6"
+        },
+        "6": {
+          "text": "Determine the formula of an alkane if, during the complete absorption of the combustion products of 8.6 g of the alkane by a solution of sodium hydroxide, 21.2 g of sodium carbonate and 33.6 g of sodium hydrogencarbonate were obtained.",
+          "answer": "C6H14"
+        },
+        "7": {
+          "text": "A mixture of propane, methane, and carbon dioxide (IV) occupies a volume of 6.165 L. After burning the mixture in excess oxygen, 11.565 L of carbon dioxide was obtained. Determine the propane content in the original mixture (in % by volume).",
+          "answer": "43,8%"
+        },
+        "8": {
+          "text": "To 165 L of a mixture of methane, hydrogen, and nitrogen, 270 mL of oxygen was added, and the mixture was ignited. After the reaction, the volume of the mixture was 156 L. When the reaction products were passed through excess alkali solution, the volume decreased to 48 L. Assuming that all volumes are measured at standard conditions, determine the volumes of gases in the original mixture.",
+          "answer": "108 L CH4; 42 L H2; 15 L N2"
+        },
+        "9": {
+          "text": "All the carbon dioxide obtained from 2.24 L of ethane was passed through 38.2 mL of a 32% potassium hydroxide solution (1.31 g/mL). Determine the mass fractions of substances in the resulting solution.",
+          "answer": "20,18% K2CO3; 19,39% KHCO3"
+        },
+        "10": {
+          "text": "During the bromination of 5.6 L of methane, a mixture of bromomethane and dibromomethane, as well as hydrogen bromide, was obtained and dissolved in 300 mL of water. A solution with a concentration of 9.75% was formed. Determine the mass fraction of dibromomethane in the resulting mixture.",
+          "answer": "73,3%"
+        },
+        "11": {
+          "text": "Excess metallic sodium was reacted with a mixture of 38 g of bromomethane and 21.8 g of bromoethane, resulting in a mixture of ethane, propane, and butane with a volume of 6.72 L (at standard conditions). Determine the volumetric fraction of ethane in the resulting mixture, assuming the volumetric fraction of propane is 33.33%.",
+          "answer": "50%"
+        },
+        "12": {
+          "text": "A mixture of propane, methane, and carbon dioxide (IV) occupies a volume of 6.165 L. After burning the mixture in excess oxygen, 11.565 L of CO2 is obtained. Determine the propane content in the mixture (in % by volume).",
+          "answer": "43,8%"
+        },
+        "13": {
+          "text": "To a certain volume of alkane, ten times the volume of a nitrogen and oxygen mixture with a density at standard conditions of 1.357 g/L was added. The mixture was then explosively ignited in a closed container. The volumetric fraction of nitrogen in the resulting gas mixture after being brought to standard conditions was 50%. Determine which alkane was oxidized.",
+          "answer": "propane"
+        },
+        "14": {
+          "text": "A mixture of an alkane and oxygen, with a stoichiometric volume ratio, after combustion, condensation of water vapor, and returning to the initial conditions, decreased in volume by a factor of 1.8. Determine the structure of the alkane that was part of the mixture, knowing that there is one quaternary carbon atom in its molecule.",
+          "answer": "dimethylpropane"
+        },
+        "15": {
+          "text": "There is a mixture of branched-chain alkanes. Its vapor density compared to air is 2.193. During chlorination of this mixture, only two pairs of isomeric chloroproducts were obtained, and hydrochloric acid was dissolved in 300 mL of water. A solution with a concentration of 9.75% was formed. Calculate the mass fractions of alkanes in the original mixture.",
+          "answer": "73,1% C4H10; 26,9% C6H10"
+        }
+      }
+    },
+    "cycloalkanes": {
+      "level1": {},
+      "level2": {}
+    },
+    "alkenes": {
+      "level1": {},
+      "level2": {}
+    },
+    "alkynes": {
+      "level1": {},
+      "level2": {}
+    },
+    "arenes": {
+      "level1": {},
+      "level2": {}
+    },
+    "alcohols": {
+      "level1": {},
+      "level2": {}
+    },
+    "phenols": {
+      "level1": {},
+      "level2": {}
+    },
+    "aldehydes_ketones": {
+      "level1": {},
+      "level2": {}
+    },
+    "carboxylicAcids": {
+      "level1": {},
+      "level2": {}
+    },
+    "esters": {
+      "level1": {},
+      "level2": {}
+    },
+    "carbohydrates": {
+      "level1": {},
+      "level2": {}
+    },
+    "amines": {
+      "level1": {},
+      "level2": {}
+    },
+    "amino_acids": {
+      "level1": {},
+      "level2": {}
+    }
   }
 }
